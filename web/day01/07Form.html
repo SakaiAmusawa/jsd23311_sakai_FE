@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表格</title>
+</head>
+<body>
+<table border="1px">
+    <!--   表格的标题     -->
+    <caption>成绩表</caption>
+    <tr>
+        <td>序号</td>
+        <td>姓名</td>
+        <td>成绩</td>
+    </tr>
+    <tr>
+        <!--th 行/列的标题单元格，文字加粗居中显示  -->
+        <th>序号</th>
+        <th>姓名</th>
+        <th>成绩</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>张三</td>
+        <td>88</td>
+    </tr>
+</table>
+<hr>
+<!-- 3行4列，每个单元格有数字 2-1表示第2行第1个单元格    -->
+<!--style="border-collapse: collapse"合并表格的边框线-->
+<table border="1px" style="border-collapse: collapse">
+    <tr>
+        <!--colspan:从当前单元格开始，横着合并n个单元格,n包含当前单元格
+        注意:被合并的单元格一定得删掉！-->
+        <td colspan="2">1-1</td>
+        <!-- <td>1-2</td>-->
+        <td>1-3</td>
+        <!--rowspan:从当前单元格开始，竖着合并n个单元格-->
+        <td rowspan="3">1-4</td>
+    </tr>
+    <tr>
+        <td>2-1</td>
+        <td>2-2</td>
+        <td>2-3</td>
+        <!--            <td>2-4</td>-->
+    </tr>
+    <tr>
+        <td>3-1</td>
+        <td>3-2</td>
+        <td>3-3</td>
+        <!--            <td>3-4</td>-->
+    </tr>
+</table>
+<hr>
+<table border="1px" style="border-collapse: collapse;">
+    <caption>购物车</caption>
+    <tr>
+        <th>商品编号</th>
+        <th>商品名称</th>
+        <th>商品价格</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>小米Air</td>
+        <td>5877</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>华为遥遥领先</td>
+        <td>8877</td>
+    </tr>
+    <tr>
+        <td>总价:</td>
+        <td colspan="2">10000</td>
+    </tr>
+</table>
+</body>
+</html>
