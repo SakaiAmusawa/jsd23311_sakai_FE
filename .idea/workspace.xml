@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4aa361d5-6587-4227-b7e0-15aa97a833bb" name="Changes" comment="HTML元素分区">
-      <change afterPath="$PROJECT_DIR$/web/day01/06InsertPicture.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/day01/img/bomb.jpg" afterDir="false" />
+    <list default="true" id="4aa361d5-6587-4227-b7e0-15aa97a833bb" name="Changes" comment="system">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/day01/06InsertPicture.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/day01/06InsertPicture.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/day01/longquan.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/day01/LongquanSword.jpg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +61,13 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Sakai\IdeaProjects\jsd2311_sakai_FE\web" />
+      <recent name="C:\Users\Sakai\IdeaProjects\jsd2311_sakai_FE\web\day01" />
+      <recent name="C:\Users\Sakai\IdeaProjects\jsd2311_sakai_FE\web\day01\img" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -71,7 +78,7 @@
       <updated>1706232640362</updated>
       <workItem from="1706232641450" duration="457000" />
       <workItem from="1706233159318" duration="8778000" />
-      <workItem from="1706248958336" duration="2568000" />
+      <workItem from="1706248958336" duration="2974000" />
     </task>
     <task id="LOCAL-00001" summary="前端部分第一次提交">
       <option name="closed" value="true" />
@@ -177,7 +184,23 @@
       <option name="project" value="LOCAL" />
       <updated>1706251321528</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="HTML插图片">
+      <option name="closed" value="true" />
+      <created>1706251826211</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1706251826211</updated>
+    </task>
+    <task id="LOCAL-00015" summary="system">
+      <option name="closed" value="true" />
+      <created>1706251833451</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1706251833451</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -198,9 +221,10 @@
     <MESSAGE value="前端部分第一次提交" />
     <MESSAGE value="HTML标签的演示" />
     <MESSAGE value="HTML标签的练习" />
-    <MESSAGE value="system" />
     <MESSAGE value="HTML元素分区" />
-    <option name="LAST_COMMIT_MESSAGE" value="HTML元素分区" />
+    <MESSAGE value="HTML插图片" />
+    <MESSAGE value="system" />
+    <option name="LAST_COMMIT_MESSAGE" value="system" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
