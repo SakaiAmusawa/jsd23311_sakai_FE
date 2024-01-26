@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4aa361d5-6587-4227-b7e0-15aa97a833bb" name="Changes" comment="HTML标签的演示" />
+    <list default="true" id="4aa361d5-6587-4227-b7e0-15aa97a833bb" name="Changes" comment="HTML分区元素">
+      <change afterPath="$PROJECT_DIR$/web/day01/04PartitionElements.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,7 +49,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Sakai/IdeaProjects/jsd2311_sakai_SSM",
+    "last_opened_file_path": "C:/Users/Sakai/jsd2311_teacher",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -66,7 +68,7 @@
       <option name="presentableId" value="Default" />
       <updated>1706232640362</updated>
       <workItem from="1706232641450" duration="457000" />
-      <workItem from="1706233159318" duration="3612000" />
+      <workItem from="1706233159318" duration="8778000" />
     </task>
     <task id="LOCAL-00001" summary="前端部分第一次提交">
       <option name="closed" value="true" />
@@ -100,7 +102,39 @@
       <option name="project" value="LOCAL" />
       <updated>1706236990353</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="HTML标签的演示">
+      <option name="closed" value="true" />
+      <created>1706237375569</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1706237375569</updated>
+    </task>
+    <task id="LOCAL-00006" summary="HTML标签的演示">
+      <option name="closed" value="true" />
+      <created>1706237974319</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1706237974319</updated>
+    </task>
+    <task id="LOCAL-00007" summary="HTML标签的练习">
+      <option name="closed" value="true" />
+      <created>1706240338683</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1706240338683</updated>
+    </task>
+    <task id="LOCAL-00008" summary="HTML标签的练习">
+      <option name="closed" value="true" />
+      <created>1706240618774</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1706240618774</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -120,7 +154,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="前端部分第一次提交" />
     <MESSAGE value="HTML标签的演示" />
-    <option name="LAST_COMMIT_MESSAGE" value="HTML标签的演示" />
+    <MESSAGE value="HTML标签的练习" />
+    <option name="LAST_COMMIT_MESSAGE" value="HTML标签的练习" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
