@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4aa361d5-6587-4227-b7e0-15aa97a833bb" name="Changes" comment="HTML作业" />
+    <list default="true" id="4aa361d5-6587-4227-b7e0-15aa97a833bb" name="Changes" comment="HTML作业">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework/day01/Homework1.html" beforeDir="false" afterPath="$PROJECT_DIR$/homework/day01/Homework1.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,7 +50,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Sakai/IdeaProjects/spring-in-action-6-samples-main",
+    "last_opened_file_path": "C:/Users/Sakai/IdeaProjects/sakai",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -63,6 +66,7 @@
       <recent name="C:\Users\Sakai\IdeaProjects\jsd2311_sakai_FE\web\day01" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Sakai\IdeaProjects\jsd2311_sakai_FE\homework" />
       <recent name="C:\Users\Sakai\IdeaProjects\jsd2311_sakai_FE\web" />
       <recent name="C:\Users\Sakai\IdeaProjects\jsd2311_sakai_FE\web\day01" />
       <recent name="C:\Users\Sakai\IdeaProjects\jsd2311_sakai_FE\web\day01\img" />
@@ -80,6 +84,7 @@
       <workItem from="1706233159318" duration="8778000" />
       <workItem from="1706248958336" duration="4805000" />
       <workItem from="1706268163022" duration="2062000" />
+      <workItem from="1706317987265" duration="2870000" />
     </task>
     <task id="LOCAL-00001" summary="前端部分第一次提交">
       <option name="closed" value="true" />
@@ -257,7 +262,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706270119582</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="HTML作业">
+      <option name="closed" value="true" />
+      <created>1706318033968</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1706318033968</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
