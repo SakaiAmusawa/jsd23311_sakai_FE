@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS选择器</title>
+    <style>
+        /*1.标签名选择器:选中一类标签*/
+        h4 {
+            color: red;
+        }
+        div {
+            width: 100px;
+            height: 100px;
+            border: 3px solid red;
+        }
+        /*2. id选择器【#id值】:选中指定id的唯一一个元素*/
+        #d1 {
+            background-color: black;
+        }
+
+        /*3.类选择器【.class值】:选中指定class值的所有元素*/
+        .success {
+            background-color: green;
+            color: white;
+        }
+        .danger {
+            background-color: red;
+            color: white;
+        }
+        /* 4.伪类选择器:选中元素的某个时刻/状态    */
+        /*超链接未被访问过的状态*/
+        a:link {
+            color: gray;
+        }
+        /*超链接已被访问过的状态*/
+        a:visited {
+            color: green;
+        }
+        /*悬停状态--不是超链接独有*/
+        a:hover {
+            color: orange;
+        }
+        /*超链接激活状态*/
+        a:active {
+            color: red;
+        }
+        /* :hover不是超链接独有的 */
+        #d1:hover {
+            background-color: green;
+        }
+        /* 5.通用选择器【*】:选中页面中所有元素 */
+        * {
+            /*文字样式:斜体*/
+            font-style: italic;
+        }
+        /* 6.属性选择器【[属性]】:选中具有指定属性名与属性值的元素*/
+        [type="text"] {
+            background-color: yellow;
+        }
+        /* 7.群组选择器【选择器1,选择器2,...】:同时选中多种不同的元素
+           只要是下面任意的一种，都可以被选中*/
+        #d1,h4,.danger {
+            text-decoration: underline;
+        }
+        /* 8.后代选择器【空格】：选中#d2里所有的span元素 */
+        #d2 span {
+            background-color: pink;
+        }
+        /* 9.子代选择器【>】:选中直接子元素,不会继续向下选   */
+        #d2>div>span {
+            color: magenta;
+        }
+    </style>
+</head>
+<body>
+<h4>我是标题</h4>
+<p>我是段落</p>
+<a href="#">我是超链接</a>
+<h4>我是标题</h4>
+<div id="d1">111111</div>
+<div></div>
+<div></div>
+<hr>
+<span class="danger">用户名已被占用!</span>
+<span class="danger">两次密码不一致!</span>
+<span class="success">手机号格式正确!</span>
+<span class="success">邮箱已验证通过!</span>
+<hr>
+<a href="https://www.baidu.com">百度首页</a>
+<a href="abc">错误地址</a>
+<hr>
+<input type="text" name="email"> <br>
+<input type="text" name="uname"> <br>
+<input type="password"> <br>
+<hr>
+<div id="d2">
+    <span>1</span>
+    <div>
+        <span>2</span>
+        <b>测试文字</b>
+    </div>
+    <span>3</span>
+</div>
+</body>
+</html>

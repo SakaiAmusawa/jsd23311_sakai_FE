@@ -2,9 +2,48 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>CSS的三种位置</title>
+    <!--3.外部样式 需要引入才可以生效，多个页面可以引入同一份.css文件
+   rel="stylesheet"表示关联的是CSS样式文件
+   href="Demo.css"被引入的CSS文件路径 -->
+    <link rel="stylesheet" href="Demo.css">
+    <!-- 优先级:行内样式>(内部样式=外部样式)
+       内部与外部样式,谁后写谁生效-->
+    <!-- 2.内部样式:写在head中的style标签里,对整个当前页面生效   -->
+    <style>
+        /* 选中所有的p元素 */
+        p {
+            /* 设置文字颜色 */
+            color: blue;
+            /* 字体大小 */
+            font-size: 20px;
+            background-color: red;
+        }
+        h3 {
+            color: green;
+        }
+        h2 {
+            color: red;
+        }
+    </style>
 </head>
 <body>
+<h4>我是标题</h4>
+<!-- 1.行内样式 写在开始标签里,只对当前行生效-->
+<h4 style="color: red;">我是标题</h4>
+<h4>我是标题</h4>
 
+<p>我是段落</p>
+<p style="background-color: green;">我是段落</p>
+<p>我是段落</p>
+<p>我是段落</p>
+
+<div>我是div</div>
+<div>我是div</div>
+<div>我是div</div>
+
+<h3 style="color: red;">三级标题</h3>
+<!-- 如果设置的CSS样式不同，叠加效果   -->
+<h2>二级标题</h2>
 </body>
 </html>

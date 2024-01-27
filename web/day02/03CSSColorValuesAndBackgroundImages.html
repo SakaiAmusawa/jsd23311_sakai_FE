@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS色值与背景图</title>
+    <style>
+        h1 {
+            /*1.单词表示法*/
+            color: red;
+            /*2.rgb(红,绿,蓝) 范围：0~255 */
+            color: rgb(255,0,0);
+            color: rgb(0,255,0);
+            color: rgb(0,0,255);
+            /*3.十六进制表示法 0~9 A~F
+            前两位表示红色 中间两位表示绿色 最后两位表示蓝色*/
+            color: #FF0000;
+            color: #00FF00;
+            color: #0000ff;
+            /*4.十六进制简写*/
+            color: #f00;
+            color: #0f0;
+            color: #00f;
+            color: #000;
+            color: #fff;
+            color: #808080;
+            /* 5.rgba(red,green,blue,alpha)表示法
+            1完全不透明 0透明到看不见 0.5半透明 */
+            color: rgba(0,0,255,0.2);
+        }
+        .d1 {
+            /*1.插入背景图*/
+            background-image: url(img/mr.png);
+            /*2.背景图必须设置所在区域大小*/
+            width: 50px;
+            height: 100px;
+            /*可以同时添加背景色，没有图的地方有颜色*/
+            background-color: cyan;
+            /*3.背景图尺寸 宽度 高度*/
+            background-size: 50px 100px;
+        }
+        .d2 {
+            width: 300px;
+            height: 300px;
+            border: 2px solid #f00;
+            background-image: url(img/mr.png);
+            /*4.背景图重复*/
+            background-repeat: no-repeat; /*不允许重复*/
+            /*5.背景图位置 水平方向 垂直方向*/
+            background-position: 0px 0px; /*原点 左上角*/
+            background-position: 100px 50px; /*右下 正数*/
+            background-position: -50px -50px; /*左上 负数*/
+            background-position: center; /*两个center简写成1个 居中*/
+            background-position: 50% 50%; /*百分比 居中*/
+            background-position: 100% 100%; /*右下角*/
+        }
+        .d3 {
+            /*想要插入背景图 必须设置所在区域大小*/
+            width: 611px;
+            height: 376px;
+            background-color: #e8e8e8;
+            /*插入背景图*/
+            background-image: url(img/computer1.png);
+            /*设置背景图不重复*/
+            background-repeat: no-repeat;
+            /*背景图尺寸 宽 高*/
+            background-size: 318px 319px;
+            /*背景图位置 水平 垂直*/
+            background-position: 90% 60%;
+        }
+    </style>
+</head>
+<body>
+<h1>测试颜色</h1>
+<hr>
+<!-- .d*3 生成3个class值为d的div   -->
+<div class="d1"></div>
+<div class="d2"></div>
+<div class="d3"></div>
+</body>
+</html>

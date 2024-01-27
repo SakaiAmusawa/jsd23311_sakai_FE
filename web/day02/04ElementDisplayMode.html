@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>元素显示模式</title>
+    <style>
+        /*块级元素 display:block;
+        独占一行 可以设置宽高*/
+        div {
+            height: 100px;
+            border: 2px solid #00f;
+        }
+        #d2 {
+            width: 500px;
+        }
+        /*行内元素:display:inline 共处一行 无法设置宽高
+        如果想具有块级元素特点，可以使用display:block切换为块级元素 */
+        span {
+            width: 200px;
+            height: 200px;
+            background-color: #f00;
+            display: block;
+        }
+        /*3.行内块:inline-block 共处一行 可以设置大小 */
+        input,button {
+            width: 200px;
+            height: 200px;
+        }
+        #d3 {
+            /*4.让元素消失 */
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div id="d1"></div>
+<div id="d2"></div>
+<div id="d3"></div>
+<hr>
+<span>1234567890</span>
+<span>1234567890fhoweifhwiowid</span>
+<span>1234567890</span>
+<hr>
+<input type="text">
+<input type="text">
+<input type="text">
+<button>点我提交</button>
+</body>
+</html>
