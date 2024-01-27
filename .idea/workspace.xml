@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4aa361d5-6587-4227-b7e0-15aa97a833bb" name="Changes" comment="HTML作业">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework/day01/Homework1.html" beforeDir="false" afterPath="$PROJECT_DIR$/homework/day01/Homework1.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,15 +47,19 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Sakai/IdeaProjects/sakai",
+    "last_opened_file_path": "C:/Users/Sakai/JavaProject/teacher",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "File.Encoding",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -72,6 +75,13 @@
       <recent name="C:\Users\Sakai\IdeaProjects\jsd2311_sakai_FE\web\day01\img" />
     </key>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-1.8.0_402-corretto-1.8.0_402-f644763e9732-af3fa2b8" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -85,6 +95,12 @@
       <workItem from="1706248958336" duration="4805000" />
       <workItem from="1706268163022" duration="2062000" />
       <workItem from="1706317987265" duration="2870000" />
+      <workItem from="1706344723144" duration="18000" />
+      <workItem from="1706345439423" duration="68000" />
+      <workItem from="1706345518504" duration="63000" />
+      <workItem from="1706345871623" duration="635000" />
+      <workItem from="1706346527473" duration="136000" />
+      <workItem from="1706346719431" duration="151000" />
     </task>
     <task id="LOCAL-00001" summary="前端部分第一次提交">
       <option name="closed" value="true" />
