@@ -4,16 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4aa361d5-6587-4227-b7e0-15aa97a833bb" name="Changes" comment="DAY02">
-      <change afterPath="$PROJECT_DIR$/web/day03/01学子F1左侧.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/day03/02学子F1右侧.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/day03/03边框与内间距.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/day03/04外间距.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/day03/img/computer1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/day03/img/computer2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/day03/img/学子F1右侧.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/day03/img/学子F1左侧.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="4aa361d5-6587-4227-b7e0-15aa97a833bb" name="Changes" comment="DAY03">
+      <change beforePath="$PROJECT_DIR$/web/day03/04外间距.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/day03/04外间距.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +106,7 @@
       <workItem from="1706347935552" duration="1522000" />
       <workItem from="1706489833320" duration="667000" />
       <workItem from="1706492706741" duration="1114000" />
-      <workItem from="1706495495003" duration="4064000" />
+      <workItem from="1706495495003" duration="4442000" />
     </task>
     <task id="LOCAL-00001" summary="前端部分第一次提交">
       <option name="closed" value="true" />
@@ -332,7 +324,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706349219297</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="DAY03">
+      <option name="closed" value="true" />
+      <created>1706499779353</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1706499779353</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -361,7 +361,8 @@
     <MESSAGE value="HTML表单" />
     <MESSAGE value="HTML作业" />
     <MESSAGE value="DAY02" />
-    <option name="LAST_COMMIT_MESSAGE" value="DAY02" />
+    <MESSAGE value="DAY03" />
+    <option name="LAST_COMMIT_MESSAGE" value="DAY03" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
