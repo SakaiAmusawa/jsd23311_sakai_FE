@@ -9,24 +9,24 @@
 <form action="#">
     <!-- type控件类型 name控件名字 value控件的值       -->
     <!-- text普通文本输入框   -->
-    用户名:<input type="text" name="uname" value="tom"> <br>
+    用户名:<input name="uname" type="text" value="tom"> <br>
     <!-- password密码输入框   -->
-    密码: <input type="password" name="pwd" placeholder="请输入密码"> <br>
+    密码: <input name="pwd" placeholder="请输入密码" type="password"> <br>
     <!--  单选和多选必须设置value默认值，不然提交的值是on  -->
     <!-- radio单选框 需要name相同分到同一组才能实现单选   -->
     性别:
-    <input type="radio" name="gender" value="1">男
-    <input type="radio" name="gender" value="0">女
+    <input name="gender" type="radio" value="1">男
+    <input name="gender" type="radio" value="0">女
     <br>
     <!-- checkbox多选框   -->
     爱好:
-    <input type="checkbox" name="like" value="cy">抽烟
-    <input type="checkbox" name="like" value="hj">喝酒
-    <input type="checkbox" name="like" value="tt">烫头
-    <input type="checkbox" name="like" value="java">学Java
+    <input name="like" type="checkbox" value="cy">抽烟
+    <input name="like" type="checkbox" value="hj">喝酒
+    <input name="like" type="checkbox" value="tt">烫头
+    <input name="like" type="checkbox" value="java">学Java
     <br>
-    生日:<input type="date" name="birthday"> <br>
-    靓照:<input type="file" name="img"> <br>
+    生日:<input name="birthday" type="date"> <br>
+    靓照:<input name="img" type="file"> <br>
     <br>
     选择一个喜欢的城市
     <select name="city">

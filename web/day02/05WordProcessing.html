@@ -1,55 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>05文字处理</title>
-  <style>
-    p {
-      /*文字大小 谷歌浏览器默认的字号是16px 最小字号12px*/
-      font-size: 30px;
-      /*字体 可以设置多个*/
-      font-family: "幼圆uuuu","宋体";
-      /*简写:字号 字体*/
-      font: 35px "微软雅黑";
-    }
-    a {
-      /*文本修饰线*/
-      text-decoration: none; /*去除修饰线*/
-      text-decoration: line-through;/*删除线*/
-      text-decoration: underline;/*下划线*/
-      text-decoration: overline;/*顶部线*/
-    }
-    div {
-      width: 200px;
-      height: 200px;
-      border: 5px solid #00f;
-      /*文字水平对齐方式:居中*/
-      text-align: center;
-      /*行高:设置行与行之间的距离
-      如果单行文字的行高与div一样高，可以设置文字垂直居中效果*/
-      line-height: 200px;
-    }
-    h1 {
-      /*字体字重*/
-      font-weight: bold;/*加粗*/
-      font-weight: normal;/*正常体*/
-      font-weight: lighter;/*细体*/
-      font-style: italic;/*字体样式:斜体*/
-    }
-    span {
-      /*文本阴影:X轴偏移量 Y轴偏移量 羽化值 阴影颜色
-      水平方向:正数向右 负数向左
-      垂直方向:正数向下 负数向上
-      羽化值:数值越大，阴影越模糊*/
-      text-shadow: 20px -50px 2px red;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>05文字处理</title>
+    <style>
+        p {
+            /*文字大小 谷歌浏览器默认的字号是16px 最小字号12px*/
+            font-size: 30px;
+            /*字体 可以设置多个*/
+            font-family: "幼圆uuuu", "宋体";
+            /*简写:字号 字体*/
+            font: 35px "微软雅黑";
+        }
+
+        a {
+            /*文本修饰线*/
+            text-decoration: none; /*去除修饰线*/
+            text-decoration: line-through; /*删除线*/
+            text-decoration: underline; /*下划线*/
+            text-decoration: overline; /*顶部线*/
+        }
+
+        div {
+            width: 200px;
+            height: 200px;
+            border: 5px solid #00f;
+            /*文字水平对齐方式:居中*/
+            text-align: center;
+            /*行高:设置行与行之间的距离
+            如果单行文字的行高与div一样高，可以设置文字垂直居中效果*/
+            line-height: 200px;
+        }
+
+        h1 {
+            /*字体字重*/
+            font-weight: bold; /*加粗*/
+            font-weight: normal; /*正常体*/
+            font-weight: lighter; /*细体*/
+            font-style: italic; /*字体样式:斜体*/
+        }
+
+        span {
+            /*文本阴影:X轴偏移量 Y轴偏移量 羽化值 阴影颜色
+            水平方向:正数向右 负数向左
+            垂直方向:正数向下 负数向上
+            羽化值:数值越大，阴影越模糊*/
+            text-shadow: 20px -50px 2px red;
+        }
+    </style>
 </head>
 <body>
 <p>我是测试文字 123 ABC abc</p>
 <a href="#">超链接</a>
 <div>
-  测试文字
+    测试文字
 </div>
 <span>测试文字</span>
 <h1>标题字</h1>

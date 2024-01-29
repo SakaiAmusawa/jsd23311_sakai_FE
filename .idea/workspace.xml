@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4aa361d5-6587-4227-b7e0-15aa97a833bb" name="Changes" comment="DAY03">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/day03/05浮动布局.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/day03/05浮动布局.html" afterDir="false" />
-    </list>
+    <list default="true" id="4aa361d5-6587-4227-b7e0-15aa97a833bb" name="Changes" comment="浮动布局：将元素横置" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -107,7 +104,7 @@
       <workItem from="1706347935552" duration="1522000" />
       <workItem from="1706489833320" duration="667000" />
       <workItem from="1706492706741" duration="1114000" />
-      <workItem from="1706495495003" duration="6222000" />
+      <workItem from="1706495495003" duration="6570000" />
     </task>
     <task id="LOCAL-00001" summary="前端部分第一次提交">
       <option name="closed" value="true" />
@@ -349,7 +346,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706500251047</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="浮动布局：将元素横置">
+      <option name="closed" value="true" />
+      <created>1706509382590</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1706509382590</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -379,7 +384,8 @@
     <MESSAGE value="HTML作业" />
     <MESSAGE value="DAY02" />
     <MESSAGE value="DAY03" />
-    <option name="LAST_COMMIT_MESSAGE" value="DAY03" />
+    <MESSAGE value="浮动布局：将元素横置" />
+    <option name="LAST_COMMIT_MESSAGE" value="浮动布局：将元素横置" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
