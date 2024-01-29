@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>09绝对定位</title>
+    <style>
+        /* 绝对定位：position：absolute；
+            移动参照物：离自己最近的，使用了非static定位属性的上层元素
+            “子绝父相”：儿子使用绝对定位，父亲使用相对定位，儿子的移动参照物就是父亲
+         */
+
+        /*只要用了定位元素就可以设置层级了*/
+        .fu {
+            background-color: yellow;
+            width: 500px;
+            position: relative;
+        }
+
+        .fu > div {
+            width: 100px;
+            height: 100px;
+        }
+
+        .z1 {
+            background-color: #f00;
+            position: relative;
+            z-index: 20;
+        }
+
+        .z2 {
+            background-color: #0f0;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        .z3 {
+            background-color: #00f;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            z-index: 10;
+        }
+    </style>
+</head>
+<body>
+<div class="fu">
+    <div class="z1"></div>
+    <div class="z2"></div>
+    <div class="z3"></div>
+</div>
+</body>
+</html>
