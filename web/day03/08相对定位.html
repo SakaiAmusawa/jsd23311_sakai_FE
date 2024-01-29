@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>08相对定位</title>
+    <style>
+        /*相对定位：position:relative;
+        1.不会脱离文档流，也不会释放布局空间
+        2.比较温和，不会挤开其他元素，但可能发生堆叠
+        3.使用了定位属性后可以使用top bottom left right微调自己的位置
+        4.可以使用z-index调整层级，默认0，都是整数，可以写负数，数值越大越靠上
+        5.移动的参照物：原来的自己
+        */
+        .fu {
+            background-color: yellow;
+        }
+
+        .fu > div {
+            width: 100px;
+            height: 100px;
+            position: relative;
+        }
+
+        div:hover {
+            top: 25px;
+            left: 25px;
+        }
+
+        .z1 {
+            background-color: #f00
+        }
+
+        .z2 {
+            background-color: #0f0;
+            /*        left: 50px;
+                    bottom: 50px;*/
+        }
+
+        .z3 {
+            background-color: #00f
+        }
+    </style>
+</head>
+<body>
+<div class="fu">
+    <div class="z1"></div>
+    <div class="z2"></div>
+    <div class="z3"></div>
+</div>
+</body>
+</html>
