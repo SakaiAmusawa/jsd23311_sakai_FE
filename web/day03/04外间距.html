@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>04外间距</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .fu {
+            /*带透明的背景色*/
+            background-color: rgba(255, 255, 0, 0.3);
+            /*给父元素加BFC结界：解决父子贴边问题*/
+            overflow: hidden;
+        }
+
+        .fu > div {
+            width: 100px;
+            height: 100px;
+            background-color: rgba(0, 0, 255, 0.6);
+            border: 1px solid red;
+
+        }
+
+        .z1 {
+            margin-top: 50px;
+            margin-bottom: 80px;
+        }
+
+        /*相邻兄弟间的外间距取最大值显示，所以该处的间距应为80px,而非120px*/
+        .z2 {
+            margin-top: 40px;
+        }
+
+        .z3 {
+            margin-bottom: 50px;
+        }
+
+        span {
+            border: 2px solid red;
+        }
+
+        .s2 {
+            /*行内元素的垂直内外间距都不可以使用*/
+            margin: 50px 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="fu">
+    <div class="z1">子元素div1</div>
+    <div class="z2">子元素div2</div>
+    <div class="z3">子元素div3</div>
+</div>
+
+<hr>
+
+<span>span1</span>
+<span class="s2">span2</span>
+<span>span3</span>
+</body>
+</html>

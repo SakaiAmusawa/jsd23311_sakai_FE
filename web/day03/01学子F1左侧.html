@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>01学子F1左侧</title>
+    <style>
+      /*1.选中所有元素 去除它们自带的内外间距*/
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      /*2.选中f1下的.left左侧块设置样式*/
+      .f1>.left {
+        /*3.先设置宽高与背景色*/
+        width: 611px;
+        height: 376px;
+        background-color: #e8e8e8;
+        /*4.处理背景图片 */
+        /*插入背景图片*/
+        background-image: url(img/computer1.png);
+        /*设置背景图不重复*/
+        background-repeat: no-repeat;
+        /*设置背景图尺寸 宽度 高度*/
+        background-size: 318px 319px;
+        /*设置背景图位置 水平方向 垂直方向*/
+        background-position: 265px 35px;
+        /* 6.给父元素设置BFC结界,防止父子贴边 */
+        overflow: hidden;
+      }
+      /*5.设置F1左侧的文字区域*/
+      .f1>.left>.text {
+        width: 245px;
+        height: 232px;
+        /* 辅助色 用完了删掉 */
+        /*background-color: cyan;*/
+        margin-top: 68px;
+        margin-left: 36px;
+      }
+      /*7.设置商品标题文字样式*/
+      .f1>.left>.text>.p_title {
+          font-size: 32px;
+          color: #333;
+          /*字重:细体*/
+          font-weight: lighter;
+      }
+      /*8.设置商品描述文字样式*/
+      .f1>.left>.text>.p_intro {
+          font-size: 12px;
+          color: #666;
+          font-weight: lighter;
+          /*给描述添加上下内间距 上12px 下24px*/
+          padding-top: 12px;
+          padding-bottom: 24px;
+      }
+      /*9.设置商品价格文字样式*/
+      .f1>.left>.text>.p_price {
+          font-size: 24px;
+          color: #0aa1ed;
+          font-weight: bold;
+          /*下外间距*/
+          margin-bottom: 12px;
+      }
+      /* 10.设置查看详情按钮 */
+      .f1>.left>.text>a {
+          /*行内元素无法设置宽高,必须修改为块级元素*/
+          display: block;
+          width: 132px;
+          height: 40px;
+          background-color: #0aa1ed;
+          /*设置边框圆角 数值越大 角越圆*/
+          border-radius: 5px;
+          font-size: 20px;
+          color: #fff;
+          /*去除超链接自带的下划线*/
+          text-decoration: none;
+          /*文字水平垂直居中*/
+          text-align: center;
+          line-height: 40px;
+      }
+    </style>
+</head>
+<body>
+<div class="f1">
+  <div class="left">
+    <div class="text">
+      <p class="p_title">灵越 燃7000系列</p>
+      <p class="p_intro">
+        酷睿双核i5处理器|256GB SSD| 8GB内存 <br>
+        英特尔HD显卡620含共享显卡内存
+      </p>
+      <p class="p_price">￥4999.00</p>
+      <a href="#">查看详情</a>
+    </div>
+  </div>
+  <div class="right"></div>
+</div>
+</body>
+</html>

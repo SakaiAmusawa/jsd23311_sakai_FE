@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>03边框与内间距</title>
+    <style>
+
+        .d1 {
+            width: 200px;
+            height: 200px;
+            background-color: #0aa1ed;
+            /* 边框  粗细  样式  颜色*/
+            border: 8px solid red;
+            /*设置边框圆角*/
+            border-radius: 12px;
+        }
+
+        .d2 {
+            width: 200px;
+            height: 200px;
+            border: 5px solid green;
+
+            /*内边框间距*/
+            /*
+            单独设置每条边
+            padding-left: 50px;
+            padding-top: 50px;
+            */
+
+            /*设置全局的方法*/
+            /*padding: 50px;*/
+
+            /*顺时针设置，没有的找对面的值*/
+            padding: 10px 20px 30px;
+
+            /*切换成边框盒子：
+                效果：加内间距与边框都不会让元素变大，都算在元素设置的width与height中*/
+            box-sizing: border-box;
+
+        }
+
+        span {
+            border: 3px solid green;
+        }
+
+        .s2 {
+            padding-left: 20px;
+            padding-right: 20px;
+            /*  行内元素上下内间距不生效，所以行内元素不要使用上下内间距  */
+        }
+    </style>
+</head>
+<body>
+<div class="d1">边框测试</div>
+<div class="d2">内间距测试</div>
+
+<hr>
+
+<span class="s1">我是span1</span>
+<span class="s2">我是span2</span>
+<span class="s3">我是span3</span>
+
+</body>
+</html>

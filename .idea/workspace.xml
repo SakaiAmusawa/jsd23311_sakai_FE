@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4aa361d5-6587-4227-b7e0-15aa97a833bb" name="Changes" comment="HTML作业">
+    <list default="true" id="4aa361d5-6587-4227-b7e0-15aa97a833bb" name="Changes" comment="DAY02">
+      <change afterPath="$PROJECT_DIR$/web/day03/01学子F1左侧.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/day03/02学子F1右侧.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/day03/03边框与内间距.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/day03/04外间距.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/day03/img/computer1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/day03/img/computer2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/day03/img/学子F1右侧.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/day03/img/学子F1左侧.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,13 +58,13 @@
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Sakai/JavaProject/teacher",
+    "last_opened_file_path": "C:/Users/Sakai/JavaProject/sakai/jsd2311_sakai_FE/web/day03",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "preferences.pluginManager",
@@ -65,10 +73,12 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Sakai\JavaProject\sakai\jsd2311_sakai_FE\web\day03" />
       <recent name="C:\Users\Sakai\IdeaProjects\jsd2311_sakai_FE" />
       <recent name="C:\Users\Sakai\IdeaProjects\jsd2311_sakai_FE\web\day01" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Sakai\JavaProject\sakai\jsd2311_sakai_FE\web\day02" />
       <recent name="C:\Users\Sakai\IdeaProjects\jsd2311_sakai_FE\homework" />
       <recent name="C:\Users\Sakai\IdeaProjects\jsd2311_sakai_FE\web" />
       <recent name="C:\Users\Sakai\IdeaProjects\jsd2311_sakai_FE\web\day01" />
@@ -101,6 +111,10 @@
       <workItem from="1706345871623" duration="635000" />
       <workItem from="1706346527473" duration="136000" />
       <workItem from="1706346719431" duration="151000" />
+      <workItem from="1706347935552" duration="1522000" />
+      <workItem from="1706489833320" duration="667000" />
+      <workItem from="1706492706741" duration="1114000" />
+      <workItem from="1706495495003" duration="4064000" />
     </task>
     <task id="LOCAL-00001" summary="前端部分第一次提交">
       <option name="closed" value="true" />
@@ -286,7 +300,39 @@
       <option name="project" value="LOCAL" />
       <updated>1706318033968</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="DAY02">
+      <option name="closed" value="true" />
+      <created>1706348326316</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1706348326316</updated>
+    </task>
+    <task id="LOCAL-00025" summary="DAY02">
+      <option name="closed" value="true" />
+      <created>1706348790390</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1706348790390</updated>
+    </task>
+    <task id="LOCAL-00026" summary="DAY02">
+      <option name="closed" value="true" />
+      <created>1706349136853</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1706349136853</updated>
+    </task>
+    <task id="LOCAL-00027" summary="DAY02">
+      <option name="closed" value="true" />
+      <created>1706349219297</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1706349219297</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -314,7 +360,8 @@
     <MESSAGE value="HTML图片插入 小练习" />
     <MESSAGE value="HTML表单" />
     <MESSAGE value="HTML作业" />
-    <option name="LAST_COMMIT_MESSAGE" value="HTML作业" />
+    <MESSAGE value="DAY02" />
+    <option name="LAST_COMMIT_MESSAGE" value="DAY02" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
