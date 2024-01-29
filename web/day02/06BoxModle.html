@@ -2,9 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>06盒子模型</title>
+    <title>07盒子模型</title>
+    <style>
+        .card {
+            width: 300px;
+            background-color: #ff0;
+            /*内间距:四个方向都是10px 内容与边框之间的距离*/
+            padding: 10px;
+            border: 2px solid #f00;
+            /*单独设置下外间距 */
+            margin-bottom:30px;
+        }
+        .card>img {
+            /* 图片的宽度是父级卡片宽度的100% */
+            width: 100%;
+        }
+        .card>p {
+            border: 5px solid #f00;
+            /*外间距:边框外的与其他元素的距离
+            如果是4个值，从上外间距开始 按照顺时针 上 右 下 左 进行设置*/
+            margin: 10px 20px 30px 40px;
+        }
+    </style>
 </head>
 <body>
-
+<div class="card">
+    <img src="img/1.png" alt="">
+    <p>我是文字</p>
+</div>
+<div class="card">
+    <img src="img/1.png" alt="">
+    <p>我是文字</p>
+</div>
 </body>
 </html>
