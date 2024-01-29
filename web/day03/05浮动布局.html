@@ -6,6 +6,7 @@
     <style>
         .fu {
             background-color: yellow;
+            overflow: hidden;
         }
 
         .fu > div {
@@ -13,13 +14,61 @@
             height: 100px;
             border: 3px solid #000;
         }
+
+        .z1 {
+            background-color: #f00;
+            float: right;
+        }
+
+        .z2 {
+            background-color: #0f0;
+            float: right;
+        }
+
+        .z3 {
+            background-color: #00f;
+            float: right;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            background-color: #3097bd;
+            overflow: hidden;
+        }
+
+        ul > li {
+            width: 100px;
+            height: 40px;
+            /*水平居中*/
+            text-align: center;
+            float: left;
+        }
+
+        ul > li > a {
+            line-height: 40px;
+            text-decoration: none;
+            color: #fff;
+        }
     </style>
 </head>
 <body>
+
 <div class="fu">
     <div class="z1"></div>
     <div class="z2"></div>
     <div class="z3"></div>
 </div>
+
+<hr>
+
+<ul>
+    <li><a href="#">第一</a></li>
+    <li><a href="#">第二</a></li>
+    <li><a href="#">第三</a></li>
+    <li><a href="#">第四</a></li>
+</ul>
+
 </body>
 </html>
