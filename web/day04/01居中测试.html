@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>01居中测试</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        .main {
+            /*
+            100->100%  v->viewport h->height
+            撑满整个视口（浏览器窗口）高度的100%
+            */
+            /*height: 100vh;*/
+            background-color: #ddd;
+        }
+
+        .center {
+            /*目的：定宽且居中*/
+            width: 1000px;
+            background-color: #fff;
+            margin: 0 auto;
+        }
+
+        .card {
+            width: 300px;
+            height: 600px;
+            border: 5px solid blue;
+            /*让块级元素 自己 在版心中居中*/
+            margin: 0 auto;
+            /*让块级元素里的 文字 在卡片里水平居中*/
+            text-align: center;
+
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+    <!--  版心：固定宽度，居中  -->
+    <div class="center">
+        <div class="card">我是内容</div>
+        <div class="card">我是内容</div>
+        <div class="card">我是内容</div>
+    </div>
+</div>
+</body>
+</html>
