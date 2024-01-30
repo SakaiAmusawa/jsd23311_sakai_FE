@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4aa361d5-6587-4227-b7e0-15aa97a833bb" name="Changes" comment="元素的放大与过渡">
-      <change afterPath="$PROJECT_DIR$/web/day04/04学子F1F2动画完整版.html" afterDir="false" />
+    <list default="true" id="4aa361d5-6587-4227-b7e0-15aa97a833bb" name="Changes" comment="完整版的通用样式">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/day04/04学子F1F2动画完整版.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/day04/04学子F1F2动画完整版.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +112,7 @@
       <workItem from="1706495495003" duration="14534000" />
       <workItem from="1706520052723" duration="7480000" />
       <workItem from="1706528979393" duration="1375000" />
-      <workItem from="1706576350464" duration="6749000" />
+      <workItem from="1706576350464" duration="12462000" />
     </task>
     <task id="LOCAL-00001" summary="前端部分第一次提交">
       <option name="closed" value="true" />
@@ -490,7 +490,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706580833398</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="完整版的通用样式">
+      <option name="closed" value="true" />
+      <created>1706583503560</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1706583503560</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -530,7 +538,8 @@
     <MESSAGE value="小练 未完成" />
     <MESSAGE value="居中、元素的阴影" />
     <MESSAGE value="元素的放大与过渡" />
-    <option name="LAST_COMMIT_MESSAGE" value="元素的放大与过渡" />
+    <MESSAGE value="完整版的通用样式" />
+    <option name="LAST_COMMIT_MESSAGE" value="完整版的通用样式" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
