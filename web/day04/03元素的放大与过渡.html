@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>03元素的放大与过渡</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin: 100px auto 0;
+
+            /*
+            变换所需的时间：提供一定的过渡效果
+            注意：要加给div 如果加给了div:hover那么在离开将失去过渡效果
+            */
+            transition: 2s;
+        }
+
+        div:hover {
+            background-color: #0aa1ed;
+            /*变换       放大 倍率 */
+            transform: scale(2);
+        }
+
+    </style>
+</head>
+<body>
+<div></div>
+</body>
+</html>
