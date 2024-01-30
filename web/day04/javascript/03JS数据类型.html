@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>03JS数据类型</title>
+</head>
+<body>
+  <script>
+    //JS数据类型:原始数据类型(基础类型)+引用类型
+    //JS原始数据类型:
+    //number数值 string字符串 boolean布尔 undefined未定义 null空
+
+    //1)number类型 整数+小数
+    let a = 1;
+    let b = 9.9;
+    console.log(typeof a,typeof b);
+
+    //2)string字符串类型 单引+双引都可以
+    let c = '新春快乐!';
+    let d = "来年大吉!";
+    console.log(typeof c,typeof d);
+
+    //3)boolean布尔类型 true==>1 false==>0
+    let e = true;
+    let f = false;
+    console.log(typeof e,typeof f);
+
+    //4)undefined未定义型
+    //变量声明了但未赋值
+    //访问了对象不存在的属性
+    //访问了数组不存在的下标
+    let g;
+    console.log(g,typeof g);//undefined
+
+    //引用数据类型:Object Array Function Number String Boolean...
+    //1)定义对象
+    //let obj={}; ==> new obj();
+    let obj = {
+      //属性名:属性值  多对数据用逗号隔开
+      name:'张三',
+      age:18
+    };//结束写分号
+    console.log(obj);//{name: '张三', age: 18}
+    //查看对象的属性值
+    console.log(obj.name,obj.age);
+    //修改对象的属性值
+    obj.age = 20;
+    console.log(obj.age);
+    //如果属性不存在，就是新增属性值
+    obj.like = '放寒假';
+    console.log(obj);//{name: '张三', age: 20, like: '放寒假'}
+    console.log(obj.eat);//访问对象不存在的属性:undefined
+
+    //2)Array数组类型
+    let arr = ['李逵','后羿','鲁班',1,3.5,true];
+    console.log(arr);
+    console.log(arr[0]);//‘李逵’
+    console.log(arr[100]);//访问数组不存在的下标
+    console.log(arr[5]);
+  </script>
+</body>
+</html>

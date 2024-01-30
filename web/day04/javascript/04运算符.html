@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>04运算符</title>
+</head>
+<body>
+  <script>
+    //除法会根据结果自动转为整数或小数
+    console.log(3/2);//1.5
+    console.log(4/2);//2
+
+    let a = 1;
+    let b = true;
+    //松散比较运算符 只比较值
+    console.log(a == b);//true值都是1
+    //严格比较运算符 先比较类型，再比较值
+    console.log(a === b);//false,数据类型都不一样number boolean
+
+    console.log(3>10);//false
+    //如果两边都是字符，比较的是字符的编码值
+    //charCodeAt()获取指定字符的编码值
+    console.log('a'>'A');//true 97>65
+    console.log('3'.charCodeAt());//51
+    console.log('10'.charCodeAt());//49
+    console.log('3'>'10');//true
+
+    //三目运算符 1 ? 2 : 3 ;
+    let c = 0;
+    console.log(c==0?'YES':'NO');
+    //=是赋值符号,先赋值c为1,转为布尔类型是true,所以会取到2号位置的结果'YES'
+    console.log(c = 1 ?'YES':'NO');
+
+  </script>
+</body>
+</html>

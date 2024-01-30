@@ -4,9 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4aa361d5-6587-4227-b7e0-15aa97a833bb" name="Changes" comment="完整版的通用样式">
+    <list default="true" id="4aa361d5-6587-4227-b7e0-15aa97a833bb" name="Changes" comment="格式化">
+      <change afterPath="$PROJECT_DIR$/web/day04/javascript/01.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/day04/javascript/01JS的三种引入方式.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/day04/javascript/02变量与常量.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/day04/javascript/03JS数据类型.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/day04/javascript/04运算符.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/day04/javascript/05流程控制.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/day04/javascript/06函数.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/day04/04学子F1F2动画完整版.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/day04/04学子F1F2动画完整版.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +23,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JavaScript File" />
         <option value="HTML File" />
       </list>
     </option>
@@ -42,28 +50,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Sakai/JavaProject/sakai/jsd2311_sakai_FE/web/day04/img",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.updates",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Sakai/JavaProject/teacher/jsd2311-3-teacher&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.updates&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Sakai\JavaProject\sakai\jsd2311_sakai_FE\web\day04\img" />
@@ -112,23 +120,8 @@
       <workItem from="1706495495003" duration="14534000" />
       <workItem from="1706520052723" duration="7480000" />
       <workItem from="1706528979393" duration="1375000" />
-      <workItem from="1706576350464" duration="12462000" />
-    </task>
-    <task id="LOCAL-00001" summary="前端部分第一次提交">
-      <option name="closed" value="true" />
-      <created>1706233025235</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1706233025235</updated>
-    </task>
-    <task id="LOCAL-00002" summary="前端部分第一次提交">
-      <option name="closed" value="true" />
-      <created>1706233176859</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1706233176859</updated>
+      <workItem from="1706576350464" duration="22745000" />
+      <workItem from="1706611332776" duration="679000" />
     </task>
     <task id="LOCAL-00003" summary="前端部分第一次提交">
       <option name="closed" value="true" />
@@ -498,7 +491,31 @@
       <option name="project" value="LOCAL" />
       <updated>1706583503560</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="完整版的完成？">
+      <option name="closed" value="true" />
+      <created>1706595864126</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1706595864126</updated>
+    </task>
+    <task id="LOCAL-00050" summary="完整版的完成!">
+      <option name="closed" value="true" />
+      <created>1706596013083</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1706596013084</updated>
+    </task>
+    <task id="LOCAL-00051" summary="格式化">
+      <option name="closed" value="true" />
+      <created>1706596638285</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1706596638285</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -529,7 +546,6 @@
     <MESSAGE value="DAY02" />
     <MESSAGE value="DAY03" />
     <MESSAGE value="浮动布局：将元素横置" />
-    <MESSAGE value="格式化" />
     <MESSAGE value="综合小练" />
     <MESSAGE value="相对定位" />
     <MESSAGE value="绝对定位" />
@@ -539,7 +555,10 @@
     <MESSAGE value="居中、元素的阴影" />
     <MESSAGE value="元素的放大与过渡" />
     <MESSAGE value="完整版的通用样式" />
-    <option name="LAST_COMMIT_MESSAGE" value="完整版的通用样式" />
+    <MESSAGE value="完整版的完成？" />
+    <MESSAGE value="完整版的完成!" />
+    <MESSAGE value="格式化" />
+    <option name="LAST_COMMIT_MESSAGE" value="格式化" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
