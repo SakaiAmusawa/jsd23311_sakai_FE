@@ -4,15 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4aa361d5-6587-4227-b7e0-15aa97a833bb" name="Changes" comment="格式化">
-      <change afterPath="$PROJECT_DIR$/web/day04/javascript/01.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/day04/javascript/01JS的三种引入方式.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/day04/javascript/02变量与常量.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/day04/javascript/03JS数据类型.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/day04/javascript/04运算符.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/day04/javascript/05流程控制.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/day04/javascript/06函数.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="4aa361d5-6587-4227-b7e0-15aa97a833bb" name="Changes" comment="JS的使用">
+      <change afterPath="$PROJECT_DIR$/homework/day04/04学子F1F2动画完整版.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework/day04/img/computer1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework/day04/img/computer2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework/day04/img/computer3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework/day04/img/computer4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework/day04/img/computer5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework/day04/img/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework/day04/img/学子F1右侧.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework/day04/img/学子F1左侧.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework/day04/img/学子F2右侧商品卡片.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework/day04/img/学子F2左侧分类标注图.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework/day04/img/学子首页F1F2布局.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,7 +63,7 @@
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Sakai/JavaProject/teacher/jsd2311-3-teacher&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Sakai/JavaProject/sakai/jsd2311_sakai_FE/web/day04&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -121,15 +125,8 @@
       <workItem from="1706520052723" duration="7480000" />
       <workItem from="1706528979393" duration="1375000" />
       <workItem from="1706576350464" duration="22745000" />
-      <workItem from="1706611332776" duration="679000" />
-    </task>
-    <task id="LOCAL-00003" summary="前端部分第一次提交">
-      <option name="closed" value="true" />
-      <created>1706236961211</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1706236961211</updated>
+      <workItem from="1706611332776" duration="896000" />
+      <workItem from="1706661541653" duration="1729000" />
     </task>
     <task id="LOCAL-00004" summary="HTML标签的演示">
       <option name="closed" value="true" />
@@ -515,7 +512,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706596638285</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="JS的使用">
+      <option name="closed" value="true" />
+      <created>1706614365672</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1706614365672</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -533,7 +538,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="前端部分第一次提交" />
     <MESSAGE value="HTML标签的演示" />
     <MESSAGE value="HTML标签的练习" />
     <MESSAGE value="HTML元素分区" />
@@ -558,7 +562,8 @@
     <MESSAGE value="完整版的完成？" />
     <MESSAGE value="完整版的完成!" />
     <MESSAGE value="格式化" />
-    <option name="LAST_COMMIT_MESSAGE" value="格式化" />
+    <MESSAGE value="JS的使用" />
+    <option name="LAST_COMMIT_MESSAGE" value="JS的使用" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
