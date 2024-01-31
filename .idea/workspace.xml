@@ -4,16 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4aa361d5-6587-4227-b7e0-15aa97a833bb" name="Changes" comment="1/30 作业（未完成）">
-      <change afterPath="$PROJECT_DIR$/web/day05/01DOM操作.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/day05/02计算器.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/day05/03猜数字.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/day05/04员工列表练习.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/day05/05自定义JS对象.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/day05/06个人简历练习.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/day05/img/fcq.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/day05/img/money.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="4aa361d5-6587-4227-b7e0-15aa97a833bb" name="Changes" comment="JS">
+      <change beforePath="$PROJECT_DIR$/homework/day04/04学子F1F2动画完整版.html" beforeDir="false" afterPath="$PROJECT_DIR$/homework/day04/04学子F1F2动画完整版.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +51,7 @@
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Vue-Workspace/vue-project-01",
+    "last_opened_file_path": "C:/Users/Sakai/JavaProject/sakai/jsd2311_sakai_FE",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -124,14 +116,7 @@
       <workItem from="1706611332776" duration="896000" />
       <workItem from="1706661541653" duration="2098000" />
       <workItem from="1706684896491" duration="5502000" />
-    </task>
-    <task id="LOCAL-00005" summary="HTML标签的演示">
-      <option name="closed" value="true" />
-      <created>1706237375569</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1706237375569</updated>
+      <workItem from="1706699649862" duration="777000" />
     </task>
     <task id="LOCAL-00006" summary="HTML标签的演示">
       <option name="closed" value="true" />
@@ -517,7 +502,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706663813187</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="JS">
+      <option name="closed" value="true" />
+      <created>1706699911105</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1706699911106</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -535,7 +528,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="HTML标签的练习" />
     <MESSAGE value="HTML元素分区" />
     <MESSAGE value="HTML插图片" />
     <MESSAGE value="system" />
@@ -560,7 +552,8 @@
     <MESSAGE value="格式化" />
     <MESSAGE value="JS的使用" />
     <MESSAGE value="1/30 作业（未完成）" />
-    <option name="LAST_COMMIT_MESSAGE" value="1/30 作业（未完成）" />
+    <MESSAGE value="JS" />
+    <option name="LAST_COMMIT_MESSAGE" value="JS" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
