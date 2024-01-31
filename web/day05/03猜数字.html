@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>猜数字</title>
+</head>
+<body>
+<h3>已生成一个1~100之间的随机数字：</h3>
+<input placeholder="请输入你猜的数字" type="text">
+<button onclick="guess()">点我验证</button>
+<h3>小提示：<span></span></h3>
+
+
+<script>
+    let r = parseInt(Math.random() * 100) + 1
+    console.log(r)
+    let count;
+
+    function guess() {
+        let input = document.querySelector("input");
+        let n = input.value
+
+        if (isNaN(n)) {
+            alert('给我滚出去');
+            return;
+        }
+        let span = document.querySelector("span");
+        count++;
+        if (n > r) {
+            span.innerHTML = 'big';
+
+        } else if (n < r) {
+            span.innerHTML = 'small';
+
+        } else {
+            span.innerHTML = "总计猜测了" + count + "次"
+        }
+
+    }
+</script>
+
+</body>
+</html>

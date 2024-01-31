@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>计算器</title>
+</head>
+<body>
+<input id="i1" placeholder="请输入数字1" type="text"><br>
+<input id="i2" placeholder="请输入数字2" type="text"><br>
+<button onclick="calc('+')">加</button>
+<button onclick="calc('-')">减</button>
+<button onclick="calc('*')">乘</button>
+<button onclick="calc('/')">除</button>
+<h4>运算结果：<span></span></h4>
+<script>
+    function calc(o) {
+        //document.getElementById('Id值')获取指定ID值的HTML元素
+        //元素.value 获取元素的值,获取的元素类型为string
+        let n1 = document.getElementById('i1').value;
+        let n2 = document.getElementById('i2').value;
+        //数据类型转换
+        n1 = parseFloat(n1);
+        n2 = parseFloat(n2);
+        //检查用户输入的是否为数字，如果不是，弹窗显示
+        //isNaN判断参数是否为非数字，非数字返回true，数字返回false
+        if (isNaN(n1) || isNaN(n2)) {
+            alert('请输入数字')
+        }
+        //获取显示结果的span元素
+        //document.querySelector() 获取对应选择起的HTML元素
+        let htmlSpanElement = document.querySelector('span');
+        switch (o) {
+            case '+':
+                htmlSpanElement.innerHTML = n1 + n2;
+                break;
+            case '-':
+                htmlSpanElement.innerHTML = n1 - n2;
+                break;
+            case '*':
+                htmlSpanElement.innerHTML = n1 * n2;
+                break;
+            case '/':
+                if (n2 !== 0) {
+                    htmlSpanElement.innerHTML = n1 / n2;
+                }else {
+                    alert('除数不能为0')
+                }
+
+                break;
+        }
+    }
+</script>
+</body>
+</html>

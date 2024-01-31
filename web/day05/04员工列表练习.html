@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>员工列表练习</title>
+</head>
+<body>
+<input type="text" placeholder="姓名" id="i1">
+<input type="text" placeholder="工资" id="i2">
+<input type="text" placeholder="岗位" id="i3">
+<input type="button" value="点我添加员工" onclick="addEmp()">
+<hr>
+<table border="1px">
+    <caption>员工列表</caption>
+    <tr>
+        <th>姓名</th>
+        <th>工资</th>
+        <th>岗位</th>
+    </tr>
+</table>
+
+<script>
+    //1.创建函数,点击按钮时执行
+    function addEmp(){
+        //2.创建要生成的tr元素-表格行
+        let tr = document.createElement("tr");
+        //3.创建每行的3个td元素-单元格
+        let nameTd = document.createElement("td");
+        let salaryTd = document.createElement("td");
+        let jobTd = document.createElement("td");
+        //4.获取用户输入的3个数据
+        let uName = document.getElementById("i1").value;
+        let uSalary = document.getElementById("i2").value;
+        let uJob = document.getElementById("i3").value;
+        //console.log(uName,uSalary,uJob);
+        //5.将获取到的数据放到单元格中
+        nameTd.innerHTML = uName;
+        salaryTd.innerHTML = uSalary;
+        jobTd.innerHTML = uJob;
+        //6.将创建好的3个单元格放到tr里
+        tr.append(nameTd,salaryTd,jobTd);
+        console.log(tr);
+        //7.获取table元素,并且把生成的tr行放到table表格里
+        document.querySelector('table').append(tr);
+    }
+</script>
+</body>
+</html>

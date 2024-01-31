@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>自定义JS对象</title>
+</head>
+<body>
+<table border="1px">
+    <caption>商品列表</caption>
+    <tr>
+        <th>商品标题</th>
+        <th>商品价格</th>
+        <th>商品库存</th>
+    </tr>
+</table>
+<script>
+    let p1 = {};
+    p1.name = '张三';
+    p1.age = 20;
+    p1.eat = function () {
+        console.log(this.age + this.name + 'eating')
+    };
+    p1.eat();
+
+    let p2 = {name: '李四', age: 21};
+    p2.eat = function () {
+        console.log(p2.name + ':' + p2.age + 'eating')
+    }
+    p2.eat();
+
+    let productInfo = {
+        title: "HuaweiMate60Pro",
+        CPU: "麒麟9000",
+        color: "石墨黑",
+        price: 5999
+    };
+    console.log(productInfo)
+
+    let productArr = [
+        {title: "华为Mate60", price: 8000, num: 200},
+        {title: "米老鼠14", price: 5000, num: 1000},
+        {title: "iPhone15", price: 10000, num: 800}
+    ]
+    console.log(productArr)
+    console.log(productArr[1])
+
+
+
+    for (let i = 0; i <productArr.length; i++) {
+        let tr = document.createElement("tr");
+        let title = document.createElement("td");
+        let price = document.createElement("td");
+        let num = document.createElement("td");
+
+        title.innerHTML = productArr[i].title
+        price.innerHTML = productArr[i].price
+        num.innerHTML = productArr[i].num
+
+        tr.append(title, price, num)
+        document.querySelector('table').append(tr);
+
+    }
+
+</script>
+<script>
+</script>
+</body>
+</html>

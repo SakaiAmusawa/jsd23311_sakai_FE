@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM操作</title>
+</head>
+<body>
+<button onclick="addMoney()">get money!!!</button>
+<script>
+    function addMoney() {
+        //1.利用document对象创建img元素
+        let imgE = document.createElement('img');
+        //2.修改imgE元素的src属性
+        imgE.src = "img/money.jpg";
+        //3.将创建好的图片加入到body中
+        document.body.append(imgE);
+        //4.修改图片的width属性值
+        imgE.width = 100;
+    }
+</script>
+</body>
+</html>
