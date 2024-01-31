@@ -2,78 +2,259 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>学子商城</title>
     <style>
-        /******通用设置******/
+
+        /***************通用设置***************/
         * {
             margin: 0;
             padding: 0;
-            font-family: "simhei";
+            /*统一所有文字的字号与字型，不一样的单独设置*/
             font-size: 12px;
+            font-family: "simhei";
         }
 
+        /*去除所有超链接自带的下划线*/
         a {
             text-decoration: none;
         }
 
+        /*去除列表项前自带的标识符（去除列表前的黑色实心圆）*/
         ul {
             list-style: none;
         }
 
+        /*防止F1 F2因所有子元素浮动而失高*/
         .f1, .f2 {
             overflow: hidden;
         }
 
-        .f1, .f2 > div {
+        /*给F1 F2的背景设置背景颜色*/
+        .f1 > div, .f2 > div {
             background-color: #e8e8e8;
         }
 
-        .index_main {
-            width: 1004px;
-            margin: 0 auto;
-        }
-
+        /*首页主体内容中 设置所有“查看详情”的通用样式*/
         .index_main .detail {
             display: block;
-            width: 132px;
-            height: 40px;
             background-color: #0aa1ed;
             color: #fff;
-            border-radius: 5px;
             text-align: center;
-            line-height: 40px;
+            border-radius: 5px;
+            /*问题：电脑图片放大后会影响点击详情按钮*/
             position: relative;
             z-index: 10;
         }
 
-        /******图片平滑设置******/
+        /*设置主体内容在页面中心*/
+        .index_main {
+            /*设置版心的宽度，并水平居中*/
+            width: 1004px;
+            margin: 0 auto;
+        }
+
+        /***************优化 首页主题图片***************/
         .index_main .scale {
             transition: 1s;
         }
 
+        /*悬停在图片上时*/
         .index_main .scale:hover {
+            /*图片放大至原来的1.1倍*/
             transform: scale(1.1);
         }
 
-        /******F1样式******/
+        /***************F1 样式***************/
         .f1 {
+            /*设置F1与F2之间的间距*/
             margin-bottom: 10px;
         }
 
+        /***************F1 左侧样式***************/
         .f1 > .left {
             width: 611px;
-            height: 276px;
+            height: 376px;
+            /*浮动实现元素横置*/
             float: left;
+            /*给左侧快加有外间距*/
             margin-right: 10px;
+            /*为子级元素提供定位*/
             position: relative;
         }
 
         .f1 > .left > img {
             width: 318px;
             height: 319px;
+            /*子级图片使用绝对定位，参照物使用了相对定位的父级元素*/
             position: absolute;
             left: 265px;
-            top: 35px;
+            top: 35px
+        }
+
+        .f1 > .left > .text {
+            width: 245px;
+            height: 232px;
+            position: absolute;
+            left: 36px;
+            top: 68px;
+        }
+
+        .f1 > .left > .text > .p_title {
+            font-size: 32px;
+            color: #333;
+            font-weight: lighter;
+        }
+
+        .f1 > .left > .text > .p_intro {
+            color: #666;
+            font-weight: lighter;
+            margin: 12px 0 24px 0;
+        }
+
+        .f1 > .left > .text > .p_price {
+            color: #0aa1ed;
+            font-weight: bold;
+            font-size: 24px;
+            margin-bottom: 12px;
+        }
+
+        .f1 > .left > .text > a {
+            width: 132px;
+            height: 40px;
+            font-size: 20px;
+            line-height: 40px;
+        }
+
+        /***************F1 右侧样式***************/
+        .f1 > .right {
+            width: 375px;
+            height: 376px;
+            float: left;
+            position: relative;
+        }
+
+        .f1 > .right > img {
+            position: absolute;
+            left: 75px;
+            top: 130px;
+        }
+
+        .f1 > .right > .text {
+            width: 245px;
+            height: 232px;
+            margin: 39px 0 0 25px;
+        }
+
+        .f1 > .right > .text > .p_title {
+            font-size: 32px;
+            color: #333;
+            font-weight: lighter;
+        }
+
+        .f1 > .right > .text > .p_intro {
+            color: #666;
+            font-weight: lighter;
+            /*内间距:上12 下24*/
+            padding: 12px 0 24px 0;
+        }
+
+        .f1 > .right > .text > .p_price {
+            font-size: 24px;
+            font-weight: bold;
+            color: #0aa1ed;
+            /*下外间距:12px*/
+            margin-bottom: 12px;
+        }
+
+        .f1 > .right > .text > a {
+            width: 132px;
+            height: 40px;
+            font-size: 20px;
+            line-height: 40px;
+        }
+
+        /***************F2 样式***************/
+        /***************F2 左侧样式***************/
+        .f2 > .item_cat {
+            width: 366px;
+            height: 233px;
+            margin-right: 20px;
+            float: left;
+        }
+
+        .f2 > .item_cat > .tit {
+            height: 35px;
+            background-color: #0aa1ed;
+            position: relative;
+        }
+
+        .f2 > .item_cat > .tit > img {
+            width: 29px;
+            height: 20px;
+            position: absolute;
+            top: 8px;
+            left: 8px;
+        }
+
+        .f2 > .item_cat > .tit > span {
+            color: #fff;
+            position: absolute;
+            left: 49px;
+            line-height: 35px;
+            font-size: 16px;
+        }
+
+        .f2 > .item_cat > .item_all {
+            /*让文字不要贴边显示*/
+            padding-left: 12px;
+        }
+
+        /***************F2 右侧样式***************/
+        .f2 > .card {
+            width: 198px;
+            height: 233px;
+            float: left;
+            margin-right: 8px;
+            text-align: center;
+        }
+
+        .f2 > .card > .p_intro {
+            font-weight: lighter;
+        }
+
+        /*设置卡片价格*/
+        .f2 > .card > .p_price {
+            font-weight: bold;
+            color: #0aa1ed;
+            margin: 6px;
+        }
+
+        /*设置卡片里的查看详情按钮*/
+        .f2 > .card > a {
+            width: 100px;
+            height: 24px;
+            line-height: 24px;
+            /*让块级元素自己水平居中*/
+            margin: 0 auto;
+        }
+
+        .f2 > .item_cat .tit_p {
+            color: #62b5ec;
+            margin: 17px 0 9px;
+        }
+
+        .f2 > .item_cat ul {
+            overflow: hidden;
+        }
+
+        /*浮动让所有子元素横置*/
+        .f2 > .item_cat ul > li {
+            float: left;
+            margin-right: 10px;
+        }
+
+        .f2 > .item_cat ul a {
+            color: #0aa1ed;
         }
     </style>
 </head>
@@ -170,6 +351,7 @@
             <a class="detail" href="#">查看详情</a>
         </div>
     </div>
+
 </div>
 </body>
 </html>
