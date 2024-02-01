@@ -17,7 +17,7 @@ const add = () => {
     }*/
   let newEmp = {...e.value}
   arr.value.push(newEmp)
-
+  // 以下语句的作用是重置输入框内的内容，对整体逻辑无影响
   e.value = {name: "", salary: "", job: ""}
 }
 </script>

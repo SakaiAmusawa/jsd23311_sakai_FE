@@ -5,10 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4aa361d5-6587-4227-b7e0-15aa97a833bb" name="Changes" comment="icon和message的使用">
+      <change afterPath="$PROJECT_DIR$/sakai-v1/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sakai-v1/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sakai-v1/babel.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sakai-v1/jsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sakai-v1/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sakai-v1/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sakai-v1/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sakai-v1/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sakai-v1/src/App.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sakai-v1/src/assets/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sakai-v1/src/components/HelloWorld.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sakai-v1/src/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sakai-v1/src/router/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sakai-v1/src/store/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sakai-v1/src/views/AboutView.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sakai-v1/src/views/HomeView.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sakai-v1/vue.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v1/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/v1/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v1/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/v1/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v1/src/views/ElIcon.vue" beforeDir="false" afterPath="$PROJECT_DIR$/v1/src/views/ElIcon.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,15 +176,7 @@
       <workItem from="1706778809766" duration="67000" />
       <workItem from="1706778886449" duration="168000" />
       <workItem from="1706779066042" duration="2445000" />
-      <workItem from="1706785646095" duration="339000" />
-    </task>
-    <task id="LOCAL-00031" summary="浮动布局：将元素横置">
-      <option name="closed" value="true" />
-      <created>1706509382590</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1706509382590</updated>
+      <workItem from="1706785646095" duration="1045000" />
     </task>
     <task id="LOCAL-00032" summary="格式化">
       <option name="closed" value="true" />
@@ -556,7 +562,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706781489476</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="icon和message的使用">
+      <option name="closed" value="true" />
+      <created>1706786243755</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1706786243755</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
