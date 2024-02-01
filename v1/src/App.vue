@@ -21,6 +21,8 @@
     |
     <router-link to="empList">员工列表联系</router-link>
     |
+    <router-link to="resume">个人简历练习</router-link>
+    |
   </nav>
   <router-view/>
 </template>

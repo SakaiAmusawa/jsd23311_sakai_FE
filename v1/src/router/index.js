@@ -39,6 +39,9 @@ const routes = [
   }, {
     path: '/empList', name: 'empList', component: () => import('../views/EmpListExec.vue')
   }
+  , {
+    path: '/resume', name: 'resume', component: () => import('../views/ResumeExec.vue')
+  }
 
 ]
 
