@@ -7,6 +7,8 @@
     <router-link to="/bind">属性绑定联系</router-link>
     |
     <router-link to="/TW-bind">双向绑定</router-link>
+    |
+    <router-link to="/Event-bind">事件绑定</router-link>
   </nav>
   <router-view/>
 </template>

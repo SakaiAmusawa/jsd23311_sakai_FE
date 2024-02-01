@@ -23,6 +23,11 @@ const routes = [
     name: 'TW-bind',
     component: () => import('../views/TwoWaysBind.vue')
   }
+  , {
+    path: '/Event-bind',
+    name: 'Event-bind',
+    component: () => import('../views/EventBand.vue')
+  }
 ]
 
 const router = createRouter({
