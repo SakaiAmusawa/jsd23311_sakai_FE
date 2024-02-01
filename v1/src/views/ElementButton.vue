@@ -33,6 +33,9 @@
   <el-button type="info" icon="el-icon-message" circle></el-button>
   <el-button type="warning" icon="el-icon-star-off" circle></el-button>
   <el-button type="danger" icon="el-icon-delete" circle></el-button>
+
+  <hr>
+
 </template>
 
 <style scoped>

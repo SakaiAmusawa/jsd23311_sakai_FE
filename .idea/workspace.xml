@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4aa361d5-6587-4227-b7e0-15aa97a833bb" name="Changes" comment="简介练习">
-      <change afterPath="$PROJECT_DIR$/v1/src/views/ElementButton.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="4aa361d5-6587-4227-b7e0-15aa97a833bb" name="Changes" comment="添加element 简单配置 下载element提示插件 进行按钮测试">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v1/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/v1/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v1/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/v1/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v1/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/v1/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v1/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/v1/src/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v1/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/v1/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/v1/src/views/ElementButton.vue" beforeDir="false" afterPath="$PROJECT_DIR$/v1/src/views/ElementButton.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,15 +159,7 @@
       <workItem from="1706778615091" duration="184000" />
       <workItem from="1706778809766" duration="67000" />
       <workItem from="1706778886449" duration="168000" />
-      <workItem from="1706779066042" duration="627000" />
-    </task>
-    <task id="LOCAL-00027" summary="DAY02">
-      <option name="closed" value="true" />
-      <created>1706349219297</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1706349219297</updated>
+      <workItem from="1706779066042" duration="1351000" />
     </task>
     <task id="LOCAL-00028" summary="DAY03">
       <option name="closed" value="true" />
@@ -559,7 +545,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706777323909</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <task id="LOCAL-00076" summary="添加element 简单配置 下载element提示插件 进行按钮测试">
+      <option name="closed" value="true" />
+      <created>1706779794270</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1706779794270</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -578,7 +572,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="小练 未完成" />
     <MESSAGE value="居中、元素的阴影" />
     <MESSAGE value="元素的放大与过渡" />
     <MESSAGE value="完整版的通用样式" />
@@ -603,7 +596,8 @@
     <MESSAGE value="计算器练习" />
     <MESSAGE value="添加员工练习" />
     <MESSAGE value="简介练习" />
-    <option name="LAST_COMMIT_MESSAGE" value="简介练习" />
+    <MESSAGE value="添加element 简单配置 下载element提示插件 进行按钮测试" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加element 简单配置 下载element提示插件 进行按钮测试" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
