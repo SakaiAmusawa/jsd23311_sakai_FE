@@ -36,6 +36,8 @@ const routes = [
   }
   , {
     path: '/guess', name: 'guess', component: () => import('../views/GuessExec.vue')
+  }, {
+    path: '/empList', name: 'empList', component: () => import('../views/EmpListExec.vue')
   }
 
 ]
