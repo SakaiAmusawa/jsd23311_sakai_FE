@@ -23,6 +23,9 @@
     |
     <router-link to="resume">个人简历练习</router-link>
     |
+    <br>
+    <router-link to="elButton">El-按钮组建</router-link>
+    |
   </nav>
   <router-view/>
 </template>

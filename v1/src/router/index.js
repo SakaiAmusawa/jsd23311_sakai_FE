@@ -41,6 +41,8 @@ const routes = [
   }
   , {
     path: '/resume', name: 'resume', component: () => import('../views/ResumeExec.vue')
+  }, {
+    path: '/elButton', name: 'elButton', component: () => import('../views/ElementButton.vue')
   }
 
 ]
