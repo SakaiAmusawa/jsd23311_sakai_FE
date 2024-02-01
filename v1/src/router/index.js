@@ -29,6 +29,8 @@ const routes = [
     component: () => import('../views/EventBand.vue')
   }, {
     path: '/For-cmd', name: 'For-cmd', component: () => import('../views/ForCmd.vue')
+  }, {
+    path: '/hidden-display', name: 'hidden-display', component: () => import('../views/HiddenOrDisplay.vue')
   }
 ]
 

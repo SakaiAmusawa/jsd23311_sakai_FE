@@ -11,6 +11,8 @@
     <router-link to="/Event-bind">事件绑定</router-link>
     |
     <router-link to="For-cmd">循环指令</router-link>
+    |
+    <router-link to="hidden-display">隐藏显示指令</router-link>
   </nav>
   <router-view/>
 </template>
@@ -37,3 +39,5 @@ nav a.router-link-exact-active {
   color: #42b983;
 }
 </style>
+<script setup>
+</script>
