@@ -27,6 +27,8 @@ const routes = [
     path: '/Event-bind',
     name: 'Event-bind',
     component: () => import('../views/EventBand.vue')
+  }, {
+    path: '/For-cmd', name: 'For-cmd', component: () => import('../views/ForCmd.vue')
   }
 ]
 
