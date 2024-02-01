@@ -19,7 +19,11 @@ const submit = () => {
   {{ info }}
   <input :value="info" type="text">
   <hr>
-  <!-- 双向绑定的用法 -->
+  <!--
+   双向绑定的用法：将页面与数据进行绑定
+   1.info中的数据会显示在页面中
+   2.页面的值发生改变，info变量的值也会随之改变
+    -->
   <input v-model="info" type="text">
 
   <h3>登录页面</h3>
