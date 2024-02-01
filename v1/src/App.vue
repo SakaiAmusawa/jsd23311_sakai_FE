@@ -17,6 +17,10 @@
     <br>
     <router-link to="calculator">计算器</router-link>
     |
+    <router-link to="guess">猜数字练习</router-link>
+    |
+    <router-link to="empList">员工列表联系</router-link>
+    |
   </nav>
   <router-view/>
 </template>

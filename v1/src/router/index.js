@@ -34,6 +34,10 @@ const routes = [
   }, {
     path: '/calculator', name: 'calculator', component: () => import('../views/CalculatorExec.vue')
   }
+  , {
+    path: '/guess', name: 'guess', component: () => import('../views/GuessExec.vue')
+  }
+
 ]
 
 const router = createRouter({
