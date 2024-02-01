@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4aa361d5-6587-4227-b7e0-15aa97a833bb" name="Changes" comment="JS">
-      <change beforePath="$PROJECT_DIR$/homework/day04/04学子F1F2动画完整版.html" beforeDir="false" afterPath="$PROJECT_DIR$/homework/day04/04学子F1F2动画完整版.html" afterDir="false" />
+    <list default="true" id="4aa361d5-6587-4227-b7e0-15aa97a833bb" name="Changes" comment="创建了一个新的View&#10;1.在App.vue中指明连接方向&#10;2.router/index.js 设置好路径等信息">
+      <change beforePath="$PROJECT_DIR$/myvue01/src/views/AView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/myvue01/src/views/AView.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,11 +17,15 @@
       <list>
         <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="Vue Composition API Component" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -44,12 +48,14 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
+    "jdk.selected.JAVA_MODULE": "1.8",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/Sakai/JavaProject/sakai/jsd2311_sakai_FE",
     "node.js.detected.package.eslint": "true",
@@ -57,11 +63,18 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "npm.serve.executor": "Run",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "preferences.updates",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2023.3.2\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "vue.recent.templates": [
+      "Vue Composition API Component"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
@@ -79,6 +92,23 @@
       <recent name="C:\Users\Sakai\IdeaProjects\jsd2311_sakai_FE\web\day01" />
       <recent name="C:\Users\Sakai\IdeaProjects\jsd2311_sakai_FE\web\day01\img" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="serve" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/myvue01/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="serve" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.serve" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -117,38 +147,7 @@
       <workItem from="1706661541653" duration="2098000" />
       <workItem from="1706684896491" duration="5502000" />
       <workItem from="1706699649862" duration="777000" />
-    </task>
-    <task id="LOCAL-00006" summary="HTML标签的演示">
-      <option name="closed" value="true" />
-      <created>1706237974319</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1706237974319</updated>
-    </task>
-    <task id="LOCAL-00007" summary="HTML标签的练习">
-      <option name="closed" value="true" />
-      <created>1706240338683</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1706240338683</updated>
-    </task>
-    <task id="LOCAL-00008" summary="HTML标签的练习">
-      <option name="closed" value="true" />
-      <created>1706240618774</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1706240618774</updated>
-    </task>
-    <task id="LOCAL-00009" summary="system">
-      <option name="closed" value="true" />
-      <created>1706249024777</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1706249024777</updated>
+      <workItem from="1706700461366" duration="2845000" />
     </task>
     <task id="LOCAL-00010" summary="HTML元素分区">
       <option name="closed" value="true" />
@@ -510,7 +509,39 @@
       <option name="project" value="LOCAL" />
       <updated>1706699911106</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="作业?">
+      <option name="closed" value="true" />
+      <created>1706700837981</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1706700837981</updated>
+    </task>
+    <task id="LOCAL-00056" summary="创建了一个VUE项目">
+      <option name="closed" value="true" />
+      <created>1706700860547</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1706700860547</updated>
+    </task>
+    <task id="LOCAL-00057" summary="更改端口至9090">
+      <option name="closed" value="true" />
+      <created>1706700946013</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1706700946013</updated>
+    </task>
+    <task id="LOCAL-00058" summary="创建了一个新的View&#10;1.在App.vue中指明连接方向&#10;2.router/index.js 设置好路径等信息">
+      <option name="closed" value="true" />
+      <created>1706701383996</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1706701383996</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -528,10 +559,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="HTML元素分区" />
-    <MESSAGE value="HTML插图片" />
-    <MESSAGE value="system" />
-    <MESSAGE value="HTML图片插入" />
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="HTML图片插入 小练习" />
     <MESSAGE value="HTML表单" />
     <MESSAGE value="HTML作业" />
@@ -553,7 +581,11 @@
     <MESSAGE value="JS的使用" />
     <MESSAGE value="1/30 作业（未完成）" />
     <MESSAGE value="JS" />
-    <option name="LAST_COMMIT_MESSAGE" value="JS" />
+    <MESSAGE value="作业?" />
+    <MESSAGE value="创建了一个VUE项目" />
+    <MESSAGE value="更改端口至9090" />
+    <MESSAGE value="创建了一个新的View&#10;1.在App.vue中指明连接方向&#10;2.router/index.js 设置好路径等信息" />
+    <option name="LAST_COMMIT_MESSAGE" value="创建了一个新的View&#10;1.在App.vue中指明连接方向&#10;2.router/index.js 设置好路径等信息" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
