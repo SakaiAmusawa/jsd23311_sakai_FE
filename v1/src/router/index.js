@@ -31,6 +31,8 @@ const routes = [
     path: '/For-cmd', name: 'For-cmd', component: () => import('../views/ForCmd.vue')
   }, {
     path: '/hidden-display', name: 'hidden-display', component: () => import('../views/HiddenOrDisplay.vue')
+  }, {
+    path: '/calculator', name: 'calculator', component: () => import('../views/CalculatorExec.vue')
   }
 ]
 

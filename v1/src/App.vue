@@ -13,6 +13,10 @@
     <router-link to="For-cmd">循环指令</router-link>
     |
     <router-link to="hidden-display">隐藏显示指令</router-link>
+    |
+    <br>
+    <router-link to="calculator">计算器</router-link>
+    |
   </nav>
   <router-view/>
 </template>
