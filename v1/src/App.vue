@@ -1,7 +1,12 @@
 <template>
   <nav>
-    <router-link to="/">Home</router-link> |
+    <router-link to="/">Home</router-link>
+    |
     <router-link to="/about">About</router-link>
+    |
+    <router-link to="/bind">属性绑定联系</router-link>
+    |
+    <router-link to="/TW-bind">双向绑定</router-link>
   </nav>
   <router-view/>
 </template>
