@@ -44,7 +44,11 @@ const routes = [
   }, {
     path: '/elButton', name: 'elButton', component: () => import('../views/ElementButton.vue')
   }
-
+  , {
+    path: '/elicon', name: 'elicon', component: () => import('../views/ElIcon.vue')
+  }, {
+    path: '/elMessage', name: 'elMessage', component: () => import('../views/Message.vue')
+  }
 ]
 
 const router = createRouter({

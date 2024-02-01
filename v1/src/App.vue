@@ -24,7 +24,11 @@
     <router-link to="resume">个人简历练习</router-link>
     |
     <br>
-    <router-link to="elButton">El-按钮组建</router-link>
+    <router-link to="elButton">El-按钮组件</router-link>
+    |
+    <router-link to="elicon">El-图标组件</router-link>
+    |
+    <router-link to="elMessage">El-消息组件</router-link>
     |
   </nav>
   <router-view/>
