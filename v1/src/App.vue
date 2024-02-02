@@ -30,7 +30,7 @@
     |
     <router-link to="/elMessage">El-消息组件</router-link>
     |
-    <router-link to="/m">El-单选组件</router-link>
+    <router-link to="/elRadio">El-单选组件</router-link>
     |
     <router-link to="/n">El-组件</router-link>
     |
