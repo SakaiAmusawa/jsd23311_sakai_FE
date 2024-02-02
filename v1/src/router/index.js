@@ -45,9 +45,33 @@ const routes = [
     path: '/elButton', name: 'elButton', component: () => import('../views/ElementButton.vue')
   }
   , {
-    path: '/elicon', name: 'elicon', component: () => import('../views/ElIcon.vue')
+    path: '/elicon', name: 'elicon', component: () => import('../views/ElementIcon.vue')
   }, {
-    path: '/elMessage', name: 'elMessage', component: () => import('../views/Message.vue')
+    path: '/elMessage', name: 'elMessage', component: () => import('../views/ElementMessage.vue')
+  }, {
+    path: '/m', component: () => import('../views/MView.vue')
+  }, {
+    path: '/n', component: () => import('../views/NView.vue')
+  }, {
+    path: '/o', component: () => import('../views/OView.vue')
+  }, {
+    path: '/p', component: () => import('../views/PView.vue')
+  }, {
+    path: '/q', component: () => import('../views/QView.vue')
+  }, {
+    path: '/r', component: () => import('../views/RView.vue')
+  }, {
+    path: '/s', component: () => import('../views/SView.vue')
+  }, {
+    path: '/t', component: () => import('../views/TView.vue')
+  }, {
+    path: '/u', component: () => import('../views/UView.vue')
+  }, {
+    path: '/v', component: () => import('../views/VView.vue')
+  }, {
+    path: '/w', component: () => import('../views/WView.vue')
+  }, {
+    path: '/x', component: () => import('../views/XView.vue')
   }
 ]
 
