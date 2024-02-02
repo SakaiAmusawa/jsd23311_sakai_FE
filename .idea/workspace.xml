@@ -4,22 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4aa361d5-6587-4227-b7e0-15aa97a833bb" name="Changes" comment="练习">
-      <change afterPath="$PROJECT_DIR$/v1/src/views/MView.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/v1/src/views/NView.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/v1/src/views/OView.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/v1/src/views/PView.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/v1/src/views/QView.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/v1/src/views/RView.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/v1/src/views/SView.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/v1/src/views/TView.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/v1/src/views/UView.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/v1/src/views/VView.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/v1/src/views/WView.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/v1/src/views/XView.vue" afterDir="false" />
+    <list default="true" id="4aa361d5-6587-4227-b7e0-15aa97a833bb" name="Changes" comment="修改">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/v1/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/v1/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v1/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/v1/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/v1/src/views/ElementButton.vue" beforeDir="false" afterPath="$PROJECT_DIR$/v1/src/views/ElementButton.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/v1/src/views/MView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/v1/src/views/MView.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,15 +163,7 @@
       <workItem from="1706778886449" duration="168000" />
       <workItem from="1706779066042" duration="2445000" />
       <workItem from="1706785646095" duration="6331000" />
-      <workItem from="1706834036579" duration="2080000" />
-    </task>
-    <task id="LOCAL-00034" summary="综合小练">
-      <option name="closed" value="true" />
-      <created>1706513724386</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1706513724386</updated>
+      <workItem from="1706834036579" duration="3188000" />
     </task>
     <task id="LOCAL-00035" summary="综合小练">
       <option name="closed" value="true" />
@@ -568,7 +549,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706791975140</updated>
     </task>
-    <option name="localTasksCounter" value="83" />
+    <task id="LOCAL-00083" summary="修改">
+      <option name="closed" value="true" />
+      <created>1706837673783</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1706837673784</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -587,7 +576,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="完整版的通用样式" />
     <MESSAGE value="完整版的完成？" />
     <MESSAGE value="完整版的完成!" />
     <MESSAGE value="格式化" />
@@ -612,7 +600,8 @@
     <MESSAGE value="添加element 简单配置 下载element提示插件 进行按钮测试" />
     <MESSAGE value="icon和message的使用" />
     <MESSAGE value="练习" />
-    <option name="LAST_COMMIT_MESSAGE" value="练习" />
+    <MESSAGE value="修改" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

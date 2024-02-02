@@ -36,6 +36,17 @@
 
   <hr>
 
+  <el-button type="primary" disabled>禁用按钮</el-button>
+
+  <hr>
+
+  <a href="https://www.baidu.com">
+    <el-button link>链接按钮</el-button>
+  </a>
+  <a href="https://www.jd.com">
+    <el-button link type="danger">链接按钮</el-button>
+  </a>
+
 </template>
 
 <style scoped>

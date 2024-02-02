@@ -45,11 +45,11 @@ const routes = [
     path: '/elButton', name: 'elButton', component: () => import('../views/ElementButton.vue')
   }
   , {
-    path: '/elicon', name: 'elicon', component: () => import('../views/ElementIcon.vue')
+    path: '/elIcon', name: 'elIcon', component: () => import('../views/ElementIcon.vue')
   }, {
     path: '/elMessage', name: 'elMessage', component: () => import('../views/ElementMessage.vue')
   }, {
-    path: '/m', component: () => import('../views/MView.vue')
+    path: '/elRadio', component: () => import('../views/ElementRadio.vue')
   }, {
     path: '/n', component: () => import('../views/NView.vue')
   }, {
