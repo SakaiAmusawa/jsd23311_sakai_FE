@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4aa361d5-6587-4227-b7e0-15aa97a833bb" name="Changes" comment="修改">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="4aa361d5-6587-4227-b7e0-15aa97a833bb" name="Changes" comment="单选组件">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v1/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/v1/src/App.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/v1/src/views/ElementRadio.vue" beforeDir="false" afterPath="$PROJECT_DIR$/v1/src/views/ElementRadio.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -163,15 +161,7 @@
       <workItem from="1706778886449" duration="168000" />
       <workItem from="1706779066042" duration="2445000" />
       <workItem from="1706785646095" duration="6331000" />
-      <workItem from="1706834036579" duration="3881000" />
-    </task>
-    <task id="LOCAL-00036" summary="相对定位">
-      <option name="closed" value="true" />
-      <created>1706516053472</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1706516053473</updated>
+      <workItem from="1706834036579" duration="5492000" />
     </task>
     <task id="LOCAL-00037" summary="绝对定位">
       <option name="closed" value="true" />
@@ -557,7 +547,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706838600406</updated>
     </task>
-    <option name="localTasksCounter" value="85" />
+    <task id="LOCAL-00085" summary="单选组件">
+      <option name="closed" value="true" />
+      <created>1706839276614</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1706839276614</updated>
+    </task>
+    <option name="localTasksCounter" value="86" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -576,7 +574,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="完整版的完成？" />
     <MESSAGE value="完整版的完成!" />
     <MESSAGE value="格式化" />
     <MESSAGE value="JS的使用" />
@@ -601,7 +598,8 @@
     <MESSAGE value="icon和message的使用" />
     <MESSAGE value="练习" />
     <MESSAGE value="修改" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改" />
+    <MESSAGE value="单选组件" />
+    <option name="LAST_COMMIT_MESSAGE" value="单选组件" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

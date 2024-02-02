@@ -4,6 +4,14 @@ import {ref} from "vue";
 
 const edu = ref("学历");
 
+const arr = ref([
+  {title: "apple🍎", price: 5},
+  {title: "banana🍌", price: 3},
+  {title: "pear🍐", price: 6},
+  {title: "orange🍊", price: 7},
+])
+
+const showPrice = ref("$$$")
 </script>
 
 <template>
@@ -15,6 +23,13 @@ const edu = ref("学历");
     <el-radio-button label="本科">学历：本科</el-radio-button>
   </el-radio-group>
   <h4>{{ edu }}</h4>
+
+  <hr>
+
+  <el-radio-group v-model="showPrice">
+    <el-radio-button :label="fruit.price" v-for="fruit in arr">{{ fruit.title }}</el-radio-button>
+  </el-radio-group>
+  <h4>{{ showPrice }}</h4>=
 </template>
 
 <style scoped>
