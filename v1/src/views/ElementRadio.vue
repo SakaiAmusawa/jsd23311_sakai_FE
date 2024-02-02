@@ -29,7 +29,7 @@ const showPrice = ref("$$$")
   <el-radio-group v-model="showPrice">
     <el-radio-button :label="fruit.price" v-for="fruit in arr">{{ fruit.title }}</el-radio-button>
   </el-radio-group>
-  <h4>{{ showPrice }}</h4>=
+  <h4>{{ showPrice }}</h4>
 </template>
 
 <style scoped>

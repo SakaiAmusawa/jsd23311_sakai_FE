@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4aa361d5-6587-4227-b7e0-15aa97a833bb" name="Changes" comment="单选组件">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="4aa361d5-6587-4227-b7e0-15aa97a833bb" name="Changes" comment="单选组件的练习">
       <change beforePath="$PROJECT_DIR$/v1/src/views/ElementRadio.vue" beforeDir="false" afterPath="$PROJECT_DIR$/v1/src/views/ElementRadio.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -161,15 +160,7 @@
       <workItem from="1706778886449" duration="168000" />
       <workItem from="1706779066042" duration="2445000" />
       <workItem from="1706785646095" duration="6331000" />
-      <workItem from="1706834036579" duration="5492000" />
-    </task>
-    <task id="LOCAL-00037" summary="绝对定位">
-      <option name="closed" value="true" />
-      <created>1706517350501</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1706517350501</updated>
+      <workItem from="1706834036579" duration="6428000" />
     </task>
     <task id="LOCAL-00038" summary="固定广告栏">
       <option name="closed" value="true" />
@@ -555,7 +546,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706839276614</updated>
     </task>
-    <option name="localTasksCounter" value="86" />
+    <task id="LOCAL-00086" summary="单选组件的练习">
+      <option name="closed" value="true" />
+      <created>1706841246114</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1706841246114</updated>
+    </task>
+    <option name="localTasksCounter" value="87" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -574,7 +573,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="完整版的完成!" />
     <MESSAGE value="格式化" />
     <MESSAGE value="JS的使用" />
     <MESSAGE value="1/30 作业（未完成）" />
@@ -599,7 +597,8 @@
     <MESSAGE value="练习" />
     <MESSAGE value="修改" />
     <MESSAGE value="单选组件" />
-    <option name="LAST_COMMIT_MESSAGE" value="单选组件" />
+    <MESSAGE value="单选组件的练习" />
+    <option name="LAST_COMMIT_MESSAGE" value="单选组件的练习" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
