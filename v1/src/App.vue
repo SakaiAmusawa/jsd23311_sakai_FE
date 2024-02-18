@@ -42,7 +42,7 @@
     |
     <router-link to="/elMenu">El-菜单组件</router-link>
     |
-    <router-link to="/t">El-组件</router-link>
+    <router-link to="/elLayout">El-布局组件</router-link>
     |
     <router-link to="/u">El-组件</router-link>
     |
