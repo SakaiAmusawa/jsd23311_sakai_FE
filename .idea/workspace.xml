@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4aa361d5-6587-4227-b7e0-15aa97a833bb" name="Changes" comment="单选组件的练习">
-      <change beforePath="$PROJECT_DIR$/v1/src/views/ElementRadio.vue" beforeDir="false" afterPath="$PROJECT_DIR$/v1/src/views/ElementRadio.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +60,7 @@
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "1.8",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Sakai/JavaProject/sakai/jsd2311_sakai_FE/v1/src/views",
+    "last_opened_file_path": "C:/Users/Sakai/JavaProject/teacher/jsd2311-3-teacher",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -160,15 +160,8 @@
       <workItem from="1706778886449" duration="168000" />
       <workItem from="1706779066042" duration="2445000" />
       <workItem from="1706785646095" duration="6331000" />
-      <workItem from="1706834036579" duration="6428000" />
-    </task>
-    <task id="LOCAL-00038" summary="固定广告栏">
-      <option name="closed" value="true" />
-      <created>1706521121467</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1706521121468</updated>
+      <workItem from="1706834036579" duration="7700000" />
+      <workItem from="1708216483059" duration="329000" />
     </task>
     <task id="LOCAL-00039" summary="元素溢出">
       <option name="closed" value="true" />
@@ -554,7 +547,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706841246114</updated>
     </task>
-    <option name="localTasksCounter" value="87" />
+    <task id="LOCAL-00087" summary="单选组件的练习">
+      <option name="closed" value="true" />
+      <created>1706843316495</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1706843316495</updated>
+    </task>
+    <option name="localTasksCounter" value="88" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
