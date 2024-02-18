@@ -36,7 +36,7 @@
     |
     <router-link to="/elSwitch">El-开关组件</router-link>
     |
-    <router-link to="/q">El-组件</router-link>
+    <router-link to="/elForm">El-表单组件</router-link>
     |
     <router-link to="/r">El-组件</router-link>
     |

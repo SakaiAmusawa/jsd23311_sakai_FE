@@ -55,7 +55,7 @@ const routes = [
     }, {
         path: '/elSwitch', component: () => import('../views/ElementSwitch.vue')
     }, {
-        path: '/q', component: () => import('../views/QView.vue')
+        path: '/elForm', component: () => import('../views/ElementForms.vue')
     }, {
         path: '/r', component: () => import('../views/RView.vue')
     }, {
