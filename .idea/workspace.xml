@@ -4,7 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4aa361d5-6587-4227-b7e0-15aa97a833bb" name="Changes" comment="删除文件" />
+    <list default="true" id="4aa361d5-6587-4227-b7e0-15aa97a833bb" name="Changes" comment="删除不必要的内容">
+      <change beforePath="$PROJECT_DIR$/bakery/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bakery/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bakery/babel.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bakery/jsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bakery/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bakery/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bakery/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bakery/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bakery/src/App.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bakery/src/assets/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bakery/src/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bakery/src/router/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bakery/src/store/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bakery/src/views/HomeView.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bakery/vue.config.js" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -72,7 +88,7 @@
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "1.8",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Sakai/JavaProject/sakai/jsd2311_sakai_FE/v2/public",
+    "last_opened_file_path": "C:/Users/Sakai/JavaProject/sakai/jsd2311_sakai_FE",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -175,46 +191,7 @@
       <workItem from="1706834036579" duration="7700000" />
       <workItem from="1708216483059" duration="9131000" />
       <workItem from="1708236070562" duration="10440000" />
-    </task>
-    <task id="LOCAL-00054" summary="JS">
-      <option name="closed" value="true" />
-      <created>1706699911105</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1706699911106</updated>
-    </task>
-    <task id="LOCAL-00055" summary="作业?">
-      <option name="closed" value="true" />
-      <created>1706700837981</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1706700837981</updated>
-    </task>
-    <task id="LOCAL-00056" summary="创建了一个VUE项目">
-      <option name="closed" value="true" />
-      <created>1706700860547</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1706700860547</updated>
-    </task>
-    <task id="LOCAL-00057" summary="更改端口至9090">
-      <option name="closed" value="true" />
-      <created>1706700946013</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1706700946013</updated>
-    </task>
-    <task id="LOCAL-00058" summary="创建了一个新的View&#10;1.在App.vue中指明连接方向&#10;2.router/index.js 设置好路径等信息">
-      <option name="closed" value="true" />
-      <created>1706701383996</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1706701383996</updated>
+      <workItem from="1708247414336" duration="645000" />
     </task>
     <task id="LOCAL-00059" summary="创建了一个新的View">
       <option name="closed" value="true" />
@@ -568,7 +545,47 @@
       <option name="project" value="LOCAL" />
       <updated>1708247173247</updated>
     </task>
-    <option name="localTasksCounter" value="103" />
+    <task id="LOCAL-00103" summary="烘焙坊项目的创建">
+      <option name="closed" value="true" />
+      <created>1708247448038</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1708247448038</updated>
+    </task>
+    <task id="LOCAL-00104" summary="修改端口号为3016">
+      <option name="closed" value="true" />
+      <created>1708247519914</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1708247519914</updated>
+    </task>
+    <task id="LOCAL-00105" summary="修改配置文件 并在Terminal执行&#10;npm install element-plus --save命令">
+      <option name="closed" value="true" />
+      <created>1708247713080</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1708247713080</updated>
+    </task>
+    <task id="LOCAL-00106" summary="删除不必要的内容">
+      <option name="closed" value="true" />
+      <created>1708247795788</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1708247795788</updated>
+    </task>
+    <task id="LOCAL-00107" summary="删除不必要的内容">
+      <option name="closed" value="true" />
+      <created>1708247943534</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1708247943534</updated>
+    </task>
+    <option name="localTasksCounter" value="108" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -587,10 +604,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="文本测试" />
-    <MESSAGE value="绑定与双向绑定" />
-    <MESSAGE value="事件绑定" />
-    <MESSAGE value="循环指令" />
     <MESSAGE value="删除" />
     <MESSAGE value="隐藏和显示" />
     <MESSAGE value="计算器练习" />
@@ -612,7 +625,11 @@
     <MESSAGE value="v2配置路径以及添加页面" />
     <MESSAGE value="寒假作业的完成" />
     <MESSAGE value="删除文件" />
-    <option name="LAST_COMMIT_MESSAGE" value="删除文件" />
+    <MESSAGE value="烘焙坊项目的创建" />
+    <MESSAGE value="修改端口号为3016" />
+    <MESSAGE value="修改配置文件 并在Terminal执行&#10;npm install element-plus --save命令" />
+    <MESSAGE value="删除不必要的内容" />
+    <option name="LAST_COMMIT_MESSAGE" value="删除不必要的内容" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

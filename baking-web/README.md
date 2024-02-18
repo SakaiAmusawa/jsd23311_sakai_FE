@@ -1,4 +1,4 @@
-# bakery
+# baking-web
 
 ## Project setup
 ```
