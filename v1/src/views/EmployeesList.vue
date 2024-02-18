@@ -21,7 +21,10 @@ const add = () => {
   arr.value.push({...emp.value})
 }
 
-const del = ($index, row) => {
+const del = (index, row) => {
+  if (confirm("确认删除？" + row.name + "吗？")) {
+    arr.value.splice(index, 1);
+  }
 
 }
 </script>
