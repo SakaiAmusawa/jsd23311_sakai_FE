@@ -32,9 +32,9 @@
     |
     <router-link to="/elRadio">El-单选组件</router-link>
     |
-    <router-link to="/elSelect">El-选择器</router-link>
+    <router-link to="/elSelect">El-选择器组件</router-link>
     |
-    <router-link to="/p">El-组件</router-link>
+    <router-link to="/elSwitch">El-开关</router-link>
     |
     <router-link to="/q">El-组件</router-link>
     |
