@@ -53,7 +53,7 @@ const routes = [
     }, {
         path: '/elSelect', component: () => import('../views/ElementSelect.vue')
     }, {
-        path: '/p', component: () => import('../views/PView.vue')
+        path: '/elSwitch', component: () => import('../views/ElementSwitch.vue')
     }, {
         path: '/q', component: () => import('../views/QView.vue')
     }, {
