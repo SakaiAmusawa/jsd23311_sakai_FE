@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4aa361d5-6587-4227-b7e0-15aa97a833bb" name="Changes" comment="综合练习">
-      <change beforePath="$PROJECT_DIR$/v2/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/v2/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v2/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/v2/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v2/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/v2/src/main.js" afterDir="false" />
-    </list>
+    <list default="true" id="4aa361d5-6587-4227-b7e0-15aa97a833bb" name="Changes" comment="删除文件" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,12 +22,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "SakaiAmusawa"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;SakaiAmusawa&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -76,7 +72,7 @@
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "1.8",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Sakai/JavaProject/sakai/jsd2311_sakai_FE/v1/src/views",
+    "last_opened_file_path": "C:/Users/Sakai/JavaProject/sakai/jsd2311_sakai_FE/v2/public",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -98,11 +94,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Sakai\JavaProject\sakai\jsd2311_sakai_FE\v1\src\views" />
+      <recent name="C:\Users\Sakai\JavaProject\sakai\jsd2311_sakai_FE\v2\public" />
+      <recent name="C:\Users\Sakai\JavaProject\sakai\jsd2311_sakai_FE\v2\src\views\admin" />
+      <recent name="C:\Users\Sakai\JavaProject\sakai\jsd2311_sakai_FE\v2\src\views\home" />
       <recent name="C:\Users\Sakai\JavaProject\sakai\jsd2311_sakai_FE\v1\public" />
-      <recent name="C:\Users\Sakai\JavaProject\sakai\jsd2311_sakai_FE\web\day04\img" />
-      <recent name="C:\Users\Sakai\JavaProject\sakai\jsd2311_sakai_FE\web\day03" />
-      <recent name="C:\Users\Sakai\JavaProject\sakai\jsd2311_sakai_FE\web\day03\img" />
+      <recent name="C:\Users\Sakai\JavaProject\sakai\jsd2311_sakai_FE\v1\src\views" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Sakai\JavaProject\sakai\jsd2311_sakai_FE\web\day02" />
@@ -178,78 +174,7 @@
       <workItem from="1706785646095" duration="6331000" />
       <workItem from="1706834036579" duration="7700000" />
       <workItem from="1708216483059" duration="9131000" />
-    </task>
-    <task id="LOCAL-00045" summary="居中、元素的阴影">
-      <option name="closed" value="true" />
-      <created>1706578931406</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1706578931406</updated>
-    </task>
-    <task id="LOCAL-00046" summary="居中、元素的阴影">
-      <option name="closed" value="true" />
-      <created>1706580119480</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1706580119480</updated>
-    </task>
-    <task id="LOCAL-00047" summary="元素的放大与过渡">
-      <option name="closed" value="true" />
-      <created>1706580833398</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1706580833398</updated>
-    </task>
-    <task id="LOCAL-00048" summary="完整版的通用样式">
-      <option name="closed" value="true" />
-      <created>1706583503560</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1706583503560</updated>
-    </task>
-    <task id="LOCAL-00049" summary="完整版的完成？">
-      <option name="closed" value="true" />
-      <created>1706595864126</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1706595864126</updated>
-    </task>
-    <task id="LOCAL-00050" summary="完整版的完成!">
-      <option name="closed" value="true" />
-      <created>1706596013083</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1706596013084</updated>
-    </task>
-    <task id="LOCAL-00051" summary="格式化">
-      <option name="closed" value="true" />
-      <created>1706596638285</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1706596638285</updated>
-    </task>
-    <task id="LOCAL-00052" summary="JS的使用">
-      <option name="closed" value="true" />
-      <created>1706614365672</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1706614365672</updated>
-    </task>
-    <task id="LOCAL-00053" summary="1/30 作业（未完成）">
-      <option name="closed" value="true" />
-      <created>1706663813186</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1706663813187</updated>
+      <workItem from="1708236070562" duration="10440000" />
     </task>
     <task id="LOCAL-00054" summary="JS">
       <option name="closed" value="true" />
@@ -571,7 +496,79 @@
       <option name="project" value="LOCAL" />
       <updated>1708228725345</updated>
     </task>
-    <option name="localTasksCounter" value="94" />
+    <task id="LOCAL-00094" summary="综合练习">
+      <option name="closed" value="true" />
+      <created>1708239758077</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1708239758077</updated>
+    </task>
+    <task id="LOCAL-00095" summary="？">
+      <option name="closed" value="true" />
+      <created>1708239778245</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1708239778245</updated>
+    </task>
+    <task id="LOCAL-00096" summary="综合练习">
+      <option name="closed" value="true" />
+      <created>1708239930931</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1708239930931</updated>
+    </task>
+    <task id="LOCAL-00097" summary="v2初始化改造">
+      <option name="closed" value="true" />
+      <created>1708241693648</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1708241693649</updated>
+    </task>
+    <task id="LOCAL-00098" summary="v2初始化改造">
+      <option name="closed" value="true" />
+      <created>1708242214781</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1708242214781</updated>
+    </task>
+    <task id="LOCAL-00099" summary="v2配置路径">
+      <option name="closed" value="true" />
+      <created>1708242854913</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1708242854913</updated>
+    </task>
+    <task id="LOCAL-00100" summary="v2配置路径以及添加页面">
+      <option name="closed" value="true" />
+      <created>1708245889661</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1708245889661</updated>
+    </task>
+    <task id="LOCAL-00101" summary="寒假作业的完成">
+      <option name="closed" value="true" />
+      <created>1708246643646</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1708246643646</updated>
+    </task>
+    <task id="LOCAL-00102" summary="删除文件">
+      <option name="closed" value="true" />
+      <created>1708247173247</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1708247173247</updated>
+    </task>
+    <option name="localTasksCounter" value="103" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -590,12 +587,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="作业?" />
-    <MESSAGE value="创建了一个VUE项目" />
-    <MESSAGE value="更改端口至9090" />
-    <MESSAGE value="创建了一个新的View&#10;1.在App.vue中指明连接方向&#10;2.router/index.js 设置好路径等信息" />
-    <MESSAGE value="创建了一个新的View" />
-    <MESSAGE value="更改端口" />
     <MESSAGE value="文本测试" />
     <MESSAGE value="绑定与双向绑定" />
     <MESSAGE value="事件绑定" />
@@ -614,8 +605,14 @@
     <MESSAGE value="员工列表练习" />
     <MESSAGE value="寒假作业" />
     <MESSAGE value="员工列表综合练习" />
+    <MESSAGE value="？" />
     <MESSAGE value="综合练习" />
-    <option name="LAST_COMMIT_MESSAGE" value="综合练习" />
+    <MESSAGE value="v2初始化改造" />
+    <MESSAGE value="v2配置路径" />
+    <MESSAGE value="v2配置路径以及添加页面" />
+    <MESSAGE value="寒假作业的完成" />
+    <MESSAGE value="删除文件" />
+    <option name="LAST_COMMIT_MESSAGE" value="删除文件" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
