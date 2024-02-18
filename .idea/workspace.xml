@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4aa361d5-6587-4227-b7e0-15aa97a833bb" name="Changes" comment="单选组件的练习">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="4aa361d5-6587-4227-b7e0-15aa97a833bb" name="Changes" comment="综合练习">
+      <change beforePath="$PROJECT_DIR$/v2/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/v2/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/v2/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/v2/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/v2/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/v2/src/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +25,20 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "SakaiAmusawa"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="66e89fe0-42e6-4242-b542-efac2020959e" />
+        <option name="url" value="https://github.com/SakaiAmusawa/jsd23311_sakai_FE.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -60,7 +76,7 @@
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "1.8",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Sakai/JavaProject/teacher/jsd2311-3-teacher",
+    "last_opened_file_path": "C:/Users/Sakai/JavaProject/sakai/jsd2311_sakai_FE/v1/src/views",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -70,7 +86,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "JavaScript.Libraries",
     "ts.external.directory.path": "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2023.3.2\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   },
@@ -161,55 +177,7 @@
       <workItem from="1706779066042" duration="2445000" />
       <workItem from="1706785646095" duration="6331000" />
       <workItem from="1706834036579" duration="7700000" />
-      <workItem from="1708216483059" duration="329000" />
-    </task>
-    <task id="LOCAL-00039" summary="元素溢出">
-      <option name="closed" value="true" />
-      <created>1706522181945</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1706522181945</updated>
-    </task>
-    <task id="LOCAL-00040" summary="元素溢出">
-      <option name="closed" value="true" />
-      <created>1706524960162</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1706524960162</updated>
-    </task>
-    <task id="LOCAL-00041" summary="元素溢出">
-      <option name="closed" value="true" />
-      <created>1706524969931</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1706524969931</updated>
-    </task>
-    <task id="LOCAL-00042" summary="小练 未完成">
-      <option name="closed" value="true" />
-      <created>1706529298783</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1706529298783</updated>
-    </task>
-    <task id="LOCAL-00043" summary="小练 未完成">
-      <option name="closed" value="true" />
-      <created>1706577299483</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1706577299483</updated>
-    </task>
-    <task id="LOCAL-00044" summary="小练 未完成">
-      <option name="closed" value="true" />
-      <created>1706578908299</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1706578908299</updated>
+      <workItem from="1708216483059" duration="9131000" />
     </task>
     <task id="LOCAL-00045" summary="居中、元素的阴影">
       <option name="closed" value="true" />
@@ -555,7 +523,55 @@
       <option name="project" value="LOCAL" />
       <updated>1706843316495</updated>
     </task>
-    <option name="localTasksCounter" value="88" />
+    <task id="LOCAL-00088" summary="员工列表练习">
+      <option name="closed" value="true" />
+      <created>1708224014811</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1708224014812</updated>
+    </task>
+    <task id="LOCAL-00089" summary="寒假作业">
+      <option name="closed" value="true" />
+      <created>1708224030198</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1708224030198</updated>
+    </task>
+    <task id="LOCAL-00090" summary="员工列表综合练习">
+      <option name="closed" value="true" />
+      <created>1708226882000</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1708226882000</updated>
+    </task>
+    <task id="LOCAL-00091" summary="员工列表综合练习">
+      <option name="closed" value="true" />
+      <created>1708227609584</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1708227609585</updated>
+    </task>
+    <task id="LOCAL-00092" summary="员工列表综合练习">
+      <option name="closed" value="true" />
+      <created>1708228428963</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1708228428964</updated>
+    </task>
+    <task id="LOCAL-00093" summary="综合练习">
+      <option name="closed" value="true" />
+      <created>1708228725345</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1708228725345</updated>
+    </task>
+    <option name="localTasksCounter" value="94" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -574,10 +590,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="格式化" />
-    <MESSAGE value="JS的使用" />
-    <MESSAGE value="1/30 作业（未完成）" />
-    <MESSAGE value="JS" />
     <MESSAGE value="作业?" />
     <MESSAGE value="创建了一个VUE项目" />
     <MESSAGE value="更改端口至9090" />
@@ -599,7 +611,11 @@
     <MESSAGE value="修改" />
     <MESSAGE value="单选组件" />
     <MESSAGE value="单选组件的练习" />
-    <option name="LAST_COMMIT_MESSAGE" value="单选组件的练习" />
+    <MESSAGE value="员工列表练习" />
+    <MESSAGE value="寒假作业" />
+    <MESSAGE value="员工列表综合练习" />
+    <MESSAGE value="综合练习" />
+    <option name="LAST_COMMIT_MESSAGE" value="综合练习" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

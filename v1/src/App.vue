@@ -56,7 +56,7 @@
     |
     <router-link to="/EmployeesList">员工列表综合练习</router-link>
     |
-
+    <router-link to="/exec">综合练习</router-link>
   </nav>
   <router-view/>
 </template>
