@@ -40,7 +40,7 @@
     |
     <router-link to="/elForm">El-表格组件</router-link>
     |
-    <router-link to="/s">El-组件</router-link>
+    <router-link to="/elMenu">El-菜单组件</router-link>
     |
     <router-link to="/t">El-组件</router-link>
     |

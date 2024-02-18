@@ -59,7 +59,7 @@ const routes = [
     }, {
         path: '/elForm', component: () => import('../views/ElementForm.vue')
     }, {
-        path: '/s', component: () => import('../views/SView.vue')
+        path: '/elMenu', component: () => import('../views/ElementMenu.vue')
     }, {
         path: '/t', component: () => import('../views/TView.vue')
     }, {
