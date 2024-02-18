@@ -118,7 +118,12 @@ const productArr = ref([
           </el-col>
         </el-row>
       </el-main>
-      <el-footer>Footer</el-footer>
+      <!--   页脚   -->
+      <el-footer style="background-color: #282c30;color: #666;height: 200px;padding-top: 40px;">
+        <p>.......</p>
+        <p>.......</p>
+        <p>.......</p>
+      </el-footer>
     </el-container>
   </div>
 </template>
