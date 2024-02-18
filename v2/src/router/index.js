@@ -6,6 +6,8 @@ const routes = [
         path: '/',
         name: 'home',
         component: HomeView,
+        /*重定向至首页*/
+        redirect: '/index',
         children: [
             {
                 path: '/reg',
@@ -23,6 +25,22 @@ const routes = [
                 path: 'detail',
                 component: () => import('../views/home/DetailView.vue')
             }
+        ]
+    },
+    {
+        path: '/admin',
+        component: () => import('../views/AdminView.vue'),
+        children: [
+            {
+                path: 'user',
+                component: () => import('../views/admin/UserView.vue')
+            }, {
+                path: 'banner',
+                component: () => import('../views/admin/BannerView.vue')
+            }, {
+                path: 'product',
+                component: () => import('../views/admin/ProductView.vue')
+            },
         ]
     }
 ]
