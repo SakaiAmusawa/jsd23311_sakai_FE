@@ -19,7 +19,7 @@
     |
     <router-link to="/guess">猜数字练习</router-link>
     |
-    <router-link to="/empList">员工列表联系</router-link>
+    <router-link to="/empList">员工列表练习</router-link>
     |
     <router-link to="/resume">个人简历练习</router-link>
     |
@@ -53,6 +53,8 @@
     <router-link to="/w">El-组件</router-link>
     |
     <router-link to="/x">El-组件</router-link>
+    |
+    <router-link to="/EmployeesList">员工列表综合练习</router-link>
     |
 
   </nav>

@@ -72,6 +72,8 @@ const routes = [
     path: '/w', component: () => import('../views/WView.vue')
   }, {
     path: '/x', component: () => import('../views/XView.vue')
+  }, {
+    path: '/EmployeesList', component: () => import('../views/EmployeesList.vue')
   }
 ]
 
