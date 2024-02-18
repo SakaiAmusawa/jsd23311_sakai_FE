@@ -38,7 +38,7 @@
     |
     <router-link to="/elForms">El-表单组件</router-link>
     |
-    <router-link to="/r">El-组件</router-link>
+    <router-link to="/elForm">El-表格组件</router-link>
     |
     <router-link to="/s">El-组件</router-link>
     |
