@@ -10,10 +10,10 @@
           </el-col>
           <el-col :span="10">
             <!--头部导航栏-->
-            <el-menu active-text-color="orange" mode="horizontal" style="height: 70px;">
+            <el-menu @select="handleSelect" active-text-color="orange" mode="horizontal" style="height: 70px;">
               <el-menu-item index="1">食谱</el-menu-item>
               <el-menu-item index="2">视频</el-menu-item>
-              <el-menu-item index="3">咨询</el-menu-item>
+              <el-menu-item index="3">资讯</el-menu-item>
             </el-menu>
           </el-col>
           <el-col :span="6">
@@ -98,6 +98,10 @@
 <script setup>
 import {Search} from '@element-plus/icons-vue'
 import router from "@/router";
+
+const handleSelect = (key, keyPath) => {
+  router.push('/list')
+}
 </script>
 
 <style>
