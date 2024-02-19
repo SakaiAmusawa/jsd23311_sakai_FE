@@ -27,5 +27,12 @@
   background-image: url("/public/imgs/loginbg.gif");
   background-size: cover;
   background-position: center;
+
+  .box-card {
+    background-color: transparent;
+  }
+  ::v-deep(*.el-input__wrapper){
+    background-color: transparent;
+  }
 }
 </style>
