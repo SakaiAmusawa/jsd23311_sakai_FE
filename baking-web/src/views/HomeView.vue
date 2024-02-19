@@ -84,7 +84,10 @@
                 </el-col>
               </el-row>
             </el-col>
-            <el-col :span="8">10</el-col>
+            <el-col :span="8">
+              <p style="font-size: 60px;color: #666666;margin: 10px 0 ;"><span style="color: orange">烘焙</span>坊</p>
+              <p>烘焙行业社区平台</p>
+            </el-col>
           </el-row>
         </div>
       </el-footer>
@@ -97,9 +100,10 @@ import {Search} from '@element-plus/icons-vue'
 </script>
 
 <style>
-footer h3{
+footer h3 {
   color: #fff;
 }
+
 #footer-center p {
   margin: 5px 0;
 }
