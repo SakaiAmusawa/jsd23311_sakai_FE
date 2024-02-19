@@ -6,7 +6,7 @@
         <el-row :gutter="20" style="width: 1200px;margin: 0 auto;">
           <el-col :span="6">
             <!--头部logo图片-->
-            <img alt="LOGO" src="/imgs/icon.png" style="width: 200px;">
+            <router-link to="/"><img alt="LOGO" src="/imgs/icon.png" style="width: 200px;"></router-link>
           </el-col>
           <el-col :span="10">
             <!--头部导航栏-->
@@ -35,8 +35,8 @@
                 </router-link>
               </template>
               <div style="text-align: center">
-                <el-button type="info" size="small">注册</el-button>
-                <el-button type="warning" size="small">登录</el-button>
+                <el-button type="info" size="small" @click="router.push('/reg')">注册</el-button>
+                <el-button type="warning" size="small" @click="router.push('/login')">登录</el-button>
               </div>
             </el-popover>
           </el-col>
@@ -97,6 +97,7 @@
 
 <script setup>
 import {Search} from '@element-plus/icons-vue'
+import router from "@/router";
 </script>
 
 <style>
