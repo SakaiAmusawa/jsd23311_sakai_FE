@@ -56,6 +56,34 @@
         </div>
 
       </el-card>
+
+      <el-card style="margin-top: 10px;">
+        <h2>热门文章</h2>
+        <hr>
+        <el-row :gutter="10" v-for="item in 4">
+          <el-col :span="10">
+            <img src="/imgs/a.jpg" alt="" style="width: 100%;">
+          </el-col>
+          <el-col :span="14">
+            <h3 style="height: 40px;margin-top: 0;">这是标题内容</h3>
+            <p style="color: #666666;font-size: 12px;margin: 0;">2024年02月19日 16:24:21</p>
+          </el-col>
+        </el-row>
+      </el-card>
+
+      <el-card style="margin-top: 10px;">
+        <h2>作者其他文章</h2>
+        <hr>
+        <el-row :gutter="10" v-for="item in 4">
+          <el-col :span="10">
+            <img src="/imgs/a.jpg" alt="" style="width: 100%;">
+          </el-col>
+          <el-col :span="14">
+            <h3 style="height: 40px;margin-top: 0;">这是标题内容</h3>
+            <p style="color: #666666;font-size: 12px;margin: 0;">2024年02月19日 16:24:21</p>
+          </el-col>
+        </el-row>
+      </el-card>
     </el-col>
   </el-row>
 </template>
