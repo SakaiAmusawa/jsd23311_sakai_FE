@@ -104,13 +104,13 @@ const del = (i) => {
 <template>
   <el-table :data="arr">
     <el-table-column type="index" label="编号" width="80" align="center"></el-table-column>
-    <el-table-column prop="title" label="标题" width="290" align="center"></el-table-column>
+    <el-table-column prop="title" label="标题" width="200" align="center"></el-table-column>
     <el-table-column label="封面" width="100" align="center">
       <template #default="scope">
         <img :src="scope.row.imgUrl" alt="" width="100%">
       </template>
     </el-table-column>
-    <el-table-column prop="brief" label="摘要" width="380" align="center"></el-table-column>
+    <el-table-column prop="brief" label="摘要" width="250" align="center"></el-table-column>
     <el-table-column prop="categoryName" label="分类" width="80" align="center"></el-table-column>
     <el-table-column prop="viewCount" label="浏览量" width="80" align="center"></el-table-column>
     <el-table-column prop="commentCount" label="评论量" width="80" align="center"></el-table-column>
