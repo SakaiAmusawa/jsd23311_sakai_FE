@@ -113,10 +113,10 @@ const del = (i) => {
   <el-table :data="arr">
     <el-table-column type="index" label="编号" width="80" align="center"></el-table-column>
     <el-table-column prop="title" label="标题" width="290" align="center"></el-table-column>
-    <el-table-column prop="categoryName" label="分类" width="290" align="center"></el-table-column>
-    <el-table-column prop="viewCount" label="浏览量" width="290" align="center"></el-table-column>
-    <el-table-column prop="commentCount" label="评论量" width="290" align="center"></el-table-column>
-    <el-table-column prop="createTime" label="发布时间" width="290" align="center"></el-table-column>
+    <el-table-column prop="categoryName" label="分类" width="80" align="center"></el-table-column>
+    <el-table-column prop="viewCount" label="浏览量" width="80" align="center"></el-table-column>
+    <el-table-column prop="commentCount" label="评论量" width="80" align="center"></el-table-column>
+    <el-table-column prop="createTime" label="发布时间" width="120" align="center"></el-table-column>
     <el-table-column label="操作" align="center">
       <template #default="scope">
         <el-button-group>
