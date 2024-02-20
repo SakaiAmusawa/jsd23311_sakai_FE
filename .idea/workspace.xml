@@ -77,7 +77,7 @@
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "1.8",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Sakai/JavaProject/sakai/jsd2311_sakai_FE/web/src/main/java/top/sakai/web",
+    "last_opened_file_path": "C:/Users/Sakai/JavaProject/sakai/jsd2311_sakai_FE",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -99,11 +99,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Sakai\JavaProject\sakai\jsd2311_sakai_FE" />
       <recent name="C:\Users\Sakai\JavaProject\sakai\jsd2311_sakai_FE\web\src\main\java\top\sakai\web" />
       <recent name="C:\Users\Sakai\JavaProject\sakai\jsd2311_sakai_FE\baking-web\public" />
       <recent name="C:\Users\Sakai\JavaProject\sakai\jsd2311_sakai_FE\baking-web\src\views\admin" />
       <recent name="C:\Users\Sakai\JavaProject\sakai\jsd2311_sakai_FE\baking-web\src\views\home\personal" />
-      <recent name="C:\Users\Sakai\JavaProject\sakai\jsd2311_sakai_FE\baking-web\src\views\home" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Sakai\JavaProject\sakai\jsd2311_sakai_FE\web" />
@@ -205,23 +205,7 @@
       <workItem from="1708248066618" duration="9811000" />
       <workItem from="1708260875627" duration="314000" />
       <workItem from="1708302599676" duration="1261000" />
-      <workItem from="1708390871791" duration="19943000" />
-    </task>
-    <task id="LOCAL-00095" summary="？">
-      <option name="closed" value="true" />
-      <created>1708239778245</created>
-      <option name="number" value="00095" />
-      <option name="presentableId" value="LOCAL-00095" />
-      <option name="project" value="LOCAL" />
-      <updated>1708239778245</updated>
-    </task>
-    <task id="LOCAL-00096" summary="综合练习">
-      <option name="closed" value="true" />
-      <created>1708239930931</created>
-      <option name="number" value="00096" />
-      <option name="presentableId" value="LOCAL-00096" />
-      <option name="project" value="LOCAL" />
-      <updated>1708239930931</updated>
+      <workItem from="1708390871791" duration="23054000" />
     </task>
     <task id="LOCAL-00097" summary="v2初始化改造">
       <option name="closed" value="true" />
@@ -599,7 +583,23 @@
       <option name="project" value="LOCAL" />
       <updated>1708418825045</updated>
     </task>
-    <option name="localTasksCounter" value="144" />
+    <task id="LOCAL-00144" summary="Weibo前后端项目准备">
+      <option name="closed" value="true" />
+      <created>1708419175351</created>
+      <option name="number" value="00144" />
+      <option name="presentableId" value="LOCAL-00144" />
+      <option name="project" value="LOCAL" />
+      <updated>1708419175351</updated>
+    </task>
+    <task id="LOCAL-00145" summary="Weibo前后端项目准备">
+      <option name="closed" value="true" />
+      <created>1708422402625</created>
+      <option name="number" value="00145" />
+      <option name="presentableId" value="LOCAL-00145" />
+      <option name="project" value="LOCAL" />
+      <updated>1708422402625</updated>
+    </task>
+    <option name="localTasksCounter" value="146" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
