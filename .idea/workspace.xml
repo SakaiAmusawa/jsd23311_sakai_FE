@@ -4,42 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4aa361d5-6587-4227-b7e0-15aa97a833bb" name="Changes" comment="发布内容页面完成">
-      <change afterPath="$PROJECT_DIR$/web/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/top/sakai/web/WebApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/top/sakai/web/config/Knife4jConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/top/sakai/web/config/MvcConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/top/sakai/web/config/MybatisConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/top/sakai/web/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/top/sakai/web/pojo/dto/CommentDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/top/sakai/web/pojo/dto/UserLoginDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/top/sakai/web/pojo/dto/UserRegDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/top/sakai/web/pojo/dto/WeiboDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/top/sakai/web/pojo/entity/Comment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/top/sakai/web/pojo/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/top/sakai/web/pojo/entity/Weibo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/top/sakai/web/pojo/vo/CommentVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/top/sakai/web/pojo/vo/UserVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/top/sakai/web/pojo/vo/WeiboDetailVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/top/sakai/web/pojo/vo/WeiboIndexVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/top/sakai/web/response/JsonResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/top/sakai/web/response/StatusCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/resources/static/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/test/java/top/sakai/web/WebApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/day04/javascript/01JS的三种引入方式.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/day04/javascript/01JS的三种引入方式.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/day04/javascript/02变量与常量.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/day04/javascript/02变量与常量.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/day04/javascript/03JS数据类型.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/day04/javascript/03JS数据类型.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/day04/javascript/04运算符.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/day04/javascript/04运算符.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/day04/javascript/05流程控制.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/day04/javascript/05流程控制.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/day04/javascript/06函数.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/day04/javascript/06函数.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/day05/02计算器.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/day05/02计算器.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/day05/04员工列表练习.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/day05/04员工列表练习.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/day05/05自定义JS对象.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/day05/05自定义JS对象.html" afterDir="false" />
-    </list>
+    <list default="true" id="4aa361d5-6587-4227-b7e0-15aa97a833bb" name="Changes" comment="Weibo前后端项目准备" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -100,6 +65,10 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "DefaultHtmlFileTemplate": "HTML File",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -137,16 +106,23 @@
       <recent name="C:\Users\Sakai\JavaProject\sakai\jsd2311_sakai_FE\baking-web\src\views\home" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Sakai\JavaProject\sakai\jsd2311_sakai_FE\web" />
       <recent name="C:\Users\Sakai\JavaProject\sakai\jsd2311_sakai_FE\web\day02" />
       <recent name="C:\Users\Sakai\IdeaProjects\jsd2311_sakai_FE\homework" />
       <recent name="C:\Users\Sakai\IdeaProjects\jsd2311_sakai_FE\web" />
       <recent name="C:\Users\Sakai\IdeaProjects\jsd2311_sakai_FE\web\day01" />
-      <recent name="C:\Users\Sakai\IdeaProjects\jsd2311_sakai_FE\web\day01\img" />
     </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
   </component>
   <component name="RunManager" selected="Spring Boot.WebApplication">
     <configuration name="WebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="web" />
+      <module name="weibo" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="top.sakai.web.WebApplication" />
       <extension name="coverage">
         <pattern>
@@ -229,31 +205,7 @@
       <workItem from="1708248066618" duration="9811000" />
       <workItem from="1708260875627" duration="314000" />
       <workItem from="1708302599676" duration="1261000" />
-      <workItem from="1708390871791" duration="19247000" />
-    </task>
-    <task id="LOCAL-00092" summary="员工列表综合练习">
-      <option name="closed" value="true" />
-      <created>1708228428963</created>
-      <option name="number" value="00092" />
-      <option name="presentableId" value="LOCAL-00092" />
-      <option name="project" value="LOCAL" />
-      <updated>1708228428964</updated>
-    </task>
-    <task id="LOCAL-00093" summary="综合练习">
-      <option name="closed" value="true" />
-      <created>1708228725345</created>
-      <option name="number" value="00093" />
-      <option name="presentableId" value="LOCAL-00093" />
-      <option name="project" value="LOCAL" />
-      <updated>1708228725345</updated>
-    </task>
-    <task id="LOCAL-00094" summary="综合练习">
-      <option name="closed" value="true" />
-      <created>1708239758077</created>
-      <option name="number" value="00094" />
-      <option name="presentableId" value="LOCAL-00094" />
-      <option name="project" value="LOCAL" />
-      <updated>1708239758077</updated>
+      <workItem from="1708390871791" duration="19943000" />
     </task>
     <task id="LOCAL-00095" summary="？">
       <option name="closed" value="true" />
@@ -623,7 +575,31 @@
       <option name="project" value="LOCAL" />
       <updated>1708416121757</updated>
     </task>
-    <option name="localTasksCounter" value="141" />
+    <task id="LOCAL-00141" summary="Weibo前后端项目准备">
+      <option name="closed" value="true" />
+      <created>1708418756189</created>
+      <option name="number" value="00141" />
+      <option name="presentableId" value="LOCAL-00141" />
+      <option name="project" value="LOCAL" />
+      <updated>1708418756189</updated>
+    </task>
+    <task id="LOCAL-00142" summary="Weibo前后端项目准备">
+      <option name="closed" value="true" />
+      <created>1708418764559</created>
+      <option name="number" value="00142" />
+      <option name="presentableId" value="LOCAL-00142" />
+      <option name="project" value="LOCAL" />
+      <updated>1708418764559</updated>
+    </task>
+    <task id="LOCAL-00143" summary="Weibo前后端项目准备">
+      <option name="closed" value="true" />
+      <created>1708418825044</created>
+      <option name="number" value="00143" />
+      <option name="presentableId" value="LOCAL-00143" />
+      <option name="project" value="LOCAL" />
+      <updated>1708418825045</updated>
+    </task>
+    <option name="localTasksCounter" value="144" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -642,7 +618,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="删除文件" />
     <MESSAGE value="烘焙坊项目的创建" />
     <MESSAGE value="修改端口号为3016" />
     <MESSAGE value="修改配置文件 并在Terminal执行&#10;npm install element-plus --save命令" />
@@ -667,7 +642,8 @@
     <MESSAGE value="个人信息页面完成" />
     <MESSAGE value="内容管理页面完成" />
     <MESSAGE value="发布内容页面完成" />
-    <option name="LAST_COMMIT_MESSAGE" value="发布内容页面完成" />
+    <MESSAGE value="Weibo前后端项目准备" />
+    <option name="LAST_COMMIT_MESSAGE" value="Weibo前后端项目准备" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

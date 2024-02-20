@@ -8,7 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="jsd2311_sakai_FE" />
-        <module name="web" />
+        <module name="weibo" />
       </profile>
     </annotationProcessing>
   </component>
