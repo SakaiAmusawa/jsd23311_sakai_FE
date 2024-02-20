@@ -5,58 +5,63 @@
     <title>06JS函数</title>
 </head>
 <body>
-  <script>
+<script>
     //1.通过 function 关键字定义函数
-    function f1(){
-      console.log('你好,2024!');
+    function f1() {
+        console.log('你好,2024!');
     }
+
     f1();//调用函数
 
     //2.函数如果有参数,不需要写参数类型，直接写参数名字即可
-    function f2(n){
-      console.log('幸运数字:'+n);
+    function f2(n) {
+        console.log('幸运数字:' + n);
     }
+
     f2(7);
 
     //3.带多个参数的函数
-    function f3(a,b){
-      console.log(a+b);
+    function f3(a, b) {
+        console.log(a + b);
     }
-    f3(5,6);
+
+    f3(5, 6);
     //实参与形参个数可以不一致
     //如果实参个数大于形参个数，多余的实参会被舍弃掉
-    f3(10,6,7);//16=10+6
+    f3(10, 6, 7);//16=10+6
     //如果实参个数小于形参个数，未被赋值的形参值是undefined
     f3(10);//NaN(Not a Number)=10+undefined
 
     //4.arguments对象用来保存传入的实参
-    function f4(){
-      console.log(arguments);
+    function f4() {
+        console.log(arguments);
     }
+
     f4(50);
-    f4(50,60);
-    f4(50,60,70);
+    f4(50, 60);
+    f4(50, 60, 70);
 
     //5.使用return关键字返回函数结果
-    function f5(x,y){
-      return x-y;
+    function f5(x, y) {
+        return x - y;
     }
-    console.log(f5(10,2));
+
+    console.log(f5(10, 2));
     //把函数return的结果保存在res变量里
-    let res = f5(7,1);
+    let res = f5(7, 1);
     console.log(res);
 
     //第二种声明JS函数的方式
     //变量f6保存了函数的所有内容,f6就相当于函数的名字
-    let f6 = function(){
-      return 666;
+    let f6 = function () {
+        return 666;
     }
     console.log(f6());
 
     //第三种声明函数的方式
     //new Function(参数1,参数2,参数3,方法体)
-    let f7 = new Function("name","age","console.log('哈哈哈');")
-    f7('张三',18);
-  </script>
+    let f7 = new Function("name", "age", "console.log('哈哈哈');")
+    f7('张三', 18);
+</script>
 </body>
 </html>

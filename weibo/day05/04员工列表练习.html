@@ -21,7 +21,7 @@
 
 <script>
     //1.创建函数,点击按钮时执行
-    function addEmp(){
+    function addEmp() {
         //2.创建要生成的tr元素-表格行
         let tr = document.createElement("tr");
         //3.创建每行的3个td元素-单元格
@@ -38,7 +38,7 @@
         salaryTd.innerHTML = uSalary;
         jobTd.innerHTML = uJob;
         //6.将创建好的3个单元格放到tr里
-        tr.append(nameTd,salaryTd,jobTd);
+        tr.append(nameTd, salaryTd, jobTd);
         console.log(tr);
         //7.获取table元素,并且把生成的tr行放到table表格里
         document.querySelector('table').append(tr);

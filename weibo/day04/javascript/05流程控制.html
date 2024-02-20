@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>05流程控制</title>
+</head>
+<body>
+<script>
+    //1.顺序结构
+    console.log(1);
+    console.log(2);
+    console.log(3);
+    //2.分支结构
+    if ('3' > '10') {
+        console.log('比较的是字符编码 51>49');
+    } else {
+        console.log('比较的是数字');
+    }
+    //3.分支结构 switch
+    let gender = 'hhh';
+    switch (gender) {
+        case 1 :
+            console.log('先生');
+            break;
+        case 0 :
+            console.log('女士');
+            break;
+        default:
+            console.log('数据有误!');
+    }
+    //4.循环结构
+    let names = ['张三', '李四', '王五', '赵六'];
+    for (let i = 0; i < names.length; i++) {
+        console.log(names[i]);
+    }
+    //如果把上面的let改成var,此处的i就可以打印出来
+    //console.log(i);
+    //let声明的是局部变量 var声明的是全局变量
+
+    //增强for循环 n就相当于是names[i]
+    for (let n of names) {
+        console.log(n + "~~~")
+    }
+</script>
+</body>
+</html>
