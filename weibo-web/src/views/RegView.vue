@@ -23,6 +23,7 @@
 import {ref} from "vue";
 import {ElMessage} from "element-plus";
 
+/*创建一个user对象用于储存输入框输入的信息*/
 const user = ref({
   username: '',
   password: '',
