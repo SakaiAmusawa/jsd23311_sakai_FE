@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4aa361d5-6587-4227-b7e0-15aa97a833bb" name="Changes" comment="安装qs 对代码进行优化">
-      <change beforePath="$PROJECT_DIR$/weibo-web/src/views/LoginView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/weibo-web/src/views/LoginView.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo/src/main/java/top/sakai/web/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/weibo/src/main/java/top/sakai/web/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo/src/main/java/top/sakai/web/service/impl/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/weibo/src/main/java/top/sakai/web/service/impl/UserService.java" afterDir="false" />
-    </list>
+    <list default="true" id="4aa361d5-6587-4227-b7e0-15aa97a833bb" name="Changes" comment="命名错误的改正" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -83,7 +79,7 @@
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "1.8",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Sakai/JavaProject/sakai/jsd2311_sakai_SSM",
+    "last_opened_file_path": "C:/Users/Sakai/JavaProject/teacher/jsd2311-3-teacher",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -130,10 +126,10 @@
   <component name="RunManager" selected="Spring Boot.WebApplication">
     <configuration name="WebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="weibo" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="top.sakai.web.WebApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="top.sakai.weibo.WebApplication" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="top.sakai.web.*" />
+          <option name="PATTERN" value="top.sakai.weibo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -213,23 +209,7 @@
       <workItem from="1708260875627" duration="314000" />
       <workItem from="1708302599676" duration="1261000" />
       <workItem from="1708390871791" duration="23921000" />
-      <workItem from="1708477368031" duration="18803000" />
-    </task>
-    <task id="LOCAL-00127" summary="菜单组件Demo">
-      <option name="closed" value="true" />
-      <created>1708260761417</created>
-      <option name="number" value="00127" />
-      <option name="presentableId" value="LOCAL-00127" />
-      <option name="project" value="LOCAL" />
-      <updated>1708260761417</updated>
-    </task>
-    <task id="LOCAL-00128" summary="菜单组件Demo">
-      <option name="closed" value="true" />
-      <created>1708260888588</created>
-      <option name="number" value="00128" />
-      <option name="presentableId" value="LOCAL-00128" />
-      <option name="project" value="LOCAL" />
-      <updated>1708260888588</updated>
+      <workItem from="1708477368031" duration="20095000" />
     </task>
     <task id="LOCAL-00129" summary="布局组件Demo">
       <option name="closed" value="true" />
@@ -607,7 +587,23 @@
       <option name="project" value="LOCAL" />
       <updated>1708501987023</updated>
     </task>
-    <option name="localTasksCounter" value="176" />
+    <task id="LOCAL-00176" summary="登录页面的完成">
+      <option name="closed" value="true" />
+      <created>1708504584935</created>
+      <option name="number" value="00176" />
+      <option name="presentableId" value="LOCAL-00176" />
+      <option name="project" value="LOCAL" />
+      <updated>1708504584935</updated>
+    </task>
+    <task id="LOCAL-00177" summary="命名错误的改正">
+      <option name="closed" value="true" />
+      <created>1708505749330</created>
+      <option name="number" value="00177" />
+      <option name="presentableId" value="LOCAL-00177" />
+      <option name="project" value="LOCAL" />
+      <updated>1708505749330</updated>
+    </task>
+    <option name="localTasksCounter" value="178" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -626,8 +622,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="用户管理页面完成" />
-    <MESSAGE value="轮播图管理页面完成" />
     <MESSAGE value="个人信息页面完成" />
     <MESSAGE value="内容管理页面完成" />
     <MESSAGE value="发布内容页面完成" />
@@ -651,7 +645,9 @@
     <MESSAGE value="异常处理" />
     <MESSAGE value="注册页面前端修改" />
     <MESSAGE value="安装qs 对代码进行优化" />
-    <option name="LAST_COMMIT_MESSAGE" value="安装qs 对代码进行优化" />
+    <MESSAGE value="登录页面的完成" />
+    <MESSAGE value="命名错误的改正" />
+    <option name="LAST_COMMIT_MESSAGE" value="命名错误的改正" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
