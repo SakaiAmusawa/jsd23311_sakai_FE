@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4aa361d5-6587-4227-b7e0-15aa97a833bb" name="Changes" comment="微博项目注册页前端:为注册按钮添加点击事件（在控制台打印消息，查看是否获得了输入的文字）" />
+    <list default="true" id="4aa361d5-6587-4227-b7e0-15aa97a833bb" name="Changes" comment="微博项目注册页前端:为注册按钮添加点击事件（使用axios工具，使得前端向后端发送请求）">
+      <change afterPath="$PROJECT_DIR$/weibo/src/main/java/top/sakai/web/controller/UserController.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,6 +18,7 @@
         <option value="JavaScript File" />
         <option value="HTML File" />
         <option value="Vue Composition API Component" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -207,31 +210,7 @@
       <workItem from="1708260875627" duration="314000" />
       <workItem from="1708302599676" duration="1261000" />
       <workItem from="1708390871791" duration="23921000" />
-      <workItem from="1708477368031" duration="3609000" />
-    </task>
-    <task id="LOCAL-00102" summary="删除文件">
-      <option name="closed" value="true" />
-      <created>1708247173247</created>
-      <option name="number" value="00102" />
-      <option name="presentableId" value="LOCAL-00102" />
-      <option name="project" value="LOCAL" />
-      <updated>1708247173247</updated>
-    </task>
-    <task id="LOCAL-00103" summary="烘焙坊项目的创建">
-      <option name="closed" value="true" />
-      <created>1708247448038</created>
-      <option name="number" value="00103" />
-      <option name="presentableId" value="LOCAL-00103" />
-      <option name="project" value="LOCAL" />
-      <updated>1708247448038</updated>
-    </task>
-    <task id="LOCAL-00104" summary="修改端口号为3016">
-      <option name="closed" value="true" />
-      <created>1708247519914</created>
-      <option name="number" value="00104" />
-      <option name="presentableId" value="LOCAL-00104" />
-      <option name="project" value="LOCAL" />
-      <updated>1708247519914</updated>
+      <workItem from="1708477368031" duration="5134000" />
     </task>
     <task id="LOCAL-00105" summary="修改配置文件 并在Terminal执行&#10;npm install element-plus --save命令">
       <option name="closed" value="true" />
@@ -601,7 +580,31 @@
       <option name="project" value="LOCAL" />
       <updated>1708480330551</updated>
     </task>
-    <option name="localTasksCounter" value="151" />
+    <task id="LOCAL-00151" summary="微博项目注册页前端:为注册按钮添加点击事件（在控制台打印消息，查看是否获得了输入的文字）">
+      <option name="closed" value="true" />
+      <created>1708481128333</created>
+      <option name="number" value="00151" />
+      <option name="presentableId" value="LOCAL-00151" />
+      <option name="project" value="LOCAL" />
+      <updated>1708481128333</updated>
+    </task>
+    <task id="LOCAL-00152" summary="使用 npm install axios 安装axios(作用:用于前端向后端发送数据)">
+      <option name="closed" value="true" />
+      <created>1708481388466</created>
+      <option name="number" value="00152" />
+      <option name="presentableId" value="LOCAL-00152" />
+      <option name="project" value="LOCAL" />
+      <updated>1708481388466</updated>
+    </task>
+    <task id="LOCAL-00153" summary="微博项目注册页前端:为注册按钮添加点击事件（使用axios工具，使得前端向后端发送请求）">
+      <option name="closed" value="true" />
+      <created>1708482084826</created>
+      <option name="number" value="00153" />
+      <option name="presentableId" value="LOCAL-00153" />
+      <option name="project" value="LOCAL" />
+      <updated>1708482084827</updated>
+    </task>
+    <option name="localTasksCounter" value="154" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -620,8 +623,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="删除不必要的内容" />
-    <MESSAGE value="项目页面的创建以及路径的配置" />
     <MESSAGE value="添加了背景色" />
     <MESSAGE value="添加了所需要的图片" />
     <MESSAGE value="添加了&lt;router-view/&gt;使其能够正确显示内容" />
@@ -645,7 +646,9 @@
     <MESSAGE value="格式化" />
     <MESSAGE value="微博项目注册页前端:声明一个响应式对象，将输入框进行双向绑定" />
     <MESSAGE value="微博项目注册页前端:为注册按钮添加点击事件（在控制台打印消息，查看是否获得了输入的文字）" />
-    <option name="LAST_COMMIT_MESSAGE" value="微博项目注册页前端:为注册按钮添加点击事件（在控制台打印消息，查看是否获得了输入的文字）" />
+    <MESSAGE value="使用 npm install axios 安装axios(作用:用于前端向后端发送数据)" />
+    <MESSAGE value="微博项目注册页前端:为注册按钮添加点击事件（使用axios工具，使得前端向后端发送请求）" />
+    <option name="LAST_COMMIT_MESSAGE" value="微博项目注册页前端:为注册按钮添加点击事件（使用axios工具，使得前端向后端发送请求）" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
