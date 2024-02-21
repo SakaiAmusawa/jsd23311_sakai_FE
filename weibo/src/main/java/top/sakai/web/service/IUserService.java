@@ -4,7 +4,6 @@ import org.springframework.stereotype.Service;
 import top.sakai.web.pojo.dto.UserLoginDTO;
 import top.sakai.web.pojo.dto.UserRegDTO;
 
-@Service
 public interface IUserService {
     void reg(UserRegDTO userRegDTO);
 
