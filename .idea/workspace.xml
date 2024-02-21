@@ -208,15 +208,7 @@
       <workItem from="1708260875627" duration="314000" />
       <workItem from="1708302599676" duration="1261000" />
       <workItem from="1708390871791" duration="23921000" />
-      <workItem from="1708477368031" duration="5984000" />
-    </task>
-    <task id="LOCAL-00107" summary="删除不必要的内容">
-      <option name="closed" value="true" />
-      <created>1708247943534</created>
-      <option name="number" value="00107" />
-      <option name="presentableId" value="LOCAL-00107" />
-      <option name="project" value="LOCAL" />
-      <updated>1708247943534</updated>
+      <workItem from="1708477368031" duration="6810000" />
     </task>
     <task id="LOCAL-00108" summary="烘焙坊项目的创建">
       <option name="closed" value="true" />
@@ -602,7 +594,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708483434665</updated>
     </task>
-    <option name="localTasksCounter" value="156" />
+    <task id="LOCAL-00156" summary="添加WebConfig,修改MVC跨域请求的配置">
+      <option name="closed" value="true" />
+      <created>1708483526308</created>
+      <option name="number" value="00156" />
+      <option name="presentableId" value="LOCAL-00156" />
+      <option name="project" value="LOCAL" />
+      <updated>1708483526308</updated>
+    </task>
+    <option name="localTasksCounter" value="157" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
