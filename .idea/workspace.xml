@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4aa361d5-6587-4227-b7e0-15aa97a833bb" name="Changes" comment="创建UserMapper">
-      <change beforePath="$PROJECT_DIR$/weibo/src/main/java/top/sakai/web/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/weibo/src/main/java/top/sakai/web/controller/UserController.java" afterDir="false" />
-    </list>
+    <list default="true" id="4aa361d5-6587-4227-b7e0-15aa97a833bb" name="Changes" comment="完成用户注册功能(两层架构的完成)" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -211,23 +209,7 @@
       <workItem from="1708260875627" duration="314000" />
       <workItem from="1708302599676" duration="1261000" />
       <workItem from="1708390871791" duration="23921000" />
-      <workItem from="1708477368031" duration="8286000" />
-    </task>
-    <task id="LOCAL-00112" summary="项目页面的创建以及路径的配置">
-      <option name="closed" value="true" />
-      <created>1708248849447</created>
-      <option name="number" value="00112" />
-      <option name="presentableId" value="LOCAL-00112" />
-      <option name="project" value="LOCAL" />
-      <updated>1708248849447</updated>
-    </task>
-    <task id="LOCAL-00113" summary="添加了背景色">
-      <option name="closed" value="true" />
-      <created>1708249234547</created>
-      <option name="number" value="00113" />
-      <option name="presentableId" value="LOCAL-00113" />
-      <option name="project" value="LOCAL" />
-      <updated>1708249234547</updated>
+      <workItem from="1708477368031" duration="8675000" />
     </task>
     <task id="LOCAL-00114" summary="添加了所需要的图片">
       <option name="closed" value="true" />
@@ -605,7 +587,23 @@
       <option name="project" value="LOCAL" />
       <updated>1708485863515</updated>
     </task>
-    <option name="localTasksCounter" value="161" />
+    <task id="LOCAL-00161" summary="小修改">
+      <option name="closed" value="true" />
+      <created>1708486437913</created>
+      <option name="number" value="00161" />
+      <option name="presentableId" value="LOCAL-00161" />
+      <option name="project" value="LOCAL" />
+      <updated>1708486437913</updated>
+    </task>
+    <task id="LOCAL-00162" summary="完成用户注册功能(两层架构的完成)">
+      <option name="closed" value="true" />
+      <created>1708486515275</created>
+      <option name="number" value="00162" />
+      <option name="presentableId" value="LOCAL-00162" />
+      <option name="project" value="LOCAL" />
+      <updated>1708486515275</updated>
+    </task>
+    <option name="localTasksCounter" value="163" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -624,8 +622,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="错误的安装element plus 以修正" />
-    <MESSAGE value="选择器组件Demo" />
     <MESSAGE value="开关组件Demo" />
     <MESSAGE value="表单组件Demo" />
     <MESSAGE value="表格组件Demo" />
@@ -649,7 +645,9 @@
     <MESSAGE value="添加UserMapper接口" />
     <MESSAGE value="定义查询方法和插入方法" />
     <MESSAGE value="创建UserMapper" />
-    <option name="LAST_COMMIT_MESSAGE" value="创建UserMapper" />
+    <MESSAGE value="小修改" />
+    <MESSAGE value="完成用户注册功能(两层架构的完成)" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成用户注册功能(两层架构的完成)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
