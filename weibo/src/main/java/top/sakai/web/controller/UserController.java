@@ -12,6 +12,7 @@ import top.sakai.web.service.IUserService;
 @RestController
 @RequestMapping("/v1/users/")
 public class UserController {
+    //不再注入UserMapper,而是注入业务接口
     @Autowired
     IUserService userService;//注入的是接口
 
