@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4aa361d5-6587-4227-b7e0-15aa97a833bb" name="Changes" comment="微博项目注册页前端:为注册按钮添加点击事件（使用axios工具，使得前端向后端发送请求）">
-      <change afterPath="$PROJECT_DIR$/weibo/src/main/java/top/sakai/web/controller/UserController.java" afterDir="false" />
-    </list>
+    <list default="true" id="4aa361d5-6587-4227-b7e0-15aa97a833bb" name="Changes" comment="添加WebConfig,修改MVC跨域请求的配置" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -210,23 +208,7 @@
       <workItem from="1708260875627" duration="314000" />
       <workItem from="1708302599676" duration="1261000" />
       <workItem from="1708390871791" duration="23921000" />
-      <workItem from="1708477368031" duration="5134000" />
-    </task>
-    <task id="LOCAL-00105" summary="修改配置文件 并在Terminal执行&#10;npm install element-plus --save命令">
-      <option name="closed" value="true" />
-      <created>1708247713080</created>
-      <option name="number" value="00105" />
-      <option name="presentableId" value="LOCAL-00105" />
-      <option name="project" value="LOCAL" />
-      <updated>1708247713080</updated>
-    </task>
-    <task id="LOCAL-00106" summary="删除不必要的内容">
-      <option name="closed" value="true" />
-      <created>1708247795788</created>
-      <option name="number" value="00106" />
-      <option name="presentableId" value="LOCAL-00106" />
-      <option name="project" value="LOCAL" />
-      <updated>1708247795788</updated>
+      <workItem from="1708477368031" duration="5984000" />
     </task>
     <task id="LOCAL-00107" summary="删除不必要的内容">
       <option name="closed" value="true" />
@@ -604,7 +586,23 @@
       <option name="project" value="LOCAL" />
       <updated>1708482084827</updated>
     </task>
-    <option name="localTasksCounter" value="154" />
+    <task id="LOCAL-00154" summary="微博项目注册页后端:接受前端发送的数据">
+      <option name="closed" value="true" />
+      <created>1708482585531</created>
+      <option name="number" value="00154" />
+      <option name="presentableId" value="LOCAL-00154" />
+      <option name="project" value="LOCAL" />
+      <updated>1708482585531</updated>
+    </task>
+    <task id="LOCAL-00155" summary="添加WebConfig,修改MVC跨域请求的配置">
+      <option name="closed" value="true" />
+      <created>1708483434665</created>
+      <option name="number" value="00155" />
+      <option name="presentableId" value="LOCAL-00155" />
+      <option name="project" value="LOCAL" />
+      <updated>1708483434665</updated>
+    </task>
+    <option name="localTasksCounter" value="156" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -623,8 +621,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="添加了背景色" />
-    <MESSAGE value="添加了所需要的图片" />
     <MESSAGE value="添加了&lt;router-view/&gt;使其能够正确显示内容" />
     <MESSAGE value="格式化了代码" />
     <MESSAGE value="添加了测试内容，并测试了跳转是否正常" />
@@ -648,7 +644,9 @@
     <MESSAGE value="微博项目注册页前端:为注册按钮添加点击事件（在控制台打印消息，查看是否获得了输入的文字）" />
     <MESSAGE value="使用 npm install axios 安装axios(作用:用于前端向后端发送数据)" />
     <MESSAGE value="微博项目注册页前端:为注册按钮添加点击事件（使用axios工具，使得前端向后端发送请求）" />
-    <option name="LAST_COMMIT_MESSAGE" value="微博项目注册页前端:为注册按钮添加点击事件（使用axios工具，使得前端向后端发送请求）" />
+    <MESSAGE value="微博项目注册页后端:接受前端发送的数据" />
+    <MESSAGE value="添加WebConfig,修改MVC跨域请求的配置" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加WebConfig,修改MVC跨域请求的配置" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
