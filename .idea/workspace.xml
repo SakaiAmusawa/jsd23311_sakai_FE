@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4aa361d5-6587-4227-b7e0-15aa97a833bb" name="Changes" comment="添加WebConfig,修改MVC跨域请求的配置" />
+    <list default="true" id="4aa361d5-6587-4227-b7e0-15aa97a833bb" name="Changes" comment="定义查询方法和插入方法">
+      <change afterPath="$PROJECT_DIR$/weibo/src/main/resources/mappers/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,6 +20,7 @@
         <option value="HTML File" />
         <option value="Vue Composition API Component" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -62,49 +66,49 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Spring Boot.WebApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Sakai/JavaProject/sakai/jsd2311_sakai_FE&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;npm.serve.executor&quot;: &quot;Run&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;JavaScript.Libraries&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\IntelliJ IDEA 2023.3.2\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.WebApplication.executor": "Run",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "jdk.selected.JAVA_MODULE": "1.8",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Sakai/JavaProject/sakai/jsd2311_sakai_FE/weibo/src/main/resources/mappers",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.serve.executor": "Run",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2023.3.2\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;vue.recent.templates&quot;: [
-      &quot;Vue Composition API Component&quot;
+  "keyToStringList": {
+    "vue.recent.templates": [
+      "Vue Composition API Component"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Sakai\JavaProject\sakai\jsd2311_sakai_FE\weibo\src\main\resources\mappers" />
       <recent name="C:\Users\Sakai\JavaProject\sakai\jsd2311_sakai_FE" />
       <recent name="C:\Users\Sakai\JavaProject\sakai\jsd2311_sakai_FE\web\src\main\java\top\sakai\web" />
       <recent name="C:\Users\Sakai\JavaProject\sakai\jsd2311_sakai_FE\baking-web\public" />
       <recent name="C:\Users\Sakai\JavaProject\sakai\jsd2311_sakai_FE\baking-web\src\views\admin" />
-      <recent name="C:\Users\Sakai\JavaProject\sakai\jsd2311_sakai_FE\baking-web\src\views\home\personal" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Sakai\JavaProject\sakai\jsd2311_sakai_FE\web" />
@@ -208,31 +212,7 @@
       <workItem from="1708260875627" duration="314000" />
       <workItem from="1708302599676" duration="1261000" />
       <workItem from="1708390871791" duration="23921000" />
-      <workItem from="1708477368031" duration="6810000" />
-    </task>
-    <task id="LOCAL-00108" summary="烘焙坊项目的创建">
-      <option name="closed" value="true" />
-      <created>1708248139739</created>
-      <option name="number" value="00108" />
-      <option name="presentableId" value="LOCAL-00108" />
-      <option name="project" value="LOCAL" />
-      <updated>1708248139739</updated>
-    </task>
-    <task id="LOCAL-00109" summary="修改端口号为3016">
-      <option name="closed" value="true" />
-      <created>1708248179902</created>
-      <option name="number" value="00109" />
-      <option name="presentableId" value="LOCAL-00109" />
-      <option name="project" value="LOCAL" />
-      <updated>1708248179902</updated>
-    </task>
-    <task id="LOCAL-00110" summary="修改配置文件 并在Terminal执行&#10;npm install element-plus --save命令">
-      <option name="closed" value="true" />
-      <created>1708248289872</created>
-      <option name="number" value="00110" />
-      <option name="presentableId" value="LOCAL-00110" />
-      <option name="project" value="LOCAL" />
-      <updated>1708248289872</updated>
+      <workItem from="1708477368031" duration="7859000" />
     </task>
     <task id="LOCAL-00111" summary="删除不必要的内容">
       <option name="closed" value="true" />
@@ -602,7 +582,31 @@
       <option name="project" value="LOCAL" />
       <updated>1708483526308</updated>
     </task>
-    <option name="localTasksCounter" value="157" />
+    <task id="LOCAL-00157" summary="添加WebConfig,修改MVC跨域请求的配置">
+      <option name="closed" value="true" />
+      <created>1708484773390</created>
+      <option name="number" value="00157" />
+      <option name="presentableId" value="LOCAL-00157" />
+      <option name="project" value="LOCAL" />
+      <updated>1708484773390</updated>
+    </task>
+    <task id="LOCAL-00158" summary="添加UserMapper接口">
+      <option name="closed" value="true" />
+      <created>1708485035983</created>
+      <option name="number" value="00158" />
+      <option name="presentableId" value="LOCAL-00158" />
+      <option name="project" value="LOCAL" />
+      <updated>1708485035983</updated>
+    </task>
+    <task id="LOCAL-00159" summary="定义查询方法和插入方法">
+      <option name="closed" value="true" />
+      <created>1708485191119</created>
+      <option name="number" value="00159" />
+      <option name="presentableId" value="LOCAL-00159" />
+      <option name="project" value="LOCAL" />
+      <updated>1708485191119</updated>
+    </task>
+    <option name="localTasksCounter" value="160" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -621,8 +625,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="添加了&lt;router-view/&gt;使其能够正确显示内容" />
-    <MESSAGE value="格式化了代码" />
     <MESSAGE value="添加了测试内容，并测试了跳转是否正常" />
     <MESSAGE value="错误的安装element plus 以修正" />
     <MESSAGE value="选择器组件Demo" />
@@ -646,7 +648,9 @@
     <MESSAGE value="微博项目注册页前端:为注册按钮添加点击事件（使用axios工具，使得前端向后端发送请求）" />
     <MESSAGE value="微博项目注册页后端:接受前端发送的数据" />
     <MESSAGE value="添加WebConfig,修改MVC跨域请求的配置" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加WebConfig,修改MVC跨域请求的配置" />
+    <MESSAGE value="添加UserMapper接口" />
+    <MESSAGE value="定义查询方法和插入方法" />
+    <option name="LAST_COMMIT_MESSAGE" value="定义查询方法和插入方法" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
