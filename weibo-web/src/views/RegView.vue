@@ -34,6 +34,7 @@ const user = ref({
 })
 
 const reg = () => {
+  //把JS对象转为查询字符串格式
   let data = qs.stringify(user.value);
   //console.log(user.value)
   //前端向服务器发出注册请求，需要工具axios，注意需要导入
