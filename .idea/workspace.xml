@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4aa361d5-6587-4227-b7e0-15aa97a833bb" name="Changes" comment="格式化">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="4aa361d5-6587-4227-b7e0-15aa97a833bb" name="Changes" comment="微博项目注册页前端:声明一个响应式对象，将输入框进行双向绑定">
       <change beforePath="$PROJECT_DIR$/weibo-web/src/views/RegView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/weibo-web/src/views/RegView.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -210,15 +209,7 @@
       <workItem from="1708260875627" duration="314000" />
       <workItem from="1708302599676" duration="1261000" />
       <workItem from="1708390871791" duration="23921000" />
-      <workItem from="1708477368031" duration="2327000" />
-    </task>
-    <task id="LOCAL-00100" summary="v2配置路径以及添加页面">
-      <option name="closed" value="true" />
-      <created>1708245889661</created>
-      <option name="number" value="00100" />
-      <option name="presentableId" value="LOCAL-00100" />
-      <option name="project" value="LOCAL" />
-      <updated>1708245889661</updated>
+      <workItem from="1708477368031" duration="2649000" />
     </task>
     <task id="LOCAL-00101" summary="寒假作业的完成">
       <option name="closed" value="true" />
@@ -604,7 +595,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708479200824</updated>
     </task>
-    <option name="localTasksCounter" value="149" />
+    <task id="LOCAL-00149" summary="微博项目注册页前端:声明一个响应式对象，将输入框进行双向绑定">
+      <option name="closed" value="true" />
+      <created>1708479828678</created>
+      <option name="number" value="00149" />
+      <option name="presentableId" value="LOCAL-00149" />
+      <option name="project" value="LOCAL" />
+      <updated>1708479828678</updated>
+    </task>
+    <option name="localTasksCounter" value="150" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -623,7 +622,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="修改端口号为3016" />
     <MESSAGE value="修改配置文件 并在Terminal执行&#10;npm install element-plus --save命令" />
     <MESSAGE value="删除不必要的内容" />
     <MESSAGE value="项目页面的创建以及路径的配置" />
@@ -648,7 +646,8 @@
     <MESSAGE value="发布内容页面完成" />
     <MESSAGE value="Weibo前后端项目准备" />
     <MESSAGE value="格式化" />
-    <option name="LAST_COMMIT_MESSAGE" value="格式化" />
+    <MESSAGE value="微博项目注册页前端:声明一个响应式对象，将输入框进行双向绑定" />
+    <option name="LAST_COMMIT_MESSAGE" value="微博项目注册页前端:声明一个响应式对象，将输入框进行双向绑定" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
