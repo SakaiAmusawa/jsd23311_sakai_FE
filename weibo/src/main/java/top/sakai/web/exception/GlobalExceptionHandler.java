@@ -76,7 +76,7 @@ public class GlobalExceptionHandler {
     @ExceptionHandler
     public JsonResult doHandleServiceException(ServiceException exception) {
         //1.在后端控制台打印错误日志
-        log.error("RuntimeException" + exception.getStatusCode().getMsg());
+        log.error("RuntimeException:" + exception.getStatusCode().getMsg());
         //2.返回错误状态码
         return new JsonResult(exception.getStatusCode());
     }

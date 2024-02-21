@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4aa361d5-6587-4227-b7e0-15aa97a833bb" name="Changes" comment="三层架构改造">
-      <change afterPath="$PROJECT_DIR$/weibo/src/main/java/top/sakai/web/exception/ServiceException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo/src/main/java/top/sakai/web/service/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/weibo/src/main/java/top/sakai/web/service/IUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo/src/main/java/top/sakai/web/service/impl/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/weibo/src/main/java/top/sakai/web/service/impl/UserService.java" afterDir="false" />
-    </list>
+    <list default="true" id="4aa361d5-6587-4227-b7e0-15aa97a833bb" name="Changes" comment="异常处理" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -214,31 +209,7 @@
       <workItem from="1708260875627" duration="314000" />
       <workItem from="1708302599676" duration="1261000" />
       <workItem from="1708390871791" duration="23921000" />
-      <workItem from="1708477368031" duration="13006000" />
-    </task>
-    <task id="LOCAL-00119" summary="添加了测试内容，并测试了跳转是否正常">
-      <option name="closed" value="true" />
-      <created>1708250416118</created>
-      <option name="number" value="00119" />
-      <option name="presentableId" value="LOCAL-00119" />
-      <option name="project" value="LOCAL" />
-      <updated>1708250416118</updated>
-    </task>
-    <task id="LOCAL-00120" summary="错误的安装element plus 以修正">
-      <option name="closed" value="true" />
-      <created>1708259567486</created>
-      <option name="number" value="00120" />
-      <option name="presentableId" value="LOCAL-00120" />
-      <option name="project" value="LOCAL" />
-      <updated>1708259567486</updated>
-    </task>
-    <task id="LOCAL-00121" summary="选择器组件Demo">
-      <option name="closed" value="true" />
-      <created>1708260072333</created>
-      <option name="number" value="00121" />
-      <option name="presentableId" value="LOCAL-00121" />
-      <option name="project" value="LOCAL" />
-      <updated>1708260072333</updated>
+      <workItem from="1708477368031" duration="13403000" />
     </task>
     <task id="LOCAL-00122" summary="选择器组件Demo">
       <option name="closed" value="true" />
@@ -608,7 +579,31 @@
       <option name="project" value="LOCAL" />
       <updated>1708488134570</updated>
     </task>
-    <option name="localTasksCounter" value="168" />
+    <task id="LOCAL-00168" summary="三层架构改造">
+      <option name="closed" value="true" />
+      <created>1708496759414</created>
+      <option name="number" value="00168" />
+      <option name="presentableId" value="LOCAL-00168" />
+      <option name="project" value="LOCAL" />
+      <updated>1708496759414</updated>
+    </task>
+    <task id="LOCAL-00169" summary="异常处理">
+      <option name="closed" value="true" />
+      <created>1708496781673</created>
+      <option name="number" value="00169" />
+      <option name="presentableId" value="LOCAL-00169" />
+      <option name="project" value="LOCAL" />
+      <updated>1708496781673</updated>
+    </task>
+    <task id="LOCAL-00170" summary="异常处理">
+      <option name="closed" value="true" />
+      <created>1708496846607</created>
+      <option name="number" value="00170" />
+      <option name="presentableId" value="LOCAL-00170" />
+      <option name="project" value="LOCAL" />
+      <updated>1708496846607</updated>
+    </task>
+    <option name="localTasksCounter" value="171" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -627,7 +622,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="布局组件Demo" />
     <MESSAGE value="注册页面改进" />
     <MESSAGE value="烘焙坊后台管理系统的共有头部和侧边栏的创建" />
     <MESSAGE value="用户管理页面完成" />
@@ -652,7 +646,8 @@
     <MESSAGE value="对UserController改造" />
     <MESSAGE value="改造" />
     <MESSAGE value="三层架构改造" />
-    <option name="LAST_COMMIT_MESSAGE" value="三层架构改造" />
+    <MESSAGE value="异常处理" />
+    <option name="LAST_COMMIT_MESSAGE" value="异常处理" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
