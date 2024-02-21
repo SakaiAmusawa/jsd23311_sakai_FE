@@ -2,8 +2,8 @@
   <div class="common-layout">
     <el-container>
       <el-header>
-        <el-menu mode="horizontal" background-color="#0aa1ed" text-color="#fff" active-text-color="#ff0"
-                 default-active="1">
+        <el-menu active-text-color="#ff0" background-color="#0aa1ed" default-active="1" mode="horizontal"
+                 text-color="#fff">
           <el-menu-item index="1">精彩活动</el-menu-item>
           <el-menu-item index="2">精品女装</el-menu-item>
           <el-menu-item index="3">品牌男装</el-menu-item>

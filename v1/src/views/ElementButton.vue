@@ -14,29 +14,29 @@
   <el-button type="danger">危险按钮</el-button>
   <br>
   <el-button plain>朴素按钮</el-button>
-  <el-button type="primary" plain>主要按钮</el-button>
-  <el-button type="success" plain>成功按钮</el-button>
-  <el-button type="info" plain>信息按钮</el-button>
-  <el-button type="warning" plain>警告按钮</el-button>
-  <el-button type="danger" plain>危险按钮</el-button>
+  <el-button plain type="primary">主要按钮</el-button>
+  <el-button plain type="success">成功按钮</el-button>
+  <el-button plain type="info">信息按钮</el-button>
+  <el-button plain type="warning">警告按钮</el-button>
+  <el-button plain type="danger">危险按钮</el-button>
   <br>
   <el-button round>圆角按钮</el-button>
-  <el-button type="primary" round>主要按钮</el-button>
-  <el-button type="success" round>成功按钮</el-button>
-  <el-button type="info" round>信息按钮</el-button>
-  <el-button type="warning" round>警告按钮</el-button>
-  <el-button type="danger" round>危险按钮</el-button>
+  <el-button round type="primary">主要按钮</el-button>
+  <el-button round type="success">成功按钮</el-button>
+  <el-button round type="info">信息按钮</el-button>
+  <el-button round type="warning">警告按钮</el-button>
+  <el-button round type="danger">危险按钮</el-button>
   <br>
-  <el-button icon="el-icon-search" circle></el-button>
-  <el-button type="primary" icon="el-icon-edit" circle></el-button>
-  <el-button type="success" icon="el-icon-check" circle></el-button>
-  <el-button type="info" icon="el-icon-message" circle></el-button>
-  <el-button type="warning" icon="el-icon-star-off" circle></el-button>
-  <el-button type="danger" icon="el-icon-delete" circle></el-button>
+  <el-button circle icon="el-icon-search"></el-button>
+  <el-button circle icon="el-icon-edit" type="primary"></el-button>
+  <el-button circle icon="el-icon-check" type="success"></el-button>
+  <el-button circle icon="el-icon-message" type="info"></el-button>
+  <el-button circle icon="el-icon-star-off" type="warning"></el-button>
+  <el-button circle icon="el-icon-delete" type="danger"></el-button>
 
   <hr>
 
-  <el-button type="primary" disabled>禁用按钮</el-button>
+  <el-button disabled type="primary">禁用按钮</el-button>
 
   <hr>
 

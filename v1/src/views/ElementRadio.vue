@@ -15,7 +15,7 @@ const showPrice = ref("$$$")
 </script>
 
 <template>
-<h1>单选组件</h1>
+  <h1>单选组件</h1>
   <el-radio-group v-model="edu">
     <el-radio-button label="初中">学历：初中</el-radio-button>
     <el-radio-button label="高中">学历：高中</el-radio-button>
@@ -27,7 +27,7 @@ const showPrice = ref("$$$")
   <hr>
 
   <el-radio-group v-model="showPrice">
-    <el-radio-button :label="fruit.price" v-for="fruit in arr">{{ fruit.title }}</el-radio-button>
+    <el-radio-button v-for="fruit in arr" :label="fruit.price">{{ fruit.title }}</el-radio-button>
   </el-radio-group>
   <h4>{{ showPrice }}</h4>
 </template>

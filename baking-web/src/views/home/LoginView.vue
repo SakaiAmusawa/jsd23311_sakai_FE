@@ -14,7 +14,7 @@
           <el-input placeholder="请输入密码" type="password"></el-input>
         </el-form-item>
         <el-form-item>
-          <el-button type="primary" style="width: 100%;">登录</el-button>
+          <el-button style="width: 100%;" type="primary">登录</el-button>
         </el-form-item>
       </el-form>
     </el-card>
@@ -31,7 +31,8 @@
   .box-card {
     background-color: transparent;
   }
-  ::v-deep(*.el-input__wrapper){
+
+  ::v-deep(*.el-input__wrapper) {
     background-color: transparent;
   }
 }

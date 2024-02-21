@@ -3,7 +3,7 @@
 </script>
 
 <template>
-<h1>用户管理页面</h1>
+  <h1>用户管理页面</h1>
 </template>
 
 <style scoped>

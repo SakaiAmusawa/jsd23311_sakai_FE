@@ -13,9 +13,9 @@ url.value = "https://www.jd.com"
   <!-- 属性绑定：将属性值与变量绑定 -->
   <input type="text" v-bind:value="info">
   <!-- 简写 -->
-  <input type="text" :value="info">
+  <input :value="info" type="text">
   <!-- 可以拼接 -->
-  <input type="text" :value="info+'内容拼接'">
+  <input :value="info+'内容拼接'" type="text">
 
   <hr>
   <a :href="url">超链接</a>

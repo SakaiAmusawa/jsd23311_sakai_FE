@@ -22,10 +22,10 @@ const handlePictureCardPreview = (uploadFile) => {
     <el-form-item label="头像">
       <el-upload
           v-model:file-list="fileList"
-          action="https://run.mocky.io/v3/9d059bf9-4660-45f2-925d-ce80ad6c4d15"
-          list-type="picture-card"
           :on-preview="handlePictureCardPreview"
           :on-remove="handleRemove"
+          action="https://run.mocky.io/v3/9d059bf9-4660-45f2-925d-ce80ad6c4d15"
+          list-type="picture-card"
       >
         <el-icon>
           <Plus/>
@@ -33,14 +33,14 @@ const handlePictureCardPreview = (uploadFile) => {
       </el-upload>
 
       <el-dialog v-model="dialogVisible">
-        <img w-full :src="dialogImageUrl" alt="Preview Image"/>
+        <img :src="dialogImageUrl" alt="Preview Image" w-full/>
       </el-dialog>
     </el-form-item>
     <el-form-item label="昵称">
       <el-input placeholder="请输入昵称"></el-input>
     </el-form-item>
     <el-form-item label="用户名">
-      <el-input placeholder="请输入用户名" value="tom" disabled></el-input>
+      <el-input disabled placeholder="请输入用户名" value="tom"></el-input>
     </el-form-item>
     <el-form-item>
       <el-button type="primary">保存修改</el-button>

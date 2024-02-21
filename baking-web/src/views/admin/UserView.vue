@@ -19,7 +19,7 @@ const del = (i, user) => {
 <!--用户管理页面-->
 <template>
   <el-table :data="arr">
-    <el-table-column type="index" label="编号" width="100px"></el-table-column>
+    <el-table-column label="编号" type="index" width="100px"></el-table-column>
     <el-table-column label="用户名" prop="username"></el-table-column>
     <el-table-column label="昵称" prop="nickname"></el-table-column>
     <el-table-column label="头像">

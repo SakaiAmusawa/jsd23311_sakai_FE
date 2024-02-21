@@ -1,10 +1,10 @@
 <script setup>
-import { ref } from "vue";
+import {ref} from "vue";
 
-const person = ref({ name: "", age: "", imgUrl: "", friends: [] });
+const person = ref({name: "", age: "", imgUrl: "", friends: []});
 
 const load = () => {
-  person.value = { name: "fcq", age: "20", imgUrl: "fcq.jpg", friends: ["路飞", "索隆"] };
+  person.value = {name: "fcq", age: "20", imgUrl: "fcq.jpg", friends: ["路飞", "索隆"]};
 };
 </script>
 

@@ -5,10 +5,10 @@
 <template>
   <div style="width: 1200px;margin: 0 auto;">
     <el-row :gutter="10" style="margin-top: 5px;">
-      <el-col :span="6" v-for="item in 4">
+      <el-col v-for="item in 4" :span="6">
         <el-card class="box-card">
-          <router-link to="/detail" style="text-decoration: none">
-            <img src="/imgs/a.jpg" alt="" style="width: 100%;height: 150px;">
+          <router-link style="text-decoration: none" to="/detail">
+            <img alt="" src="/imgs/a.jpg" style="width: 100%;height: 150px;">
             <p style="height: 40px;">奶油面包</p>
           </router-link>
           <el-row :gutter="10" style="margin-top: 5px;">

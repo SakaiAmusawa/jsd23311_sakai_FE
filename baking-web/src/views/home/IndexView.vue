@@ -17,7 +17,7 @@ import router from "@/router";
         <p style="font-size: 28px;margin: 10px">烘焙食谱</p>
       </el-col>
       <el-col :span="21">
-        <el-menu mode="horizontal" active-text-color="orange">
+        <el-menu active-text-color="orange" mode="horizontal">
           <el-menu-item index="1">全部</el-menu-item>
           <el-menu-item index="2">面包</el-menu-item>
           <el-menu-item index="3">小食</el-menu-item>
@@ -25,10 +25,10 @@ import router from "@/router";
       </el-col>
     </el-row>
     <el-row :gutter="10" style="margin-top: 5px;">
-      <el-col :span="6" v-for="item in 4">
+      <el-col v-for="item in 4" :span="6">
         <el-card class="box-card">
-          <router-link to="/detail" style="text-decoration: none;color: #333">
-            <img src="/imgs/a.jpg" alt="" style="width: 100%;height: 150px;">
+          <router-link style="text-decoration: none;color: #333" to="/detail">
+            <img alt="" src="/imgs/a.jpg" style="width: 100%;height: 150px;">
             <p style="height: 40px;">奶油面包</p>
           </router-link>
           <!--作者与分类-->
@@ -50,7 +50,7 @@ import router from "@/router";
         <p style="font-size: 28px;margin: 10px">烘焙视频</p>
       </el-col>
       <el-col :span="21">
-        <el-menu mode="horizontal" active-text-color="orange">
+        <el-menu active-text-color="orange" mode="horizontal">
           <el-menu-item index="1">全部</el-menu-item>
           <el-menu-item index="2">面包</el-menu-item>
           <el-menu-item index="3">小食</el-menu-item>
@@ -58,10 +58,10 @@ import router from "@/router";
       </el-col>
     </el-row>
     <el-row :gutter="10" style="margin-top: 5px;">
-      <el-col :span="6" v-for="item in 4">
+      <el-col v-for="item in 4" :span="6">
         <el-card class="box-card">
-          <router-link to="/detail" style="text-decoration: none;color: #333">
-            <img src="/imgs/a.jpg" alt="" style="width: 100%;height: 150px;">
+          <router-link style="text-decoration: none;color: #333" to="/detail">
+            <img alt="" src="/imgs/a.jpg" style="width: 100%;height: 150px;">
             <p style="height: 40px;">奶油面包</p>
           </router-link>
           <!--作者与分类-->
@@ -83,7 +83,7 @@ import router from "@/router";
         <p style="font-size: 28px;margin: 10px">行业资讯</p>
       </el-col>
       <el-col :span="21">
-        <el-menu mode="horizontal" active-text-color="orange">
+        <el-menu active-text-color="orange" mode="horizontal">
           <el-menu-item index="1">全部</el-menu-item>
           <el-menu-item index="2">面包</el-menu-item>
           <el-menu-item index="3">小食</el-menu-item>
@@ -91,10 +91,10 @@ import router from "@/router";
       </el-col>
     </el-row>
     <el-row :gutter="10" style="margin-top: 5px;">
-      <el-col :span="6" v-for="item in 4">
+      <el-col v-for="item in 4" :span="6">
         <el-card class="box-card">
-          <router-link to="/detail" style="text-decoration: none;color: #333">
-            <img src="/imgs/a.jpg" alt="" style="width: 100%;height: 150px;">
+          <router-link style="text-decoration: none;color: #333" to="/detail">
+            <img alt="" src="/imgs/a.jpg" style="width: 100%;height: 150px;">
             <p style="height: 40px;">奶油面包</p>
           </router-link>
           <!--作者与分类-->

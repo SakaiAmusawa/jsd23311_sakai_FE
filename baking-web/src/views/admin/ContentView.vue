@@ -103,19 +103,19 @@ const del = (i) => {
 <!--内容管理页-->
 <template>
   <el-table :data="arr">
-    <el-table-column type="index" label="编号" width="80" align="center"></el-table-column>
-    <el-table-column prop="title" label="标题" width="200" align="center"></el-table-column>
-    <el-table-column label="封面" width="100" align="center">
+    <el-table-column align="center" label="编号" type="index" width="80"></el-table-column>
+    <el-table-column align="center" label="标题" prop="title" width="200"></el-table-column>
+    <el-table-column align="center" label="封面" width="100">
       <template #default="scope">
         <img :src="scope.row.imgUrl" alt="" width="100%">
       </template>
     </el-table-column>
-    <el-table-column prop="brief" label="摘要" width="250" align="center"></el-table-column>
-    <el-table-column prop="categoryName" label="分类" width="80" align="center"></el-table-column>
-    <el-table-column prop="viewCount" label="浏览量" width="80" align="center"></el-table-column>
-    <el-table-column prop="commentCount" label="评论量" width="80" align="center"></el-table-column>
-    <el-table-column prop="createTime" label="创建时间" width="120" align="center"></el-table-column>
-    <el-table-column label="操作" align="center">
+    <el-table-column align="center" label="摘要" prop="brief" width="250"></el-table-column>
+    <el-table-column align="center" label="分类" prop="categoryName" width="80"></el-table-column>
+    <el-table-column align="center" label="浏览量" prop="viewCount" width="80"></el-table-column>
+    <el-table-column align="center" label="评论量" prop="commentCount" width="80"></el-table-column>
+    <el-table-column align="center" label="创建时间" prop="createTime" width="120"></el-table-column>
+    <el-table-column align="center" label="操作">
       <template #default="scope">
         <el-button type="success">编辑</el-button>
         <el-button type="danger" @click="del(scope.$index)">删除</el-button>

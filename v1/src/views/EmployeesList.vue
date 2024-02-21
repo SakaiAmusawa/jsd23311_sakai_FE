@@ -33,13 +33,13 @@ const del = (index, row) => {
   <h1>员工列表综合练习</h1>
   <el-form style="width: 600px;margin: 0 auto">
     <el-form-item label="姓名">
-      <el-input placeholder="请输入姓名" v-model="emp.name"></el-input>
+      <el-input v-model="emp.name" placeholder="请输入姓名"></el-input>
     </el-form-item>
     <el-form-item label="工资">
-      <el-input placeholder="请输入工资" v-model="emp.salary"></el-input>
+      <el-input v-model="emp.salary" placeholder="请输入工资"></el-input>
     </el-form-item>
     <el-form-item label="岗位">
-      <el-input placeholder="请输入岗位" v-model="emp.job"></el-input>
+      <el-input v-model="emp.job" placeholder="请输入岗位"></el-input>
     </el-form-item>
     <el-form-item>
       <el-button type="success" @click="add()">点我提交</el-button>

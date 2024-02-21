@@ -27,11 +27,11 @@ const submit = () => {
   <input v-model="info" type="text">
 
   <h3>登录页面</h3>
-  <input type="text" v-model="user.username" placeholder="请输入用户名">
-  <input type="password" v-model="user.password" placeholder="请输入密码">
+  <input v-model="user.username" placeholder="请输入用户名" type="text">
+  <input v-model="user.password" placeholder="请输入密码" type="password">
   <br>性别
-  <input type="radio" v-model="user.gender" name="gender" value="1">男
-  <input type="radio" v-model="user.gender" name="gender" value="0">女
+  <input v-model="user.gender" name="gender" type="radio" value="1">男
+  <input v-model="user.gender" name="gender" type="radio" value="0">女
   <br>
   <input type="button" value="login" @click="submit()">
 

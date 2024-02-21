@@ -16,8 +16,8 @@
         <!--共有左侧侧边栏-->
         <el-aside width="200px">
           <!--   此处的router 配合下面index的路径 起到点击跳转的效果       -->
-          <el-menu router default-active="/admin/user" active-text-color="orange" style="height: 100%;">
-            <img src="/imgs/icon.png" alt="" style="width: 150px;margin: 20px;">
+          <el-menu active-text-color="orange" default-active="/admin/user" router style="height: 100%;">
+            <img alt="" src="/imgs/icon.png" style="width: 150px;margin: 20px;">
             <el-menu-item index="/admin/user">
               <el-icon>
                 <User/>

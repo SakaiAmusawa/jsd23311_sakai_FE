@@ -25,7 +25,7 @@ const guess = () => {
 
 <template>
   <h1>猜数字练习</h1>
-  <input type="text" placeholder="请输入一个1~100之间的整数" v-model="number"><br>
+  <input v-model="number" placeholder="请输入一个1~100之间的整数" type="text"><br>
   <input type="button" value="猜测" @click="guess()">
   <h3>{{ result }}</h3>
 </template>

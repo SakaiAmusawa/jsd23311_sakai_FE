@@ -53,10 +53,10 @@ const handlePictureCardPreview = (uploadFile) => {
       <!--   封面上传开始    -->
       <el-upload
           v-model:file-list="fileList"
-          action="https://run.mocky.io/v3/9d059bf9-4660-45f2-925d-ce80ad6c4d15"
-          list-type="picture-card"
           :on-preview="handlePictureCardPreview"
           :on-remove="handleRemove"
+          action="https://run.mocky.io/v3/9d059bf9-4660-45f2-925d-ce80ad6c4d15"
+          list-type="picture-card"
       >
         <el-icon>
           <Plus/>
@@ -64,7 +64,7 @@ const handlePictureCardPreview = (uploadFile) => {
       </el-upload>
 
       <el-dialog v-model="dialogVisible">
-        <img w-full :src="dialogImageUrl" alt="Preview Image"/>
+        <img :src="dialogImageUrl" alt="Preview Image" w-full/>
       </el-dialog>
       <!--   封面上传结束    -->
     </el-form-item>

@@ -13,7 +13,7 @@
           <span style="color: #0aa1ed;font-weight: bold;">摘要：</span>这是摘要的内容...
         </el-card>
         <p>这是正文</p>
-        <img src="/imgs/bread.jpg" alt="" style="width: 100%;">
+        <img alt="" src="/imgs/bread.jpg" style="width: 100%;">
       </el-card>
       <!--   评论相关开始   -->
       <el-card style="margin-top: 10px;">
@@ -27,9 +27,9 @@
             <el-button type="primary">发布</el-button>
           </el-col>
         </el-row>
-        <el-row :gutter="10" style="margin-top: 10px;" v-for="item in 10">
+        <el-row v-for="item in 10" :gutter="10" style="margin-top: 10px;">
           <el-col :span="2">
-            <el-avatar style="margin: 10px;"><img src="/imgs/head.jpg" alt=""></el-avatar>
+            <el-avatar style="margin: 10px;"><img alt="" src="/imgs/head.jpg"></el-avatar>
           </el-col>
           <el-col :span="22">
             <p style="color: orange;font-weight: bold;margin: 0;font-size: 15px">传奇哥</p>
@@ -43,7 +43,7 @@
       <el-card>
         <div id="head-div"></div>
         <div style="text-align: center;position: relative;bottom: 45px">
-          <el-avatar :size="90" style="border: 5px solid #fff"><img src="/imgs/head.jpg" alt=""></el-avatar>
+          <el-avatar :size="90" style="border: 5px solid #fff"><img alt="" src="/imgs/head.jpg"></el-avatar>
           <p style="font-size: 20px;font-weight: bold;margin: 5px 0;">传奇哥</p>
           <el-icon class="head-icon">
             <Edit/>
@@ -60,9 +60,9 @@
       <el-card style="margin-top: 10px;">
         <h2>热门文章</h2>
         <hr>
-        <el-row :gutter="10" v-for="item in 4">
+        <el-row v-for="item in 4" :gutter="10">
           <el-col :span="10">
-            <img src="/imgs/a.jpg" alt="" style="width: 100%;">
+            <img alt="" src="/imgs/a.jpg" style="width: 100%;">
           </el-col>
           <el-col :span="14">
             <h3 style="height: 40px;margin-top: 0;">这是标题内容</h3>
@@ -74,9 +74,9 @@
       <el-card style="margin-top: 10px;">
         <h2>作者其他文章</h2>
         <hr>
-        <el-row :gutter="10" v-for="item in 4">
+        <el-row v-for="item in 4" :gutter="10">
           <el-col :span="10">
-            <img src="/imgs/a.jpg" alt="" style="width: 100%;">
+            <img alt="" src="/imgs/a.jpg" style="width: 100%;">
           </el-col>
           <el-col :span="14">
             <h3 style="height: 40px;margin-top: 0;">这是标题内容</h3>

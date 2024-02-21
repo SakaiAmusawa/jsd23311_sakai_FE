@@ -25,9 +25,9 @@ const add = () => {
 <template>
   <h1>员工列表练习</h1>
 
-  <input type="text" placeholder="please input name" v-model="e.name">
-  <input type="text" placeholder="please input salary" v-model="e.salary">
-  <input type="text" placeholder="please input job" v-model="e.job">
+  <input v-model="e.name" placeholder="please input name" type="text">
+  <input v-model="e.salary" placeholder="please input salary" type="text">
+  <input v-model="e.job" placeholder="please input job" type="text">
 
   <button @click="add()">添加</button>
 

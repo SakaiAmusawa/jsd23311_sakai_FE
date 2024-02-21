@@ -108,20 +108,20 @@ const del = (i) => {
     <el-radio-button label="2">烘焙视频</el-radio-button>
     <el-radio-button label="3">行业资讯</el-radio-button>
   </el-radio-group>
-  <el-button type="primary" style="margin-left: 20px;margin-top: 7px;" @click="router.push('/personal/post')">发布内容
+  <el-button style="margin-left: 20px;margin-top: 7px;" type="primary" @click="router.push('/personal/post')">发布内容
   </el-button>
   <el-table :data="arr">
-    <el-table-column type="index" label="编号" width="80" align="center"></el-table-column>
-    <el-table-column prop="title" label="标题" width="290" align="center"></el-table-column>
-    <el-table-column prop="categoryName" label="分类" width="80" align="center"></el-table-column>
-    <el-table-column prop="viewCount" label="浏览量" width="80" align="center"></el-table-column>
-    <el-table-column prop="commentCount" label="评论量" width="80" align="center"></el-table-column>
-    <el-table-column prop="createTime" label="发布时间" width="120" align="center"></el-table-column>
-    <el-table-column label="操作" align="center">
+    <el-table-column align="center" label="编号" type="index" width="80"></el-table-column>
+    <el-table-column align="center" label="标题" prop="title" width="290"></el-table-column>
+    <el-table-column align="center" label="分类" prop="categoryName" width="80"></el-table-column>
+    <el-table-column align="center" label="浏览量" prop="viewCount" width="80"></el-table-column>
+    <el-table-column align="center" label="评论量" prop="commentCount" width="80"></el-table-column>
+    <el-table-column align="center" label="发布时间" prop="createTime" width="120"></el-table-column>
+    <el-table-column align="center" label="操作">
       <template #default="scope">
         <el-button-group>
-          <el-button type="success" size="small">编辑</el-button>
-          <el-button type="danger" size="small" @click="del(scope.$index)">删除</el-button>
+          <el-button size="small" type="success">编辑</el-button>
+          <el-button size="small" type="danger" @click="del(scope.$index)">删除</el-button>
         </el-button-group>
       </template>
     </el-table-column>

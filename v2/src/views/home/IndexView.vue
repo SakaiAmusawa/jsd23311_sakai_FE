@@ -90,10 +90,10 @@ const productArr = ref([
         </el-carousel>
         <!--   商品列表     -->
         <el-row :gutter="10">
-          <el-col :span="6" v-for="p in productArr" style="margin: 10px 0;">
+          <el-col v-for="p in productArr" :span="6" style="margin: 10px 0;">
             <el-card class="box-card" style="padding-bottom: 20px">
               <router-link to="/detail">
-                <img :src="p.url" style="width: 100%;height: 100%;" alt="">
+                <img :src="p.url" alt="" style="width: 100%;height: 100%;">
                 <p>{{ p.title }}</p>
               </router-link>
               <div>

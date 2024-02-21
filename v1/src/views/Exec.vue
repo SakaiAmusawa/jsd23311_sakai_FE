@@ -83,8 +83,8 @@ const productArr = ref([
     <el-container>
       <el-header>
         <!--顶部导航栏-->
-        <el-menu mode="horizontal" background-color="#0aa1ed" text-color="#fff" active-text-color="#ff0"
-                 default-active="1">
+        <el-menu active-text-color="#ff0" background-color="#0aa1ed" default-active="1" mode="horizontal"
+                 text-color="#fff">
           <el-menu-item index="1">精彩活动</el-menu-item>
           <el-menu-item index="2">精品女装</el-menu-item>
           <el-menu-item index="3">品牌男装</el-menu-item>
@@ -101,9 +101,9 @@ const productArr = ref([
         </el-carousel>
         <!--   商品列表     -->
         <el-row :gutter="10">
-          <el-col :span="6" v-for="p in productArr" style="margin: 10px 0;">
+          <el-col v-for="p in productArr" :span="6" style="margin: 10px 0;">
             <el-card class="box-card" style="padding-bottom: 20px">
-              <img :src="p.url" style="width: 100%;height: 100%;" alt="">
+              <img :src="p.url" alt="" style="width: 100%;height: 100%;">
               <p>{{ p.title }}</p>
               <div>
                 <span style="float: left;color: red">

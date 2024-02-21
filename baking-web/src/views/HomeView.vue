@@ -10,7 +10,7 @@
           </el-col>
           <el-col :span="10">
             <!--头部导航栏-->
-            <el-menu @select="handleSelect" active-text-color="orange" mode="horizontal" style="height: 70px;">
+            <el-menu active-text-color="orange" mode="horizontal" style="height: 70px;" @select="handleSelect">
               <el-menu-item index="1">食谱</el-menu-item>
               <el-menu-item index="2">视频</el-menu-item>
               <el-menu-item index="3">资讯</el-menu-item>
@@ -29,14 +29,14 @@
             <el-popover title="欢迎访问烘焙坊">
               <template #reference>
                 <router-link to="/personal">
-                  <el-icon size="25" style="margin-top: 30px;" color="#666">
+                  <el-icon color="#666" size="25" style="margin-top: 30px;">
                     <User/>
                   </el-icon>
                 </router-link>
               </template>
               <div style="text-align: center">
-                <el-button type="info" size="small" @click="router.push('/reg')">注册</el-button>
-                <el-button type="warning" size="small" @click="router.push('/login')">登录</el-button>
+                <el-button size="small" type="info" @click="router.push('/reg')">注册</el-button>
+                <el-button size="small" type="warning" @click="router.push('/login')">登录</el-button>
               </div>
             </el-popover>
           </el-col>
@@ -53,12 +53,12 @@
         <div style="width: 1200px;margin: 0 auto;">
           <el-row :gutter="10">
             <el-col :span="8">
-              <img src="/imgs/icon.png" alt="LOGO">
+              <img alt="LOGO" src="/imgs/icon.png">
               <p>教程灵感就看烘焙坊</p>
               <p>烘焙行业网络社区平台</p>
               <p>全国成百上千个职位等你来</p>
             </el-col>
-            <el-col :span="8" id="footer-center">
+            <el-col id="footer-center" :span="8">
               <el-row :gutter="10">
                 <el-col :span="8">
                   <h3>关于我们</h3>
