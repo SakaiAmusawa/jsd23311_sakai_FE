@@ -18,6 +18,7 @@ public class UserController {
 
     @PostMapping("/reg")
     public JsonResult reg(@RequestBody UserRegDTO userRegDTO) {
+        //调用业务层代码，具体是什么业务 不关心
         userService.reg(userRegDTO);
         return JsonResult.ok();
     }
