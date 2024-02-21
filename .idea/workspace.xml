@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4aa361d5-6587-4227-b7e0-15aa97a833bb" name="Changes" comment="异常处理" />
+    <list default="true" id="4aa361d5-6587-4227-b7e0-15aa97a833bb" name="Changes" comment="注册页面前端修改">
+      <change beforePath="$PROJECT_DIR$/weibo-web/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/weibo-web/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weibo-web/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/weibo-web/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weibo-web/src/views/RegView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/weibo-web/src/views/RegView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weibo/src/main/java/top/sakai/web/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/weibo/src/main/java/top/sakai/web/controller/UserController.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -79,7 +84,7 @@
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "1.8",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Sakai/JavaProject/teacher/jsd2311-3-teacher",
+    "last_opened_file_path": "C:/Users/Sakai/JavaProject/sakai/jsd2311_sakai_SSM",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -209,23 +214,7 @@
       <workItem from="1708260875627" duration="314000" />
       <workItem from="1708302599676" duration="1261000" />
       <workItem from="1708390871791" duration="23921000" />
-      <workItem from="1708477368031" duration="14150000" />
-    </task>
-    <task id="LOCAL-00123" summary="开关组件Demo">
-      <option name="closed" value="true" />
-      <created>1708260254833</created>
-      <option name="number" value="00123" />
-      <option name="presentableId" value="LOCAL-00123" />
-      <option name="project" value="LOCAL" />
-      <updated>1708260254833</updated>
-    </task>
-    <task id="LOCAL-00124" summary="表单组件Demo">
-      <option name="closed" value="true" />
-      <created>1708260434642</created>
-      <option name="number" value="00124" />
-      <option name="presentableId" value="LOCAL-00124" />
-      <option name="project" value="LOCAL" />
-      <updated>1708260434642</updated>
+      <workItem from="1708477368031" duration="16173000" />
     </task>
     <task id="LOCAL-00125" summary="表单组件Demo">
       <option name="closed" value="true" />
@@ -603,7 +592,23 @@
       <option name="project" value="LOCAL" />
       <updated>1708496904060</updated>
     </task>
-    <option name="localTasksCounter" value="172" />
+    <task id="LOCAL-00172" summary="注册页面前端修改">
+      <option name="closed" value="true" />
+      <created>1708497990084</created>
+      <option name="number" value="00172" />
+      <option name="presentableId" value="LOCAL-00172" />
+      <option name="project" value="LOCAL" />
+      <updated>1708497990084</updated>
+    </task>
+    <task id="LOCAL-00173" summary="注册页面前端修改">
+      <option name="closed" value="true" />
+      <created>1708498268788</created>
+      <option name="number" value="00173" />
+      <option name="presentableId" value="LOCAL-00173" />
+      <option name="project" value="LOCAL" />
+      <updated>1708498268788</updated>
+    </task>
+    <option name="localTasksCounter" value="174" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -622,7 +627,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="注册页面改进" />
     <MESSAGE value="烘焙坊后台管理系统的共有头部和侧边栏的创建" />
     <MESSAGE value="用户管理页面完成" />
     <MESSAGE value="轮播图管理页面完成" />
@@ -647,7 +651,8 @@
     <MESSAGE value="改造" />
     <MESSAGE value="三层架构改造" />
     <MESSAGE value="异常处理" />
-    <option name="LAST_COMMIT_MESSAGE" value="异常处理" />
+    <MESSAGE value="注册页面前端修改" />
+    <option name="LAST_COMMIT_MESSAGE" value="注册页面前端修改" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
