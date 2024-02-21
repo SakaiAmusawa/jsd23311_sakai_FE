@@ -3,6 +3,7 @@ package top.sakai.web.service.impl;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import top.sakai.web.exception.ServiceException;
 import top.sakai.web.mapper.UserMapper;
 import top.sakai.web.pojo.dto.UserLoginDTO;
 import top.sakai.web.pojo.dto.UserRegDTO;

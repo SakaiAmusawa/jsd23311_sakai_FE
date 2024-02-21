@@ -67,12 +67,16 @@ public class GlobalExceptionHandler {
     }
 
     @ExceptionHandler
-    public JsonResult doHandle(ConstraintViolationException exception) {
+    public JsonResult doHandleConstraintViolationException(ConstraintViolationException exception) {
         String message = exception.getMessage().split(":")[1].trim();
         log.error(message);
         return new JsonResult(StatusCode.VALIDATED_ERROR, message);
+    }
 
-
+    @ExceptionHandler
+    public JsonResult doHandleServiceException(ServiceException exception) {
+        log.error("RuntimeException" + exception.getStatusCode().getMsg());
+        return new JsonResult(exception.getStatusCode());
     }
 
 }

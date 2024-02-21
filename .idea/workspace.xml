@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4aa361d5-6587-4227-b7e0-15aa97a833bb" name="Changes" comment="完成用户注册功能(两层架构的完成)" />
+    <list default="true" id="4aa361d5-6587-4227-b7e0-15aa97a833bb" name="Changes" comment="三层架构改造">
+      <change afterPath="$PROJECT_DIR$/weibo/src/main/java/top/sakai/web/exception/ServiceException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weibo/src/main/java/top/sakai/web/service/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/weibo/src/main/java/top/sakai/web/service/IUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weibo/src/main/java/top/sakai/web/service/impl/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/weibo/src/main/java/top/sakai/web/service/impl/UserService.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,8 +21,8 @@
         <option value="JavaScript File" />
         <option value="HTML File" />
         <option value="Vue Composition API Component" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -79,7 +84,7 @@
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "1.8",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Sakai/JavaProject/sakai/jsd2311_sakai_FE/weibo/src/main/resources/mappers",
+    "last_opened_file_path": "C:/Users/Sakai/JavaProject/teacher/jsd2311-3-teacher",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -209,47 +214,7 @@
       <workItem from="1708260875627" duration="314000" />
       <workItem from="1708302599676" duration="1261000" />
       <workItem from="1708390871791" duration="23921000" />
-      <workItem from="1708477368031" duration="8675000" />
-    </task>
-    <task id="LOCAL-00114" summary="添加了所需要的图片">
-      <option name="closed" value="true" />
-      <created>1708249338318</created>
-      <option name="number" value="00114" />
-      <option name="presentableId" value="LOCAL-00114" />
-      <option name="project" value="LOCAL" />
-      <updated>1708249338318</updated>
-    </task>
-    <task id="LOCAL-00115" summary="添加了&lt;router-view/&gt;使其能够正确显示内容">
-      <option name="closed" value="true" />
-      <created>1708249640122</created>
-      <option name="number" value="00115" />
-      <option name="presentableId" value="LOCAL-00115" />
-      <option name="project" value="LOCAL" />
-      <updated>1708249640122</updated>
-    </task>
-    <task id="LOCAL-00116" summary="格式化了代码">
-      <option name="closed" value="true" />
-      <created>1708249767352</created>
-      <option name="number" value="00116" />
-      <option name="presentableId" value="LOCAL-00116" />
-      <option name="project" value="LOCAL" />
-      <updated>1708249767352</updated>
-    </task>
-    <task id="LOCAL-00117" summary="添加了测试内容，并测试了跳转是否正常">
-      <option name="closed" value="true" />
-      <created>1708249960881</created>
-      <option name="number" value="00117" />
-      <option name="presentableId" value="LOCAL-00117" />
-      <option name="project" value="LOCAL" />
-      <updated>1708249960881</updated>
-    </task>
-    <task id="LOCAL-00118" summary="添加了测试内容，并测试了跳转是否正常">
-      <option name="closed" value="true" />
-      <created>1708250120074</created>
-      <option name="number" value="00118" />
-      <option name="presentableId" value="LOCAL-00118" />
-      <option name="project" value="LOCAL" />
-      <updated>1708250120074</updated>
+      <workItem from="1708477368031" duration="13006000" />
     </task>
     <task id="LOCAL-00119" summary="添加了测试内容，并测试了跳转是否正常">
       <option name="closed" value="true" />
@@ -603,7 +568,47 @@
       <option name="project" value="LOCAL" />
       <updated>1708486515275</updated>
     </task>
-    <option name="localTasksCounter" value="163" />
+    <task id="LOCAL-00163" summary="创建service层 并创建IUserService接口并实现接口">
+      <option name="closed" value="true" />
+      <created>1708487510060</created>
+      <option name="number" value="00163" />
+      <option name="presentableId" value="LOCAL-00163" />
+      <option name="project" value="LOCAL" />
+      <updated>1708487510060</updated>
+    </task>
+    <task id="LOCAL-00164" summary="对UserController改造">
+      <option name="closed" value="true" />
+      <created>1708487605000</created>
+      <option name="number" value="00164" />
+      <option name="presentableId" value="LOCAL-00164" />
+      <option name="project" value="LOCAL" />
+      <updated>1708487605000</updated>
+    </task>
+    <task id="LOCAL-00165" summary="对UserController改造">
+      <option name="closed" value="true" />
+      <created>1708487679520</created>
+      <option name="number" value="00165" />
+      <option name="presentableId" value="LOCAL-00165" />
+      <option name="project" value="LOCAL" />
+      <updated>1708487679520</updated>
+    </task>
+    <task id="LOCAL-00166" summary="改造">
+      <option name="closed" value="true" />
+      <created>1708487837526</created>
+      <option name="number" value="00166" />
+      <option name="presentableId" value="LOCAL-00166" />
+      <option name="project" value="LOCAL" />
+      <updated>1708487837526</updated>
+    </task>
+    <task id="LOCAL-00167" summary="三层架构改造">
+      <option name="closed" value="true" />
+      <created>1708488134570</created>
+      <option name="number" value="00167" />
+      <option name="presentableId" value="LOCAL-00167" />
+      <option name="project" value="LOCAL" />
+      <updated>1708488134570</updated>
+    </task>
+    <option name="localTasksCounter" value="168" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -622,10 +627,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="开关组件Demo" />
-    <MESSAGE value="表单组件Demo" />
-    <MESSAGE value="表格组件Demo" />
-    <MESSAGE value="菜单组件Demo" />
     <MESSAGE value="布局组件Demo" />
     <MESSAGE value="注册页面改进" />
     <MESSAGE value="烘焙坊后台管理系统的共有头部和侧边栏的创建" />
@@ -647,7 +648,11 @@
     <MESSAGE value="创建UserMapper" />
     <MESSAGE value="小修改" />
     <MESSAGE value="完成用户注册功能(两层架构的完成)" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成用户注册功能(两层架构的完成)" />
+    <MESSAGE value="创建service层 并创建IUserService接口并实现接口" />
+    <MESSAGE value="对UserController改造" />
+    <MESSAGE value="改造" />
+    <MESSAGE value="三层架构改造" />
+    <option name="LAST_COMMIT_MESSAGE" value="三层架构改造" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
