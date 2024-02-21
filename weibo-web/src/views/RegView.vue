@@ -38,7 +38,6 @@ const reg = () => {
     //response对象装载着相应内容，我们可以通过response.data得到服务器响应的数据
     console.log(response.data);
   })
-  ElMessage.success("注册成功")
 }
 
 </script>
