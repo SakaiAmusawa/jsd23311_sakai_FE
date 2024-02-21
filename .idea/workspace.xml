@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4aa361d5-6587-4227-b7e0-15aa97a833bb" name="Changes" comment="注册页面前端修改">
-      <change beforePath="$PROJECT_DIR$/weibo-web/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/weibo-web/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo-web/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/weibo-web/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo-web/src/views/RegView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/weibo-web/src/views/RegView.vue" afterDir="false" />
+    <list default="true" id="4aa361d5-6587-4227-b7e0-15aa97a833bb" name="Changes" comment="安装qs 对代码进行优化">
+      <change beforePath="$PROJECT_DIR$/weibo-web/src/views/LoginView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/weibo-web/src/views/LoginView.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weibo/src/main/java/top/sakai/web/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/weibo/src/main/java/top/sakai/web/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weibo/src/main/java/top/sakai/web/service/impl/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/weibo/src/main/java/top/sakai/web/service/impl/UserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -214,23 +213,7 @@
       <workItem from="1708260875627" duration="314000" />
       <workItem from="1708302599676" duration="1261000" />
       <workItem from="1708390871791" duration="23921000" />
-      <workItem from="1708477368031" duration="16173000" />
-    </task>
-    <task id="LOCAL-00125" summary="表单组件Demo">
-      <option name="closed" value="true" />
-      <created>1708260564526</created>
-      <option name="number" value="00125" />
-      <option name="presentableId" value="LOCAL-00125" />
-      <option name="project" value="LOCAL" />
-      <updated>1708260564526</updated>
-    </task>
-    <task id="LOCAL-00126" summary="表格组件Demo">
-      <option name="closed" value="true" />
-      <created>1708260658531</created>
-      <option name="number" value="00126" />
-      <option name="presentableId" value="LOCAL-00126" />
-      <option name="project" value="LOCAL" />
-      <updated>1708260658531</updated>
+      <workItem from="1708477368031" duration="18803000" />
     </task>
     <task id="LOCAL-00127" summary="菜单组件Demo">
       <option name="closed" value="true" />
@@ -608,7 +591,23 @@
       <option name="project" value="LOCAL" />
       <updated>1708498268788</updated>
     </task>
-    <option name="localTasksCounter" value="174" />
+    <task id="LOCAL-00174" summary="安装qs 对代码进行优化">
+      <option name="closed" value="true" />
+      <created>1708501593202</created>
+      <option name="number" value="00174" />
+      <option name="presentableId" value="LOCAL-00174" />
+      <option name="project" value="LOCAL" />
+      <updated>1708501593202</updated>
+    </task>
+    <task id="LOCAL-00175" summary="安装qs 对代码进行优化">
+      <option name="closed" value="true" />
+      <created>1708501987023</created>
+      <option name="number" value="00175" />
+      <option name="presentableId" value="LOCAL-00175" />
+      <option name="project" value="LOCAL" />
+      <updated>1708501987023</updated>
+    </task>
+    <option name="localTasksCounter" value="176" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -627,7 +626,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="烘焙坊后台管理系统的共有头部和侧边栏的创建" />
     <MESSAGE value="用户管理页面完成" />
     <MESSAGE value="轮播图管理页面完成" />
     <MESSAGE value="个人信息页面完成" />
@@ -652,7 +650,8 @@
     <MESSAGE value="三层架构改造" />
     <MESSAGE value="异常处理" />
     <MESSAGE value="注册页面前端修改" />
-    <option name="LAST_COMMIT_MESSAGE" value="注册页面前端修改" />
+    <MESSAGE value="安装qs 对代码进行优化" />
+    <option name="LAST_COMMIT_MESSAGE" value="安装qs 对代码进行优化" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
