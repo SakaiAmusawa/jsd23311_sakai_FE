@@ -23,6 +23,7 @@
 import {ref} from "vue";
 import {ElMessage} from "element-plus";
 import axios from "axios";
+import router from "@/router";
 
 /*创建一个user对象用于储存输入框输入的信息*/
 const user = ref({
@@ -36,7 +37,13 @@ const reg = () => {
   //前端向服务器发出注册请求，需要工具axios，注意需要导入
   axios.post('http://localhost:8080/v1/users/reg', user.value).then((response) => {
     //response对象装载着相应内容，我们可以通过response.data得到服务器响应的数据
-    console.log(response.data);
+    //console.log(response.data);
+    if (response.data.code == 2001) {
+      ElMessage.success('注册成功');
+      router.push('/')
+    } else {
+      ElMessage.error(response.data.msg)
+    }
   })
 }
 
