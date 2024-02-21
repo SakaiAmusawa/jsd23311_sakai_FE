@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4aa361d5-6587-4227-b7e0-15aa97a833bb" name="Changes" comment="定义查询方法和插入方法">
-      <change afterPath="$PROJECT_DIR$/weibo/src/main/resources/mappers/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="4aa361d5-6587-4227-b7e0-15aa97a833bb" name="Changes" comment="创建UserMapper">
+      <change beforePath="$PROJECT_DIR$/weibo/src/main/java/top/sakai/web/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/weibo/src/main/java/top/sakai/web/controller/UserController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -212,15 +211,7 @@
       <workItem from="1708260875627" duration="314000" />
       <workItem from="1708302599676" duration="1261000" />
       <workItem from="1708390871791" duration="23921000" />
-      <workItem from="1708477368031" duration="7859000" />
-    </task>
-    <task id="LOCAL-00111" summary="删除不必要的内容">
-      <option name="closed" value="true" />
-      <created>1708248404987</created>
-      <option name="number" value="00111" />
-      <option name="presentableId" value="LOCAL-00111" />
-      <option name="project" value="LOCAL" />
-      <updated>1708248404987</updated>
+      <workItem from="1708477368031" duration="8286000" />
     </task>
     <task id="LOCAL-00112" summary="项目页面的创建以及路径的配置">
       <option name="closed" value="true" />
@@ -606,7 +597,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708485191119</updated>
     </task>
-    <option name="localTasksCounter" value="160" />
+    <task id="LOCAL-00160" summary="创建UserMapper">
+      <option name="closed" value="true" />
+      <created>1708485863515</created>
+      <option name="number" value="00160" />
+      <option name="presentableId" value="LOCAL-00160" />
+      <option name="project" value="LOCAL" />
+      <updated>1708485863515</updated>
+    </task>
+    <option name="localTasksCounter" value="161" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -625,7 +624,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="添加了测试内容，并测试了跳转是否正常" />
     <MESSAGE value="错误的安装element plus 以修正" />
     <MESSAGE value="选择器组件Demo" />
     <MESSAGE value="开关组件Demo" />
@@ -650,7 +648,8 @@
     <MESSAGE value="添加WebConfig,修改MVC跨域请求的配置" />
     <MESSAGE value="添加UserMapper接口" />
     <MESSAGE value="定义查询方法和插入方法" />
-    <option name="LAST_COMMIT_MESSAGE" value="定义查询方法和插入方法" />
+    <MESSAGE value="创建UserMapper" />
+    <option name="LAST_COMMIT_MESSAGE" value="创建UserMapper" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
