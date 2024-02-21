@@ -31,7 +31,7 @@ const user = ref({
 })
 
 const reg = () => {
-  console.log(user.value)
+  //console.log(user.value)
   ElMessage.success("注册成功")
 }
 
