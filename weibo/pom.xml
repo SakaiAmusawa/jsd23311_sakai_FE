@@ -78,7 +78,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>${spring-boot.version}</version>
                 <configuration>
-                    <mainClass>top.sakai.web.WebApplication</mainClass>
+                    <mainClass>top.sakai.weibo.WebApplication</mainClass>
                     <skip>true</skip>
                 </configuration>
                 <executions>
