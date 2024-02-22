@@ -13,4 +13,6 @@ public interface WeiboMapper {
     List<WeiboIndexVO> selectForIndex();
 
     List<WeiboIndexVO> selectForId(Integer userId);
+
+    void deleteByWeiboId(Integer id);
 }

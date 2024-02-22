@@ -20,4 +20,9 @@
                  JOIN blog.user u on u.id = w.user_id
         WHERE w.user_id = #{userId}
     </select>
+    <delete id="deleteByWeiboId">
+        DELETE
+        FROM blog.weibo
+        WHERE id = #{id}
+    </delete>
 </mapper>

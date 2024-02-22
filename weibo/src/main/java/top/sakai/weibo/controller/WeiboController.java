@@ -2,10 +2,7 @@ package top.sakai.weibo.controller;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import top.sakai.weibo.pojo.dto.WeiboDTO;
 import top.sakai.weibo.pojo.vo.WeiboIndexVO;
 import top.sakai.weibo.response.JsonResult;
@@ -37,5 +34,12 @@ public class WeiboController {
         System.out.println("UserId = " + userId);
         List<WeiboIndexVO> list = weiboService.listForId(userId);
         return JsonResult.ok(list);
+    }
+
+    @PostMapping("{id}/delete")
+    public JsonResult deleteWeibo(@PathVariable Integer id) {
+        System.out.println("id = " + id);
+        weiboService.deleteByWeiboId(id);
+        return JsonResult.ok();
     }
 }

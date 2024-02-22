@@ -23,12 +23,31 @@ onMounted(() => {
   )
 })
 
+//添加删除微博的方法
+const del = (id, i) => {
+  if (confirm('确认删除微博？')) {
+    axios.post('http://localhost:8080/v1/weibo/' + id + '/delete').then(
+        (response => {
+          if (response.data.code === 2001) {
+            ElMessage.success('删除成功')
+            arr.value.splice(i, 1)
+            if (arr.value.length === 0) {
+              ElMessage.warning('快来发布一条微博吧')
+              router.push('/post')
+            }
+          }
+        })
+    )
+  }
+}
+
 </script>
 
 <template>
   <h1>个人中心页</h1>
-  <div v-for="weibo in arr">
-    <h3>{{ weibo.nickname }}说：{{ weibo.content }}</h3>
+  <div v-for="(weibo,i) in arr" style="width: 500px;height: 40px;margin: 0 auto;">
+    <h3 style="float: left;margin: 0;line-height: 32px;">{{ weibo.nickname }}说：{{ weibo.content }}</h3>
+    <el-button type="danger" style="float: right;" @click="del(weibo.id,i)">删除</el-button>
   </div>
 </template>
 

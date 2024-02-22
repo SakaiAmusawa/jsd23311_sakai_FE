@@ -42,4 +42,9 @@ public class WeiboService implements IWeiboService {
         List<WeiboIndexVO> list = weiboMapper.selectForId(userId);
         return list;
     }
+
+    @Override
+    public void deleteByWeiboId(Integer id) {
+        weiboMapper.deleteByWeiboId(id);
+    }
 }

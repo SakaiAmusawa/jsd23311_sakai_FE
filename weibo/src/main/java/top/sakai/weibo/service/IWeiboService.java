@@ -11,4 +11,6 @@ public interface IWeiboService {
     List<WeiboIndexVO> listForIndex();
 
     List<WeiboIndexVO> listForId(Integer userId);
+
+    void deleteByWeiboId(Integer id);
 }
