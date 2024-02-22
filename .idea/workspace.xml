@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4aa361d5-6587-4227-b7e0-15aa97a833bb" name="Changes" comment="system">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo-web/src/views/LoginView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/weibo-web/src/views/LoginView.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo/src/main/java/top/sakai/weibo/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/weibo/src/main/java/top/sakai/weibo/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo/src/main/java/top/sakai/weibo/service/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/weibo/src/main/java/top/sakai/weibo/service/IUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo/src/main/java/top/sakai/weibo/service/impl/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/weibo/src/main/java/top/sakai/weibo/service/impl/UserService.java" afterDir="false" />
-    </list>
+    <list default="true" id="4aa361d5-6587-4227-b7e0-15aa97a833bb" name="Changes" comment="使得后端向前端返回数据" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -216,15 +210,7 @@
       <workItem from="1708302599676" duration="1261000" />
       <workItem from="1708390871791" duration="23921000" />
       <workItem from="1708477368031" duration="22433000" />
-      <workItem from="1708562915947" duration="2419000" />
-    </task>
-    <task id="LOCAL-00132" summary="用户管理页面完成">
-      <option name="closed" value="true" />
-      <created>1708396850111</created>
-      <option name="number" value="00132" />
-      <option name="presentableId" value="LOCAL-00132" />
-      <option name="project" value="LOCAL" />
-      <updated>1708396850111</updated>
+      <workItem from="1708562915947" duration="3058000" />
     </task>
     <task id="LOCAL-00133" summary="轮播图管理页面完成">
       <option name="closed" value="true" />
@@ -610,7 +596,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708564463180</updated>
     </task>
-    <option name="localTasksCounter" value="181" />
+    <task id="LOCAL-00181" summary="使得后端向前端返回数据">
+      <option name="closed" value="true" />
+      <created>1708565936302</created>
+      <option name="number" value="00181" />
+      <option name="presentableId" value="LOCAL-00181" />
+      <option name="project" value="LOCAL" />
+      <updated>1708565936302</updated>
+    </task>
+    <option name="localTasksCounter" value="182" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -629,7 +623,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="发布内容页面完成" />
     <MESSAGE value="Weibo前后端项目准备" />
     <MESSAGE value="格式化" />
     <MESSAGE value="微博项目注册页前端:声明一个响应式对象，将输入框进行双向绑定" />
@@ -654,7 +647,8 @@
     <MESSAGE value="命名错误的改正" />
     <MESSAGE value="实现回车登录" />
     <MESSAGE value="system" />
-    <option name="LAST_COMMIT_MESSAGE" value="system" />
+    <MESSAGE value="使得后端向前端返回数据" />
+    <option name="LAST_COMMIT_MESSAGE" value="使得后端向前端返回数据" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
