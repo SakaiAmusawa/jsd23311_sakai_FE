@@ -19,7 +19,11 @@
 
   <hr>
   <div v-for="weibo in arr">
-    <h3>{{ weibo.nickname }}说：{{ weibo.content }}</h3>
+    <router-link :to="'/detail?id='+weibo.id" style="text-decoration: none;color: black"><h3>{{ weibo.nickname }}说：{{
+        weibo.content
+      }}</h3>
+    </router-link>
+
   </div>
 
 </template>

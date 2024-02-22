@@ -15,7 +15,8 @@
         ORDER BY w.created DESC
     </select>
     <select id="selectForId" resultType="top.sakai.weibo.pojo.vo.WeiboIndexVO">
-        SELECT w.id, w.content, u.nickname
+
+    SELECT w.id, w.content, u.nickname
         FROM blog.weibo w
                  JOIN blog.user u on u.id = w.user_id
         WHERE w.user_id = #{userId}
@@ -25,4 +26,10 @@
         FROM blog.weibo
         WHERE id = #{id}
     </delete>
+    <select id="selectWeiboDetail" resultType="top.sakai.weibo.pojo.vo.WeiboDetailVO">
+        SELECT w.content, w.created, w.id, u.nickname
+        FROM blog.weibo w
+                 Join blog.user u on u.id = w.user_id
+        WHERE w.id = #{id}
+    </select>
 </mapper>

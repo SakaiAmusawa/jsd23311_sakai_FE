@@ -7,6 +7,7 @@ import top.sakai.weibo.exception.ServiceException;
 import top.sakai.weibo.mapper.WeiboMapper;
 import top.sakai.weibo.pojo.dto.WeiboDTO;
 import top.sakai.weibo.pojo.entity.Weibo;
+import top.sakai.weibo.pojo.vo.WeiboDetailVO;
 import top.sakai.weibo.pojo.vo.WeiboIndexVO;
 import top.sakai.weibo.response.StatusCode;
 import top.sakai.weibo.service.IWeiboService;
@@ -46,5 +47,11 @@ public class WeiboService implements IWeiboService {
     @Override
     public void deleteByWeiboId(Integer id) {
         weiboMapper.deleteByWeiboId(id);
+    }
+
+    @Override
+    public WeiboDetailVO selectWeiboDetail(Integer id) {
+        WeiboDetailVO weiboDetailVO=weiboMapper.selectWeiboDetail(id);
+        return weiboDetailVO;
     }
 }

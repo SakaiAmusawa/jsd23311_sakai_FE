@@ -2,6 +2,7 @@ package top.sakai.weibo.mapper;
 
 import org.springframework.stereotype.Repository;
 import top.sakai.weibo.pojo.entity.Weibo;
+import top.sakai.weibo.pojo.vo.WeiboDetailVO;
 import top.sakai.weibo.pojo.vo.WeiboIndexVO;
 
 import java.util.List;
@@ -15,4 +16,6 @@ public interface WeiboMapper {
     List<WeiboIndexVO> selectForId(Integer userId);
 
     void deleteByWeiboId(Integer id);
+
+    WeiboDetailVO selectWeiboDetail(Integer id);
 }
