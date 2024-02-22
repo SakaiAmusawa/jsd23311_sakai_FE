@@ -11,6 +11,9 @@
     <router-link to="/post">
       <el-button>发微博</el-button>
     </router-link>
+    <router-link to="/personal">
+      <el-button>我的微博</el-button>
+    </router-link>
     <el-button @click="logout()">退出登录</el-button>
   </div>
 

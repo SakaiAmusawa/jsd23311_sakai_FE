@@ -10,7 +10,8 @@ const routes = [
     {path: '/reg', component: () => import('../views/RegView')},
     {path: '/login', component: () => import('../views/LoginView')},
     {path: '/detail', component: () => import('../views/DetailView')},
-    {path: '/post', component: () => import('../views/PostView.vue')}
+    {path: '/post', component: () => import('../views/PostView.vue')},
+    {path: '/personal', component: () => import('../views/Personal.vue')}
 ]
 
 const router = createRouter({
