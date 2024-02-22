@@ -36,4 +36,10 @@ public class WeiboService implements IWeiboService {
         return list;
 
     }
+
+    @Override
+    public List<WeiboIndexVO> listForId(Integer userId) {
+        List<WeiboIndexVO> list = weiboMapper.selectForId(userId);
+        return list;
+    }
 }

@@ -9,4 +9,6 @@ public interface IWeiboService {
     void post(WeiboDTO weiboDTO);
 
     List<WeiboIndexVO> listForIndex();
+
+    List<WeiboIndexVO> listForId(Integer userId);
 }

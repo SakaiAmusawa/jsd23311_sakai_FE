@@ -31,4 +31,11 @@ public class WeiboController {
         List<WeiboIndexVO> list = weiboService.listForIndex();
         return JsonResult.ok(list);
     }
+
+    @GetMapping("")
+    public JsonResult personalWeibo(Integer userId) {
+        System.out.println("UserId = " + userId);
+        List<WeiboIndexVO> list = weiboService.listForId(userId);
+        return JsonResult.ok(list);
+    }
 }

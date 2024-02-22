@@ -11,4 +11,6 @@ public interface WeiboMapper {
     int post(Weibo weibo);
 
     List<WeiboIndexVO> selectForIndex();
+
+    List<WeiboIndexVO> selectForId(Integer userId);
 }
