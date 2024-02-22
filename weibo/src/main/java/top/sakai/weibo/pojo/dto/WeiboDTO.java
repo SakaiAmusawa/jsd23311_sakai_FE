@@ -7,5 +7,6 @@ import lombok.Data;
 public class WeiboDTO {
     @ApiModelProperty(value = "微博的内容", required = true)
     private String content;
+    private Integer userId;
 
 }

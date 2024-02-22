@@ -22,7 +22,7 @@ const post = () => {
   weibo.value.userId = user.id;
   //将数据转化为查询字符串
   let data = qs.stringify(weibo.value)
-  axios.post('https://localhost:8080/v1/users/post', data).then((response) => {
+  axios.post('http://localhost:8080/v1/weibo/post', data).then((response) => {
     if (response.data.code === 2001) {
       ElMessage.success('发布成功')
       router.push('/')

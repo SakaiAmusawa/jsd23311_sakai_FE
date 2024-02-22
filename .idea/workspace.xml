@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4aa361d5-6587-4227-b7e0-15aa97a833bb" name="Changes" comment="使得后端向前端返回数据" />
+    <list default="true" id="4aa361d5-6587-4227-b7e0-15aa97a833bb" name="Changes" comment="初步完成发布微博的功能">
+      <change afterPath="$PROJECT_DIR$/weibo/src/main/java/top/sakai/weibo/controller/WeiboController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weibo/src/main/java/top/sakai/weibo/mapper/WeiboMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weibo/src/main/java/top/sakai/weibo/service/IWeiboService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weibo/src/main/java/top/sakai/weibo/service/impl/WeiboService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weibo/src/main/resources/mappers/WeiboMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weibo-web/src/views/PostView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/weibo-web/src/views/PostView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weibo/src/main/java/top/sakai/weibo/pojo/dto/WeiboDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/weibo/src/main/java/top/sakai/weibo/pojo/dto/WeiboDTO.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -79,7 +88,7 @@
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "1.8",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Sakai/JavaProject/sakai/jsd2311_sakai_FE",
+    "last_opened_file_path": "C:/Users/Sakai/JavaProject/sakai/jsd2311_sakai_FE/weibo/src/main/resources/mappers",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -147,6 +156,10 @@
       <envs />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="npm.serve" />
+      <item itemvalue="Spring Boot.WebApplication" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.WebApplication" />
@@ -210,63 +223,7 @@
       <workItem from="1708302599676" duration="1261000" />
       <workItem from="1708390871791" duration="23921000" />
       <workItem from="1708477368031" duration="22433000" />
-      <workItem from="1708562915947" duration="3058000" />
-    </task>
-    <task id="LOCAL-00133" summary="轮播图管理页面完成">
-      <option name="closed" value="true" />
-      <created>1708399461327</created>
-      <option name="number" value="00133" />
-      <option name="presentableId" value="LOCAL-00133" />
-      <option name="project" value="LOCAL" />
-      <updated>1708399461327</updated>
-    </task>
-    <task id="LOCAL-00134" summary="内容管理页面完成">
-      <option name="closed" value="true" />
-      <created>1708400929596</created>
-      <option name="number" value="00134" />
-      <option name="presentableId" value="LOCAL-00134" />
-      <option name="project" value="LOCAL" />
-      <updated>1708400929596</updated>
-    </task>
-    <task id="LOCAL-00135" summary="内容管理页面完成">
-      <option name="closed" value="true" />
-      <created>1708400989024</created>
-      <option name="number" value="00135" />
-      <option name="presentableId" value="LOCAL-00135" />
-      <option name="project" value="LOCAL" />
-      <updated>1708400989024</updated>
-    </task>
-    <task id="LOCAL-00136" summary="个人信息页面完成">
-      <option name="closed" value="true" />
-      <created>1708408916044</created>
-      <option name="number" value="00136" />
-      <option name="presentableId" value="LOCAL-00136" />
-      <option name="project" value="LOCAL" />
-      <updated>1708408916044</updated>
-    </task>
-    <task id="LOCAL-00137" summary="个人信息页面完成">
-      <option name="closed" value="true" />
-      <created>1708411074060</created>
-      <option name="number" value="00137" />
-      <option name="presentableId" value="LOCAL-00137" />
-      <option name="project" value="LOCAL" />
-      <updated>1708411074060</updated>
-    </task>
-    <task id="LOCAL-00138" summary="内容管理页面完成">
-      <option name="closed" value="true" />
-      <created>1708413488827</created>
-      <option name="number" value="00138" />
-      <option name="presentableId" value="LOCAL-00138" />
-      <option name="project" value="LOCAL" />
-      <updated>1708413488827</updated>
-    </task>
-    <task id="LOCAL-00139" summary="内容管理页面完成">
-      <option name="closed" value="true" />
-      <created>1708413855870</created>
-      <option name="number" value="00139" />
-      <option name="presentableId" value="LOCAL-00139" />
-      <option name="project" value="LOCAL" />
-      <updated>1708413855870</updated>
+      <workItem from="1708562915947" duration="9693000" />
     </task>
     <task id="LOCAL-00140" summary="发布内容页面完成">
       <option name="closed" value="true" />
@@ -604,7 +561,63 @@
       <option name="project" value="LOCAL" />
       <updated>1708565936302</updated>
     </task>
-    <option name="localTasksCounter" value="182" />
+    <task id="LOCAL-00182" summary="设置localStorage">
+      <option name="closed" value="true" />
+      <created>1708567678212</created>
+      <option name="number" value="00182" />
+      <option name="presentableId" value="LOCAL-00182" />
+      <option name="project" value="LOCAL" />
+      <updated>1708567678212</updated>
+    </task>
+    <task id="LOCAL-00183" summary="对首页进行改造，用户已登录显示一个页面，未登录显示另外的页面">
+      <option name="closed" value="true" />
+      <created>1708568354716</created>
+      <option name="number" value="00183" />
+      <option name="presentableId" value="LOCAL-00183" />
+      <option name="project" value="LOCAL" />
+      <updated>1708568354716</updated>
+    </task>
+    <task id="LOCAL-00184" summary="设置一个简单的推出登录功能">
+      <option name="closed" value="true" />
+      <created>1708568789214</created>
+      <option name="number" value="00184" />
+      <option name="presentableId" value="LOCAL-00184" />
+      <option name="project" value="LOCAL" />
+      <updated>1708568789214</updated>
+    </task>
+    <task id="LOCAL-00185" summary="创建PostView页面，该页面用于微博的发布">
+      <option name="closed" value="true" />
+      <created>1708568926046</created>
+      <option name="number" value="00185" />
+      <option name="presentableId" value="LOCAL-00185" />
+      <option name="project" value="LOCAL" />
+      <updated>1708568926046</updated>
+    </task>
+    <task id="LOCAL-00186" summary="system">
+      <option name="closed" value="true" />
+      <created>1708569221924</created>
+      <option name="number" value="00186" />
+      <option name="presentableId" value="LOCAL-00186" />
+      <option name="project" value="LOCAL" />
+      <updated>1708569221924</updated>
+    </task>
+    <task id="LOCAL-00187" summary="设置路由，并设置基本样式">
+      <option name="closed" value="true" />
+      <created>1708569757283</created>
+      <option name="number" value="00187" />
+      <option name="presentableId" value="LOCAL-00187" />
+      <option name="project" value="LOCAL" />
+      <updated>1708569757283</updated>
+    </task>
+    <task id="LOCAL-00188" summary="初步完成发布微博的功能">
+      <option name="closed" value="true" />
+      <created>1708570490846</created>
+      <option name="number" value="00188" />
+      <option name="presentableId" value="LOCAL-00188" />
+      <option name="project" value="LOCAL" />
+      <updated>1708570490846</updated>
+    </task>
+    <option name="localTasksCounter" value="189" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -623,12 +636,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Weibo前后端项目准备" />
-    <MESSAGE value="格式化" />
-    <MESSAGE value="微博项目注册页前端:声明一个响应式对象，将输入框进行双向绑定" />
-    <MESSAGE value="微博项目注册页前端:为注册按钮添加点击事件（在控制台打印消息，查看是否获得了输入的文字）" />
-    <MESSAGE value="使用 npm install axios 安装axios(作用:用于前端向后端发送数据)" />
-    <MESSAGE value="微博项目注册页前端:为注册按钮添加点击事件（使用axios工具，使得前端向后端发送请求）" />
     <MESSAGE value="微博项目注册页后端:接受前端发送的数据" />
     <MESSAGE value="添加WebConfig,修改MVC跨域请求的配置" />
     <MESSAGE value="添加UserMapper接口" />
@@ -646,9 +653,15 @@
     <MESSAGE value="登录页面的完成" />
     <MESSAGE value="命名错误的改正" />
     <MESSAGE value="实现回车登录" />
-    <MESSAGE value="system" />
     <MESSAGE value="使得后端向前端返回数据" />
-    <option name="LAST_COMMIT_MESSAGE" value="使得后端向前端返回数据" />
+    <MESSAGE value="设置localStorage" />
+    <MESSAGE value="对首页进行改造，用户已登录显示一个页面，未登录显示另外的页面" />
+    <MESSAGE value="设置一个简单的推出登录功能" />
+    <MESSAGE value="创建PostView页面，该页面用于微博的发布" />
+    <MESSAGE value="system" />
+    <MESSAGE value="设置路由，并设置基本样式" />
+    <MESSAGE value="初步完成发布微博的功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="初步完成发布微博的功能" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
