@@ -34,6 +34,7 @@ const log = () => {
     if (response.data.code === 2001) {
       let user = response.data.data;
       ElMessage.success('登录成功!欢迎' + user.nickname + '回来');
+      localStorage.setItem('user',JSON.stringify(user))
       router.push('/')
     } else {
       ElMessage.error(response.data.msg)
