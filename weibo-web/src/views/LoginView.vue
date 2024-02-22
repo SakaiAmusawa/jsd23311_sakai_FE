@@ -32,7 +32,8 @@ const log = () => {
   let data = qs.stringify(login.value)
   axios.post('http://localhost:8080/v1/users/login', data).then((response) => {
     if (response.data.code === 2001) {
-      ElMessage.success('登录成功')
+      let user = response.data.data;
+      ElMessage.success('登录成功!欢迎' + user.nickname + '回来');
       router.push('/')
     } else {
       ElMessage.error(response.data.msg)

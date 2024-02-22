@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4aa361d5-6587-4227-b7e0-15aa97a833bb" name="Changes" comment="实现回车登录">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2f5914d8-5ce2-4a98-bff0-e00488002246.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2f5914d8-5ce2-4a98-bff0-e00488002246.xml" afterDir="false" />
+    <list default="true" id="4aa361d5-6587-4227-b7e0-15aa97a833bb" name="Changes" comment="system">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weibo-web/src/views/LoginView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/weibo-web/src/views/LoginView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weibo/src/main/java/top/sakai/weibo/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/weibo/src/main/java/top/sakai/weibo/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weibo/src/main/java/top/sakai/weibo/service/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/weibo/src/main/java/top/sakai/weibo/service/IUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weibo/src/main/java/top/sakai/weibo/service/impl/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/weibo/src/main/java/top/sakai/weibo/service/impl/UserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -213,15 +216,7 @@
       <workItem from="1708302599676" duration="1261000" />
       <workItem from="1708390871791" duration="23921000" />
       <workItem from="1708477368031" duration="22433000" />
-      <workItem from="1708562915947" duration="877000" />
-    </task>
-    <task id="LOCAL-00131" summary="烘焙坊后台管理系统的共有头部和侧边栏的创建">
-      <option name="closed" value="true" />
-      <created>1708393514420</created>
-      <option name="number" value="00131" />
-      <option name="presentableId" value="LOCAL-00131" />
-      <option name="project" value="LOCAL" />
-      <updated>1708393514421</updated>
+      <workItem from="1708562915947" duration="2419000" />
     </task>
     <task id="LOCAL-00132" summary="用户管理页面完成">
       <option name="closed" value="true" />
@@ -607,7 +602,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708507138181</updated>
     </task>
-    <option name="localTasksCounter" value="180" />
+    <task id="LOCAL-00180" summary="system">
+      <option name="closed" value="true" />
+      <created>1708564463179</created>
+      <option name="number" value="00180" />
+      <option name="presentableId" value="LOCAL-00180" />
+      <option name="project" value="LOCAL" />
+      <updated>1708564463180</updated>
+    </task>
+    <option name="localTasksCounter" value="181" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -626,7 +629,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="内容管理页面完成" />
     <MESSAGE value="发布内容页面完成" />
     <MESSAGE value="Weibo前后端项目准备" />
     <MESSAGE value="格式化" />
@@ -651,7 +653,8 @@
     <MESSAGE value="登录页面的完成" />
     <MESSAGE value="命名错误的改正" />
     <MESSAGE value="实现回车登录" />
-    <option name="LAST_COMMIT_MESSAGE" value="实现回车登录" />
+    <MESSAGE value="system" />
+    <option name="LAST_COMMIT_MESSAGE" value="system" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

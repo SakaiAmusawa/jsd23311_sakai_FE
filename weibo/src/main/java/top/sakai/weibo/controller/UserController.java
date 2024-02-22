@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import top.sakai.weibo.pojo.dto.UserLoginDTO;
 import top.sakai.weibo.pojo.dto.UserRegDTO;
+import top.sakai.weibo.pojo.vo.UserVO;
 import top.sakai.weibo.response.JsonResult;
 import top.sakai.weibo.service.IUserService;
 
@@ -25,7 +26,7 @@ public class UserController {
 
     @PostMapping("/login")
     public JsonResult login(UserLoginDTO userLoginDTO) {
-        userService.login(userLoginDTO);
-        return JsonResult.ok();
+        UserVO userVO = userService.login(userLoginDTO);
+        return JsonResult.ok(userVO);
     }
 }
