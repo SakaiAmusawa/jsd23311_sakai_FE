@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4aa361d5-6587-4227-b7e0-15aa97a833bb" name="Changes" comment="命名错误的改正" />
+    <list default="true" id="4aa361d5-6587-4227-b7e0-15aa97a833bb" name="Changes" comment="实现回车登录">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2f5914d8-5ce2-4a98-bff0-e00488002246.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2f5914d8-5ce2-4a98-bff0-e00488002246.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -79,7 +82,7 @@
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "1.8",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Sakai/JavaProject/teacher/jsd2311-3-teacher",
+    "last_opened_file_path": "C:/Users/Sakai/JavaProject/sakai/jsd2311_sakai_FE",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -209,23 +212,8 @@
       <workItem from="1708260875627" duration="314000" />
       <workItem from="1708302599676" duration="1261000" />
       <workItem from="1708390871791" duration="23921000" />
-      <workItem from="1708477368031" duration="20095000" />
-    </task>
-    <task id="LOCAL-00129" summary="布局组件Demo">
-      <option name="closed" value="true" />
-      <created>1708261129198</created>
-      <option name="number" value="00129" />
-      <option name="presentableId" value="LOCAL-00129" />
-      <option name="project" value="LOCAL" />
-      <updated>1708261129198</updated>
-    </task>
-    <task id="LOCAL-00130" summary="注册页面改进">
-      <option name="closed" value="true" />
-      <created>1708347663572</created>
-      <option name="number" value="00130" />
-      <option name="presentableId" value="LOCAL-00130" />
-      <option name="project" value="LOCAL" />
-      <updated>1708347663572</updated>
+      <workItem from="1708477368031" duration="22433000" />
+      <workItem from="1708562915947" duration="877000" />
     </task>
     <task id="LOCAL-00131" summary="烘焙坊后台管理系统的共有头部和侧边栏的创建">
       <option name="closed" value="true" />
@@ -603,7 +591,23 @@
       <option name="project" value="LOCAL" />
       <updated>1708505749330</updated>
     </task>
-    <option name="localTasksCounter" value="178" />
+    <task id="LOCAL-00178" summary="命名错误的改正">
+      <option name="closed" value="true" />
+      <created>1708505838431</created>
+      <option name="number" value="00178" />
+      <option name="presentableId" value="LOCAL-00178" />
+      <option name="project" value="LOCAL" />
+      <updated>1708505838431</updated>
+    </task>
+    <task id="LOCAL-00179" summary="实现回车登录">
+      <option name="closed" value="true" />
+      <created>1708507138181</created>
+      <option name="number" value="00179" />
+      <option name="presentableId" value="LOCAL-00179" />
+      <option name="project" value="LOCAL" />
+      <updated>1708507138181</updated>
+    </task>
+    <option name="localTasksCounter" value="180" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -622,7 +626,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="个人信息页面完成" />
     <MESSAGE value="内容管理页面完成" />
     <MESSAGE value="发布内容页面完成" />
     <MESSAGE value="Weibo前后端项目准备" />
@@ -647,7 +650,8 @@
     <MESSAGE value="安装qs 对代码进行优化" />
     <MESSAGE value="登录页面的完成" />
     <MESSAGE value="命名错误的改正" />
-    <option name="LAST_COMMIT_MESSAGE" value="命名错误的改正" />
+    <MESSAGE value="实现回车登录" />
+    <option name="LAST_COMMIT_MESSAGE" value="实现回车登录" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
