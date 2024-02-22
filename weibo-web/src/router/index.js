@@ -9,7 +9,8 @@ const routes = [
     },
     {path: '/reg', component: () => import('../views/RegView')},
     {path: '/login', component: () => import('../views/LoginView')},
-    {path: '/detail', component: () => import('../views/DetailView')}
+    {path: '/detail', component: () => import('../views/DetailView')},
+    {path: '/post', component: () => import('../views/PostView.vue')}
 ]
 
 const router = createRouter({
