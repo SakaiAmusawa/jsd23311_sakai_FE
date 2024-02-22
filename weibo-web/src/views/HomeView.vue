@@ -5,6 +5,7 @@
     <router-link to="/reg">注册</router-link>
     <router-link to="/login">登录</router-link>
   </div>
+  <!-- 如果用户信息不为空，显示欢迎信息，并显示发微博与退出登录 -->
   <div v-else>
     <h2>欢迎{{ user.nickname }}回来！</h2>
     <router-link to="/post">
@@ -13,12 +14,17 @@
     <el-button @click="logout()">退出登录</el-button>
   </div>
 
-  <!-- 如果用户信息不为空，显示欢迎信息，并显示发微博与退出登录 -->
+  <hr>
+  <div v-for="weibo in arr">
+    <h3>{{ weibo.nickname }}说：{{ weibo.content }}</h3>
+  </div>
+
 </template>
 
 <script setup>
 
-import {ref} from "vue";
+import {onMounted, ref} from "vue";
+import axios from "axios";
 
 const user = ref(localStorage.user ? JSON.parse(localStorage.user) : null)
 
@@ -31,4 +37,15 @@ const logout = () => {
   }
 
 }
+
+const arr = ref([
+  onMounted(() => {
+    axios.get('http://localhost:8080/v1/weibo/list').then((response) => {
+      if (response.data.code === 2001) {
+        arr.value = response.data.data;
+      }
+    })
+  })
+]);
+
 </script>

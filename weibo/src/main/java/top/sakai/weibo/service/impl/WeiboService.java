@@ -7,10 +7,12 @@ import top.sakai.weibo.exception.ServiceException;
 import top.sakai.weibo.mapper.WeiboMapper;
 import top.sakai.weibo.pojo.dto.WeiboDTO;
 import top.sakai.weibo.pojo.entity.Weibo;
+import top.sakai.weibo.pojo.vo.WeiboIndexVO;
 import top.sakai.weibo.response.StatusCode;
 import top.sakai.weibo.service.IWeiboService;
 
 import java.util.Date;
+import java.util.List;
 
 @Service
 public class WeiboService implements IWeiboService {
@@ -26,5 +28,12 @@ public class WeiboService implements IWeiboService {
         if (rows == 0) {
             throw new ServiceException(StatusCode.OPERATION_FAILED);
         }
+    }
+
+    @Override
+    public List<WeiboIndexVO> listForIndex() {
+        List<WeiboIndexVO> list = weiboMapper.selectForIndex();
+        return list;
+
     }
 }
