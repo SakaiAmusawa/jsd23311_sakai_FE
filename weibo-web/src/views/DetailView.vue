@@ -18,6 +18,7 @@ onMounted(() => {
       (response) => {
         if (response.data.code === 2001) {
           ElMessage.success('操作成功！')
+          weibo.value = response.data.data
         } else {
           ElMessage.error(response.data.msg)
         }
