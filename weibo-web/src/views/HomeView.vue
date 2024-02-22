@@ -10,7 +10,7 @@
     <router-link to="/post">
       <el-button>发微博</el-button>
     </router-link>
-    <el-button>退出登录</el-button>
+    <el-button @click="logout()">退出登录</el-button>
   </div>
 
   <!-- 如果用户信息不为空，显示欢迎信息，并显示发微博与退出登录 -->
@@ -22,4 +22,13 @@ import {ref} from "vue";
 
 const user = ref(localStorage.user ? JSON.parse(localStorage.user) : null)
 
+const logout = () => {
+  if (confirm('确认退出吗？')) {
+    //清空上次登录成功存入的用户信息，但不会影响已经取出来的user数据
+    localStorage.clear();
+    //还需要将响应式变量user的值充值为null，上面的页面才会一起重置
+    user.value = null;
+  }
+
+}
 </script>
