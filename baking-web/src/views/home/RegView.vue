@@ -10,19 +10,19 @@ const user = ref({username: '', password: '', nickname: ''})
 
 const reg = () => {
 
-  let data = qs.stringify(user);
+  let data = qs.stringify(user.value);
 
   axios.post('http://localhost:8080/v1/users/reg', data).then(
       (response) => {
         if (response.data.code === 2001) {
           ElMessage.success('注册成功');
-          router.push('/')
+          router.push('/login')
         } else {
           ElMessage.error(response.data.msg)
         }
       }
   )
-
+  console.log(data)
 }
 
 </script>
