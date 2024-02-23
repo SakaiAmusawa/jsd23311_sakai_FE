@@ -10,4 +10,6 @@ public class CommentDTO {
     @ApiModelProperty(value = "微博的ID", required = true)
     private Integer weiboId;
 
+    private Integer userId;
+
 }
