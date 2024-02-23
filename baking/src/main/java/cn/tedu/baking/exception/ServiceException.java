@@ -1,7 +1,7 @@
 package cn.tedu.baking.exception;
 
 import lombok.Getter;
-import top.sakai.weibo.response.StatusCode;
+import cn.tedu.baking.response.StatusCode;
 
 
 //1.自定义业务异常类
