@@ -6,9 +6,11 @@ import org.springframework.stereotype.Service;
 import top.sakai.weibo.mapper.CommentMapper;
 import top.sakai.weibo.pojo.dto.CommentDTO;
 import top.sakai.weibo.pojo.entity.Comment;
+import top.sakai.weibo.pojo.vo.CommentVO;
 import top.sakai.weibo.service.ICommentService;
 
 import java.util.Date;
+import java.util.List;
 
 @Service
 public class CommentService implements ICommentService {
@@ -20,5 +22,11 @@ public class CommentService implements ICommentService {
         BeanUtils.copyProperties(commentDTO, comment);
         comment.setCreated(new Date());
         commentMapper.insertComment(comment);
+    }
+
+    @Override
+    public List<CommentVO> selectListByWeiboId(Integer id) {
+        List<CommentVO> commentVOS = commentMapper.selectListByWeiboId(id);
+        return commentVOS;
     }
 }
