@@ -3,7 +3,7 @@ import {ref} from 'vue'
 import {Plus} from '@element-plus/icons-vue'
 import qs from "qs"
 import axios from "axios";
-import ElMessage from "element-plus"
+import {ElMessage} from "element-plus";
 
 const fileList = ref([])
 
@@ -27,7 +27,7 @@ const save = () => {
   axios.post('http://localhost:8080/v1/users/update', data).then(
       (response) => {
         if (response.data.code === 2001) {
-          ElMessage.success('修改成功');
+          ElMessage.success('修改成功')
           //修改完成后localStorage中的值也要更新
           localStorage.user = JSON.parse(user.value)
         }
