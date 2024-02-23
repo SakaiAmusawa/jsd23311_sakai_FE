@@ -1,5 +1,6 @@
 package cn.tedu.baking.controller;
 
+import cn.tedu.baking.pojo.dto.UserLoginDTO;
 import cn.tedu.baking.pojo.dto.UserRegDTO;
 import cn.tedu.baking.response.JsonResult;
 import cn.tedu.baking.service.impl.UserService;
@@ -22,4 +23,9 @@ public class UserController {
         return JsonResult.ok();
     }
 
+    @PostMapping("login")
+    public JsonResult login(UserLoginDTO userLoginDTO) {
+        userService.login(userLoginDTO);
+        return JsonResult.ok();
+    }
 }
