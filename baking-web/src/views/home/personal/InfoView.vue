@@ -1,6 +1,9 @@
 <script setup>
 import {ref} from 'vue'
 import {Plus} from '@element-plus/icons-vue'
+import qs from "qs"
+import axios from "axios";
+import ElMessage from "element-plus"
 
 const fileList = ref([])
 
@@ -15,6 +18,21 @@ const handlePictureCardPreview = (uploadFile) => {
   dialogImageUrl.value = uploadFile.url
   dialogVisible.value = true
 }
+
+const user = ref(localStorage.user ? JSON.parse(localStorage.user) : null)
+const save = () => {
+  let newUser = {id: user.value.id, nickname: user.value.nickname}
+  let data = qs.stringify(newUser)
+  axios.post('http://localhost:8080/v1/users/update', data).then(
+      (response) => {
+        if (response.data.code === 2001) {
+          ElMessage.success('修改成功');
+          localStorage.user = JSON.parse(user.value)
+        }
+      }
+  )
+}
+
 </script>
 <!--个人中心页面-->
 <template>
@@ -37,13 +55,13 @@ const handlePictureCardPreview = (uploadFile) => {
       </el-dialog>
     </el-form-item>
     <el-form-item label="昵称">
-      <el-input placeholder="请输入昵称"></el-input>
+      <el-input placeholder="请输入昵称" v-model="user.nickname"></el-input>
     </el-form-item>
     <el-form-item label="用户名">
-      <el-input disabled placeholder="请输入用户名" value="tom"></el-input>
+      <el-input disabled placeholder="请输入用户名" :value="user.username"></el-input>
     </el-form-item>
     <el-form-item>
-      <el-button type="primary">保存修改</el-button>
+      <el-button type="primary" @click="save()">保存修改</el-button>
     </el-form-item>
   </el-form>
 </template>
