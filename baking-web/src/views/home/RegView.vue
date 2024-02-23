@@ -1,5 +1,30 @@
 <script setup>
 
+import {ref} from "vue";
+import qs from "qs"
+import axios from "axios";
+import {ElMessage} from "element-plus";
+import router from "@/router";
+
+const user = ref({username: '', password: '', nickname: ''})
+
+const reg = () => {
+
+  let data = qs.stringify(user);
+
+  axios.post('http://localhost:8080/v1/users/reg', data).then(
+      (response) => {
+        if (response.data.code === 2001) {
+          ElMessage.success('注册成功');
+          router.push('/')
+        } else {
+          ElMessage.error(response.data.msg)
+        }
+      }
+  )
+
+}
+
 </script>
 <!--注册页-->
 <template>
@@ -24,16 +49,16 @@
             </h1>
           </el-form-item>
           <el-form-item label="用户名">
-            <el-input placeholder="请输入用户名"></el-input>
+            <el-input v-model="user.username" placeholder="请输入用户名"></el-input>
           </el-form-item>
           <el-form-item label="密码">
-            <el-input placeholder="请输入密码" type="password"></el-input>
+            <el-input v-model="user.password" placeholder="请输入密码" type="password"></el-input>
           </el-form-item>
-          <el-form-item label="用户名">
-            <el-input placeholder="请输入昵称"></el-input>
+          <el-form-item label="昵称">
+            <el-input v-model="user.nickname" placeholder="请输入昵称"></el-input>
           </el-form-item>
           <el-form-item>
-            <el-button style="width: 100%;" type="primary">注册</el-button>
+            <el-button style="width: 100%;" type="primary" @click="reg()">注册</el-button>
           </el-form-item>
         </el-form>
       </el-col>
