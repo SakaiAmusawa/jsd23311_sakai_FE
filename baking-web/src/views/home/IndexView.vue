@@ -6,7 +6,7 @@ import router from "@/router";
 <template>
   <div style="width: 1200px;margin: 0 auto;">
 
-    <el-carousel height="150px">
+    <el-carousel>
       <el-carousel-item v-for="item in 3">
         <img :src="'/imgs/banner'+item+'.jpg'" alt="轮播图" style="width: 100%;height: 100%;">
       </el-carousel-item>
