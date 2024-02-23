@@ -2,6 +2,7 @@ package cn.tedu.baking.controller;
 
 import cn.tedu.baking.pojo.dto.UserLoginDTO;
 import cn.tedu.baking.pojo.dto.UserRegDTO;
+import cn.tedu.baking.pojo.vo.UserVO;
 import cn.tedu.baking.response.JsonResult;
 import cn.tedu.baking.service.impl.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,7 +26,7 @@ public class UserController {
 
     @PostMapping("login")
     public JsonResult login(UserLoginDTO userLoginDTO) {
-        userService.login(userLoginDTO);
-        return JsonResult.ok();
+        UserVO userVO = userService.login(userLoginDTO);
+        return JsonResult.ok(userVO);
     }
 }
