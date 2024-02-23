@@ -23,10 +23,12 @@ const user = ref(localStorage.user ? JSON.parse(localStorage.user) : null)
 const save = () => {
   let newUser = {id: user.value.id, nickname: user.value.nickname}
   let data = qs.stringify(newUser)
+  console.log(data)
   axios.post('http://localhost:8080/v1/users/update', data).then(
       (response) => {
         if (response.data.code === 2001) {
           ElMessage.success('修改成功');
+          //修改完成后localStorage中的值也要更新
           localStorage.user = JSON.parse(user.value)
         }
       }
