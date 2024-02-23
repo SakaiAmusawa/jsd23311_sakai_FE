@@ -4,6 +4,7 @@ import cn.tedu.baking.exception.ServiceException;
 import cn.tedu.baking.mapper.UserMapper;
 import cn.tedu.baking.pojo.dto.UserLoginDTO;
 import cn.tedu.baking.pojo.dto.UserRegDTO;
+import cn.tedu.baking.pojo.dto.UserUpdateDTO;
 import cn.tedu.baking.pojo.entity.User;
 import cn.tedu.baking.pojo.vo.UserVO;
 import cn.tedu.baking.response.StatusCode;
@@ -44,5 +45,10 @@ public class UserService implements IUserService {
             throw new ServiceException(StatusCode.PASSWORD_ERROR);
         }
         return userVO;
+    }
+
+    @Override
+    public void update(UserUpdateDTO userUpdateDTO) {
+        userMapper.update(userUpdateDTO);
     }
 }
