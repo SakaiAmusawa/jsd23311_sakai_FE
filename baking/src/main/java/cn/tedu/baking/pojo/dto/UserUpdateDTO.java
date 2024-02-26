@@ -6,4 +6,5 @@ import lombok.Data;
 public class UserUpdateDTO {
     private Long id;
     private String nickname;
+    private String imgUrl;
 }

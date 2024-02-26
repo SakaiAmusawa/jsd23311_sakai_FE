@@ -5,7 +5,9 @@
       <!--头像上传开始-->
       <el-upload
           v-model:file-list="fileList"
-          action="https://run.mocky.io/v3/9d059bf9-4660-45f2-925d-ce80ad6c4d15"
+          action="http://localhost:8080/v1/upload"
+          limit="1"
+          name="file"
           list-type="picture-card"
           :on-preview="handlePictureCardPreview"
           :on-remove="handleRemove"
@@ -44,12 +46,22 @@ const user =
 console.log(user)
 const save = () => {
   let newUser = {id: user.value.id, nickname: user.value.nickname};
+  if (fileList.value.length > 0) {
+    //得到图片路径
+    let url = fileList.value[0].response.data;
+    //装到newUser中，给后端更新数据入库使用
+    newUser.imgUrl = url;
+    //装到user中，一会更新成功存入localStorage中
+    user.value.imgUrl = url;
+
+  }
   let data = qs.stringify(newUser);
   axios.post('http://localhost:8080/v1/users/update', data)
       .then((response) => {
         if (response.data.code === 2001) {
           ElMessage.success('修改成功!');
           localStorage.user = JSON.stringify(user.value);
+          location.reload()
         }
       })
 }
