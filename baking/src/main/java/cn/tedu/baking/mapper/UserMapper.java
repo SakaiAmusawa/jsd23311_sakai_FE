@@ -1,6 +1,5 @@
 package cn.tedu.baking.mapper;
 
-import cn.tedu.baking.pojo.dto.UserUpdateDTO;
 import cn.tedu.baking.pojo.entity.User;
 import cn.tedu.baking.pojo.vo.UserVO;
 import org.springframework.stereotype.Repository;
@@ -11,5 +10,5 @@ public interface UserMapper {
 
     UserVO selectByUsername(String username);
 
-    void update(UserUpdateDTO userUpdateDTO);
+    void update(User userUpdateDTO);
 }
