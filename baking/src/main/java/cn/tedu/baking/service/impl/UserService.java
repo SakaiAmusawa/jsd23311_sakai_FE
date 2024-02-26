@@ -50,6 +50,8 @@ public class UserService implements IUserService {
 
     @Override
     public void update(UserUpdateDTO userUpdateDTO) {
-        userMapper.update(userUpdateDTO);
+        User user = new User();
+        BeanUtils.copyProperties(userUpdateDTO,user);
+        userMapper.update(user);
     }
 }
