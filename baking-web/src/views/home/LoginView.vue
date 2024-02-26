@@ -8,7 +8,7 @@
           <el-input placeholder="请输入用户名" v-model="user.username"></el-input>
         </el-form-item>
         <el-form-item label="密码">
-          <el-input type="password" placeholder="请输入密码" v-model="user.password"></el-input>
+          <el-input type="password" placeholder="请输入密码" v-model="user.password" @keydown.enter="login()"></el-input>
         </el-form-item>
         <el-form-item>
           <el-button type="primary" style="width:100px;margin-left: 120px;" @click="login()">登录</el-button>
@@ -23,20 +23,19 @@ import {ref} from "vue";
 import qs from "qs";
 import axios from "axios";
 import {ElMessage} from "element-plus";
-import router from "@/router";
 
-const user = ref({username:'',password:''});
-const login = ()=>{
+const user = ref({username: '', password: ''});
+const login = () => {
   let data = qs.stringify(user.value);
-  axios.post('http://localhost:8080/v1/users/login',data)
-      .then((response)=>{
-        if(response.data.code==2001){
+  axios.post('http://localhost:8080/v1/users/login', data)
+      .then((response) => {
+        if (response.data.code === 2001) {
           ElMessage.success('登录成功!');
           let user = response.data.data;
-          localStorage.user= JSON.stringify(user);
+          localStorage.user = JSON.stringify(user);
           //router.push('/');
-          location.href='/';//登录成功存入用户信息后，立即自动刷新页面
-        }else{
+          location.href = '/';//登录成功存入用户信息后，立即自动刷新页面
+        } else {
           ElMessage.error(response.data.msg);
         }
       })

@@ -55,7 +55,7 @@ const reg = () => {
             <el-input v-model="user.password" placeholder="请输入密码" type="password"></el-input>
           </el-form-item>
           <el-form-item label="昵称">
-            <el-input v-model="user.nickname" placeholder="请输入昵称"></el-input>
+            <el-input v-model="user.nickname" placeholder="请输入昵称" @keydown.enter="reg()"></el-input>
           </el-form-item>
           <el-form-item>
             <el-button style="width: 100%;" type="primary" @click="reg()">注册</el-button>
