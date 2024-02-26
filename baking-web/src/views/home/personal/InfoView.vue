@@ -40,13 +40,14 @@ import axios from "axios";
 import {ElMessage} from "element-plus";
 
 const user =
-    ref(localStorage.user?JSON.parse(localStorage.user):null);
-const save = ()=>{
-  let newUser = {id:user.value.id,nickname:user.value.nickname};
+    ref(localStorage.user ? JSON.parse(localStorage.user) : null);
+console.log(user)
+const save = () => {
+  let newUser = {id: user.value.id, nickname: user.value.nickname};
   let data = qs.stringify(newUser);
-  axios.post('http://localhost:8080/v1/users/update',data)
-      .then((response)=>{
-        if(response.data.code==2001){
+  axios.post('http://localhost:8080/v1/users/update', data)
+      .then((response) => {
+        if (response.data.code === 2001) {
           ElMessage.success('修改成功!');
           localStorage.user = JSON.stringify(user.value);
         }

@@ -38,6 +38,7 @@ public class UserService implements IUserService {
     @Override
     public UserVO login(UserLoginDTO userLoginDTO) {
         UserVO userVO = userMapper.selectByUsername(userLoginDTO.getUsername());
+        System.out.println(userVO);
         if (userVO == null) {
             throw new ServiceException(StatusCode.USERNAME_ERROR);
         }
