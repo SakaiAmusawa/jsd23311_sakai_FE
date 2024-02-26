@@ -47,6 +47,7 @@
                   <User/>
                 </el-icon>
               </template>
+              <el-avatar :src="'http://localhost:8080'+user.imgUrl"></el-avatar>
               <div style="text-align:center;">
                 <el-button type="success" size="small" @click="router.push('/personal')">个人中心</el-button>
                 <el-button type="danger" size="small" @click="logout()">退出登录</el-button>
