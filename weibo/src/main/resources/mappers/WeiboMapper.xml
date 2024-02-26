@@ -5,8 +5,8 @@
 <mapper namespace="top.sakai.weibo.mapper.WeiboMapper">
 
     <insert id="post">
-        INSERT INTO blog.weibo(content, created, user_id)
-        VALUES (#{content}, #{created}, #{userId})
+        INSERT INTO blog.weibo(content, created, user_id, img_urls)
+        VALUES (#{content}, #{created}, #{userId}, #{imgUrls})
     </insert>
     <select id="selectForIndex" resultType="top.sakai.weibo.pojo.vo.WeiboIndexVO">
         SELECT w.id, w.content, u.nickname

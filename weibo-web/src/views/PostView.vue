@@ -5,12 +5,21 @@ import router from "@/router";
 import axios from "axios";
 import qs from "qs"
 import {ElMessage} from "element-plus";
+import {Plus} from '@element-plus/icons-vue'
 
 const weibo = ref({
   content: '',
 })
 
 const post = () => {
+  if (fileList.value.length > 0) {
+    let imgUrls = [];
+    for (let file of fileList.value) {
+      let imgUrl = file.response.data;
+      imgUrls.push(imgUrl)
+    }
+    weibo.value.imgUrls = imgUrls.toString();
+  }
   //得到用户信息
   let user = localStorage.user ? JSON.parse(localStorage.user) : null
   //判断是否登录
@@ -32,6 +41,17 @@ const post = () => {
   })
 }
 
+const fileList = ref([])
+const dialogImageUrl = ref('')
+const dialogVisible = ref(false)
+
+const handleRemove = (uploadFile, uploadFiles) => {
+  console.log(uploadFile, uploadFiles)
+}
+const handlePictureCardPreview = (uploadFile) => {
+  dialogImageUrl.value = uploadFile.url
+  dialogVisible.value = true
+}
 </script>
 
 <template>
@@ -39,6 +59,25 @@ const post = () => {
   <div style="width: 500px;margin: 0 auto;">
     <el-input v-model="weibo.content" placeholder="说点啥"></el-input>
     <el-button type="primary" style="width: 100px;font-weight: bold;margin: 10px;" @click="post()">发布微博</el-button>
+    <!--头像上传开始-->
+    <el-upload
+        v-model:file-list="fileList"
+        action="http://localhost:8080/v1/upload"
+        limit="9"
+        name="file"
+        list-type="picture-card"
+        :on-preview="handlePictureCardPreview"
+        :on-remove="handleRemove"
+    >
+      <el-icon>
+        <Plus/>
+      </el-icon>
+    </el-upload>
+
+    <el-dialog v-model="dialogVisible">
+      <img w-full :src="dialogImageUrl" alt="Preview Image"/>
+    </el-dialog>
+    <!--头像上传结束-->
   </div>
 </template>
 

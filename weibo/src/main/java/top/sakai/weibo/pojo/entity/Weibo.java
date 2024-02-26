@@ -10,5 +10,6 @@ public class Weibo {
     private String content;
     private Date created;
     private Integer userId;
+    private String imgUrls;
 
 }
