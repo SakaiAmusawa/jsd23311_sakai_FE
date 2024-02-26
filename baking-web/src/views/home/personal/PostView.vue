@@ -3,6 +3,7 @@
 import {Plus} from "@element-plus/icons-vue";
 import {onMounted, ref} from 'vue'
 import Editor from "wangeditor";
+import axios from "axios";
 
 //创建响应式变量,代表页面的div元素
 const editorDiv = ref(null)
@@ -28,6 +29,20 @@ const handlePictureCardPreview = (uploadFile) => {
   dialogImageUrl.value = uploadFile.url
   dialogVisible.value = true
 }
+
+const catTypeArr = ref([])
+onMounted(
+    () => {
+      axios.get('http://localhost:8080/v1/categories/type').then(
+          (response) => {
+            if (response.data.code === 2001) {
+              catTypeArr.value = response.data.data;
+            }
+          }
+      )
+    }
+)
+
 </script>
 <!--稿件发布页-->
 <template>
@@ -38,9 +53,10 @@ const handlePictureCardPreview = (uploadFile) => {
     </el-form-item>
     <el-form-item label="文章类型">
       <el-radio-group>
-        <el-radio-button label="1">烘焙食谱</el-radio-button>
-        <el-radio-button label="2">烘焙视频</el-radio-button>
-        <el-radio-button label="3">行业资讯</el-radio-button>
+        <!--        <el-radio-button label="1">烘焙食谱</el-radio-button>
+                <el-radio-button label="2">烘焙视频</el-radio-button>
+                <el-radio-button label="3">行业资讯</el-radio-button>-->
+        <el-radio-button v-for="c of catTypeArr" :label="c.type">{{c.name}}</el-radio-button>
       </el-radio-group>
     </el-form-item>
     <el-form-item label="二级分类">
