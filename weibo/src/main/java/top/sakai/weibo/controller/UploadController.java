@@ -1,10 +1,10 @@
 package top.sakai.weibo.controller;
 
-import top.sakai.weibo.response.JsonResult;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
+import top.sakai.weibo.response.JsonResult;
 
 import java.io.File;
 import java.io.IOException;
@@ -42,5 +42,12 @@ public class UploadController {
         file.transferTo(new File(filePath));
         //讲路径返回给前端
         return JsonResult.ok(dataPath + fileName);
+    }
+
+    @PostMapping("remove")
+    public JsonResult removeImg(String imgUrl) {
+        new File("f/files" + imgUrl).delete();
+
+        return JsonResult.ok();
     }
 }

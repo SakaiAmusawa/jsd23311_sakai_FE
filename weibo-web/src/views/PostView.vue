@@ -46,7 +46,17 @@ const dialogImageUrl = ref('')
 const dialogVisible = ref(false)
 
 const handleRemove = (uploadFile, uploadFiles) => {
-  console.log(uploadFile, uploadFiles)
+  //得到要删除图片的路径
+  let imgUrl = uploadFile.response.data;
+  axios.post('http://localhost:8080/v1/remove?imgUrl=' + imgUrl).then(
+      (response) => {
+        if (response) {
+          if (response.data.code === 2001) {
+            ElMessage.success('删除图片成功')
+          }
+        }
+      }
+  )
 }
 const handlePictureCardPreview = (uploadFile) => {
   dialogImageUrl.value = uploadFile.url

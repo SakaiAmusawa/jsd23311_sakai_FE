@@ -19,13 +19,14 @@
 
   <hr>
   <div v-for="weibo in arr">
-    <router-link :to="'/detail?id='+weibo.id" style="text-decoration: none;color: black"><h3>{{ weibo.nickname }}说：{{
-        weibo.content
-      }}</h3>
+    <router-link :to="'/detail?id='+weibo.id" style="text-decoration: none;color: black"><h3>{{
+        weibo.nickname
+      }}说：{{ weibo.content }}</h3>
+      <img width="100" v-if="weibo.imgUrls!=null"
+           v-for="url in weibo.imgUrls.split(',')"
+           :src="'http://localhost:8080/'+url">
     </router-link>
-
   </div>
-
 </template>
 
 <script setup>

@@ -11,4 +11,6 @@ public class WeiboIndexVO {
     private Integer id;
     @ApiModelProperty(value = "用户的昵称")
     private String nickname;
+    @ApiModelProperty(value = "微博中的图片")
+    private String imgUrls;
 }
