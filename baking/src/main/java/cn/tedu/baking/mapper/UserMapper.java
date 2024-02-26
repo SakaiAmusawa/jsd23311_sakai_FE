@@ -10,5 +10,5 @@ public interface UserMapper {
 
     UserVO selectByUsername(String username);
 
-    void update(User userUpdateDTO);
+    void update(User user);
 }
