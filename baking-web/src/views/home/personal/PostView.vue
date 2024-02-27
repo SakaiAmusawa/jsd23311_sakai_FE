@@ -63,8 +63,8 @@ const categoryArr = ref();
     <el-form-item label="文章标题">
       <el-input placeholder="请输入文章标题" v-model="content.title"></el-input>
     </el-form-item>
-    <el-form-item label="文章类型" v-model="content.type">
-      <el-radio-group>
+    <el-form-item label="文章类型" >
+      <el-radio-group v-model="content.type">
         <!--        <el-radio-button label="1">烘焙食谱</el-radio-button>
                 <el-radio-button label="2">烘焙视频</el-radio-button>
                 <el-radio-button label="3">行业资讯</el-radio-button>-->
