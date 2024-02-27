@@ -52,12 +52,13 @@ onMounted(
     }
 )
 
-const content = ref({title: '', type: 1});
+const content = ref({title: '', type: 1, categoryId: ''});
 
 const categoryArr = ref();
 
 //点击的文章类型发生改变，获取对应类型的二级分类
 const typeChange = () => {
+  content.value.categoryId = '';//该行代码为了防止切换一级分类时把原来的二级分类ID带过去
   axios.get('http://localhost:8080/v1/categories/' + content.value.type + '/sub'
   ).then(
       (response) => {
@@ -84,7 +85,7 @@ const typeChange = () => {
       </el-radio-group>
     </el-form-item>
     <el-form-item label="二级分类">
-      <el-select placeholder="select">
+      <el-select placeholder="请选择" v-model="content.categoryId">
         <!--        <el-option label="面包" value="1"></el-option>
                 <el-option label="小食" value="2"></el-option>-->
         <el-option v-for="c in categoryArr" :label="c.name" :value="c.id"></el-option>
