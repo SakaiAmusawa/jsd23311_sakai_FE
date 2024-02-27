@@ -16,8 +16,7 @@ import java.util.UUID;
 @RequestMapping("/v1/")
 public class UploadController {
     @PostMapping("upload")
-    /*                                     与InfoView中上传头像的name属性一致*/
-    public JsonResult upload(MultipartFile file) throws IOException {
+    /*                                     与InfoView中上传头像的name属性一致*/ public JsonResult upload(MultipartFile file) throws IOException {
         /*获取原始文件名*/
         String fileName = file.getOriginalFilename();
         /*获取文件名中的后缀名*/
@@ -42,5 +41,11 @@ public class UploadController {
         file.transferTo(new File(filePath));
         //讲路径返回给前端
         return JsonResult.ok(dataPath + fileName);
+    }
+
+    @PostMapping("remove")
+    public JsonResult remove(String imgUrl) {
+        new File("f:/files" + imgUrl).delete();
+        return JsonResult.ok();
     }
 }
