@@ -4,6 +4,7 @@ import {Plus} from "@element-plus/icons-vue";
 import {onMounted, ref} from 'vue'
 import Editor from "wangeditor";
 import axios from "axios";
+import {ElMessage} from "element-plus";
 
 //创建响应式变量,代表页面的div元素
 const editorDiv = ref(null)
@@ -21,8 +22,16 @@ const fileList = ref([])
 const dialogImageUrl = ref('')
 const dialogVisible = ref(false)
 
-const handleRemove = (uploadFile, uploadFiles) => {
-  console.log(uploadFile, uploadFiles)
+//完成删除图片的方法
+const handleRemove = (uploadFile) => {
+  let imgUrl = uploadFile.response.data; //被删除图片的路径
+  axios.post('http://localhost:8080/v1/remove?imgUrl=' + imgUrl).then(
+      (response) => {
+        if (response.data.code === 2001) {
+          ElMessage.success('删除成功')
+        }
+      }
+  )
 }
 
 const handlePictureCardPreview = (uploadFile) => {
@@ -95,9 +104,11 @@ const typeChange = () => {
       <!--   封面上传开始    -->
       <el-upload
           v-model:file-list="fileList"
+          limit="1"
+          name="file"
           :on-preview="handlePictureCardPreview"
           :on-remove="handleRemove"
-          action="https://run.mocky.io/v3/9d059bf9-4660-45f2-925d-ce80ad6c4d15"
+          action="http://localhost:8080/v1/upload"
           list-type="picture-card"
       >
         <el-icon>
