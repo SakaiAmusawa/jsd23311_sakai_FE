@@ -55,6 +55,18 @@ onMounted(
 const content = ref({title: '', type: 1});
 
 const categoryArr = ref();
+
+//点击的文章类型发生改变，获取对应类型的二级分类
+const typeChange = () => {
+  axios.get('http://localhost:8080/v1/categories/' + content.value.type + '/sub'
+  ).then(
+      (response) => {
+        if (response.data.code === 2001) {
+          categoryArr.value = response.data.data;
+        }
+      }
+  )
+}
 </script>
 <!--稿件发布页-->
 <template>
@@ -63,8 +75,8 @@ const categoryArr = ref();
     <el-form-item label="文章标题">
       <el-input placeholder="请输入文章标题" v-model="content.title"></el-input>
     </el-form-item>
-    <el-form-item label="文章类型" >
-      <el-radio-group v-model="content.type">
+    <el-form-item label="文章类型">
+      <el-radio-group v-model="content.type" @change="typeChange()">
         <!--        <el-radio-button label="1">烘焙食谱</el-radio-button>
                 <el-radio-button label="2">烘焙视频</el-radio-button>
                 <el-radio-button label="3">行业资讯</el-radio-button>-->
