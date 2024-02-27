@@ -9,4 +9,10 @@
         FROM baking.category
         WHERE level = 1;
     </select>
+    <select id="selectForSub" resultType="cn.tedu.baking.pojo.vo.CategoryVO">
+        SELECT id, name
+        FROM baking.category
+        WHERE type = #{type}
+          AND level = 2
+    </select>
 </mapper>

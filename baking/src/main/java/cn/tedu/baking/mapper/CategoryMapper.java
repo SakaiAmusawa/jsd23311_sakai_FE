@@ -8,4 +8,6 @@ import java.util.List;
 @Repository
 public interface CategoryMapper {
     List<CategoryVO> selectForType();
+
+    List<CategoryVO> selectForSub(Integer type);
 }

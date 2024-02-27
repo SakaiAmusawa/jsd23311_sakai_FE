@@ -17,4 +17,10 @@ public class CategoryService implements ICategoryService {
     public List<CategoryVO> typeList() {
         return categoryMapper.selectForType();
     }
+
+    @Override
+    public List<CategoryVO> subList(Integer type) {
+        return categoryMapper.selectForSub(type);
+    }
+
 }

@@ -6,4 +6,6 @@ import java.util.List;
 
 public interface ICategoryService {
     List<CategoryVO> typeList();
+
+    List<CategoryVO> subList(Integer type);
 }
