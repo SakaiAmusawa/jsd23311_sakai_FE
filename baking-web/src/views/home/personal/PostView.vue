@@ -33,6 +33,7 @@ const handlePictureCardPreview = (uploadFile) => {
 const catTypeArr = ref([])
 onMounted(
     () => {
+      //发送请求获取一级分类
       axios.get('http://localhost:8080/v1/categories/type').then(
           (response) => {
             if (response.data.code === 2001) {
@@ -40,29 +41,41 @@ onMounted(
             }
           }
       )
+      //发送请求获取二级分类
+      axios.get('http://localhost:8080/v1/categories/1/sub').then(
+          (response) => {
+            if (response.data.code === 2001) {
+              categoryArr.value = response.data.data;
+            }
+          }
+      )
     }
 )
 
+const content = ref({title: '', type: 1});
+
+const categoryArr = ref();
 </script>
 <!--稿件发布页-->
 <template>
   <h1 style="color: orange">发布内容页面</h1>
   <el-form label-width="100px">
     <el-form-item label="文章标题">
-      <el-input placeholder="请输入文章标题"></el-input>
+      <el-input placeholder="请输入文章标题" v-model="content.title"></el-input>
     </el-form-item>
-    <el-form-item label="文章类型">
+    <el-form-item label="文章类型" v-model="content.type">
       <el-radio-group>
         <!--        <el-radio-button label="1">烘焙食谱</el-radio-button>
                 <el-radio-button label="2">烘焙视频</el-radio-button>
                 <el-radio-button label="3">行业资讯</el-radio-button>-->
-        <el-radio-button v-for="c of catTypeArr" :label="c.type">{{c.name}}</el-radio-button>
+        <el-radio-button v-for="c of catTypeArr" :label="c.type">{{ c.name }}</el-radio-button>
       </el-radio-group>
     </el-form-item>
     <el-form-item label="二级分类">
       <el-select placeholder="select">
-        <el-option label="面包" value="1"></el-option>
-        <el-option label="小食" value="2"></el-option>
+        <!--        <el-option label="面包" value="1"></el-option>
+                <el-option label="小食" value="2"></el-option>-->
+        <el-option v-for="c in categoryArr" :label="c.name" :value="c.id"></el-option>
       </el-select>
     </el-form-item>
     <el-form-item label="封面">
