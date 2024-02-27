@@ -5,6 +5,7 @@ import {onMounted, ref} from 'vue'
 import Editor from "wangeditor";
 import axios from "axios";
 import {ElMessage} from "element-plus";
+import qs from "qs"
 
 //创建响应式变量,代表页面的div元素
 const editorDiv = ref(null)
@@ -77,6 +78,34 @@ const typeChange = () => {
       }
   )
 }
+
+const post = () => {
+  if (content.value.title.trim() === '') {
+    ElMessage.error('请输入标题');
+    return;
+  }
+  if (content.value.categoryId === '') {
+    ElMessage.error('请选择二级分类')
+    return;
+  }
+  if (fileList.value.length === 0) {
+    ElMessage.error('请上传封面')
+    return;
+  }
+  let imgUrl = fileList.value[0].response.data;//获取fileList中图片路径
+  content.value.imgUrl = imgUrl;//将图片路径装载到content对象中去
+  content.value.content = editor.txt.html();//获取文章的内容
+  content.value.brief = editor.txt.text().slice(0, 30);//获取文章的摘要,截取前30个字符
+  console.log(content.value)
+  let data = qs.stringify(content.value)
+  axios.post('http://localhost:8080/v1/content/add-new',data)
+      .then((response)=>{
+        if(response.data.code===2001){
+          ElMessage.success('发布成功!');
+        }
+      })
+}
+
 </script>
 <!--稿件发布页-->
 <template>
@@ -125,7 +154,7 @@ const typeChange = () => {
       <div ref="editorDiv"></div>
     </el-form-item>
     <el-form-item>
-      <el-button type="primary">发布内容</el-button>
+      <el-button type="primary" @click="post()">发布内容</el-button>
     </el-form-item>
   </el-form>
 </template>
