@@ -8,6 +8,7 @@ public class ContentDTO {
     private Integer categoryId;
     private String content;
     private String imgUrl;
+    private String videoUrl;
     private String title;
     private Integer type;
     private Integer updateBy;

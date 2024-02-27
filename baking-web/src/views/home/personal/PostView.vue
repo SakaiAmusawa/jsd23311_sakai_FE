@@ -6,6 +6,7 @@ import Editor from "wangeditor";
 import axios from "axios";
 import {ElMessage} from "element-plus";
 import qs from "qs"
+import router from "@/router";
 
 //创建响应式变量,代表页面的div元素
 const editorDiv = ref(null)
@@ -79,7 +80,15 @@ const typeChange = () => {
   )
 }
 
+const videoList = ref([]);
+
 const post = () => {
+  //验证用户登陆状态
+  let user = localStorage.user ? JSON.parse(localStorage.user) : null
+  if (user == null) {
+    router.push('/login')
+  }
+  content.value.userId = user.id
   if (content.value.title.trim() === '') {
     ElMessage.error('请输入标题');
     return;
@@ -94,18 +103,30 @@ const post = () => {
   }
   let imgUrl = fileList.value[0].response.data;//获取fileList中图片路径
   content.value.imgUrl = imgUrl;//将图片路径装载到content对象中去
-  content.value.content = editor.txt.html();//获取文章的内容
-  content.value.brief = editor.txt.text().slice(0, 30);//获取文章的摘要,截取前30个字符
+
+  //判断是视频还是文章
+  if (content.value.type === 2) {//视频
+    if (videoList.value.length === 0) {
+      ElMessage.error('请先选择视频文件');
+      return;
+    }
+    let videoUrl = videoList.value[0].response.data;
+    content.value.videoUrl = videoUrl;
+  } else {//文章
+    content.value.content = editor.txt.html();//获取文章的内容
+    content.value.brief = editor.txt.text().slice(0, 30);//获取文章的摘要,截取前30个字符
+  }
+
   console.log(content.value)
   let data = qs.stringify(content.value)
-  axios.post('http://localhost:8080/v1/content/add-new',data)
-      .then((response)=>{
-        if(response.data.code===2001){
+  axios.post('http://localhost:8080/v1/content/add-new', data)
+      .then((response) => {
+        if (response.data.code === 2001) {
           ElMessage.success('发布成功!');
+          router.push('/personal/management')
         }
       })
 }
-
 </script>
 <!--稿件发布页-->
 <template>
@@ -129,8 +150,8 @@ const post = () => {
         <el-option v-for="c in categoryArr" :label="c.name" :value="c.id"></el-option>
       </el-select>
     </el-form-item>
+    <!--   封面上传开始    -->
     <el-form-item label="封面">
-      <!--   封面上传开始    -->
       <el-upload
           v-model:file-list="fileList"
           limit="1"
@@ -144,13 +165,32 @@ const post = () => {
           <Plus/>
         </el-icon>
       </el-upload>
+      <el-dialog v-model="dialogVisible">
+        <img :src="dialogImageUrl" alt="Preview Image" w-full/>
+      </el-dialog>
+    </el-form-item>
+    <!--   封面上传结束    -->
+    <!--   视频开始上传   -->
+    <el-form-item label="视频" v-show="content.type===2">
+      <el-upload
+          v-model:file-list="videoList"
+          limit="1"
+          name="file"
+          :on-preview="handlePictureCardPreview"
+          :on-remove="handleRemove"
+          action="http://localhost:8080/v1/upload"
+          accept="video/*"
+      >
+        <el-button type="warning">点击上传视频</el-button>
+        <div>(只能上传不超过不超过100M的MP4文件)</div>
+      </el-upload>
 
       <el-dialog v-model="dialogVisible">
         <img :src="dialogImageUrl" alt="Preview Image" w-full/>
       </el-dialog>
-      <!--   封面上传结束    -->
     </el-form-item>
-    <el-form-item label="文章内容">
+    <!--  视频上传结束  -->
+    <el-form-item label="文章内容" v-show="content.type!==2">
       <div ref="editorDiv"></div>
     </el-form-item>
     <el-form-item>
