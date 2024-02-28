@@ -54,6 +54,7 @@ onMounted(
                 console.log(response.data.data)
                 //根据id查询到的内容装载到content中回显在页面上
                 content.value = response.data.data
+                editor.txt.html(content.value.content);
                 //发送请求获取二级分类
                 //这里解决二级分类不发正常回显的问题
                 axios.get('http://localhost:8080/v1/categories/' + content.value.type + '/sub'
@@ -154,13 +155,14 @@ const post = () => {
 </script>
 <!--稿件发布页-->
 <template>
-  <h1 style="color: orange">发布内容页面</h1>
+  <h1 style="color: orange">{{ content.id == null ? '发布内容页面' : '修改内容页面' }}</h1>
   <el-form label-width="100px">
     <el-form-item label="文章标题">
       <el-input placeholder="请输入文章标题" v-model="content.title"></el-input>
     </el-form-item>
     <el-form-item label="文章类型">
-      <el-radio-group v-model="content.type" @change="typeChange()">
+      <!--  :disabled="content.id!=null" id不为空也就是修改时，禁止修改文件类型    -->
+      <el-radio-group v-model="content.type" @change="typeChange()" :disabled="content.id!=null">
         <!--        <el-radio-button label="1">烘焙食谱</el-radio-button>
                 <el-radio-button label="2">烘焙视频</el-radio-button>
                 <el-radio-button label="3">行业资讯</el-radio-button>-->
@@ -176,6 +178,8 @@ const post = () => {
     </el-form-item>
     <!--   封面上传开始    -->
     <el-form-item label="封面">
+      <img :src="'http://localhost:8080/'+content.imgUrl" alt="" v-if="content.id!=null&&fileList.length===0"
+           style="width: 145px;height: 145px;margin-right: 10px;">
       <el-upload
           v-model:file-list="fileList"
           limit="1"
@@ -196,6 +200,8 @@ const post = () => {
     <!--   封面上传结束    -->
     <!--   视频开始上传   -->
     <el-form-item label="视频" v-show="content.type===2">
+      <video v-if="content.id!=null&&videoList.length===0" :src="'http://localhost:8080/'+content.videoUrl"
+             style="width: 300px;margin-right: 10px;" type="video/mp4"></video>
       <el-upload
           v-model:file-list="videoList"
           limit="1"
