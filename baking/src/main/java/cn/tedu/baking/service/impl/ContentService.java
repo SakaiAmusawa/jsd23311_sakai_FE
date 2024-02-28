@@ -5,6 +5,7 @@ import cn.tedu.baking.pojo.dto.ContentDTO;
 import cn.tedu.baking.pojo.dto.ContentManagementQueryDTO;
 import cn.tedu.baking.pojo.entity.Content;
 import cn.tedu.baking.pojo.vo.ContentManagementVO;
+import cn.tedu.baking.pojo.vo.ContentUpdateVO;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -35,4 +36,12 @@ public class ContentService implements IContentService {
     public void deleteById(Integer id) {
         contentMapper.deleteById(id);
     }
+
+    @Override
+    public ContentUpdateVO selectForUpdateById(Integer id) {
+        ContentUpdateVO contentUpdateVO = contentMapper.selectForUpdateById(id);
+        return contentUpdateVO;
+    }
+
+
 }

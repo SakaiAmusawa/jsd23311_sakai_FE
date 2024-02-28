@@ -2,7 +2,9 @@ package cn.tedu.baking.service.impl;
 
 import cn.tedu.baking.pojo.dto.ContentDTO;
 import cn.tedu.baking.pojo.dto.ContentManagementQueryDTO;
+import cn.tedu.baking.pojo.entity.Content;
 import cn.tedu.baking.pojo.vo.ContentManagementVO;
+import cn.tedu.baking.pojo.vo.ContentUpdateVO;
 
 import java.util.List;
 
@@ -12,4 +14,6 @@ public interface IContentService {
     List<ContentManagementVO> listForManagement(ContentManagementQueryDTO contentManagementQueryDTO);
 
     void deleteById(Integer id);
+
+    ContentUpdateVO selectForUpdateById(Integer id);
 }
