@@ -82,4 +82,5 @@ const typeChange = (type) => {
 
 <style scoped>
 
+
 </style>
