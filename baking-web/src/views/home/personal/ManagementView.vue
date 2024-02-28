@@ -2,9 +2,9 @@
 
 import router from "@/router";
 import {onMounted, ref} from "vue";
-import {ElMessage} from "element-plus";
 import axios from "axios";
 import qs from "qs";
+import {ElMessage} from "element-plus";
 
 const arr = ref([]);
 const type = ref('1');
@@ -34,10 +34,16 @@ onMounted(() => {
   loadContents();
 })
 
-const del = (i) => {
+const del = (i, c) => {
   if (confirm('确认删除吗？')) {
-    arr.value.splice(i, 1)
-    ElMessage.success('删除成功')
+    axios.post('http://localhost:8080/v1/content/' + c.id + 'delete').then(
+        (response) => {
+          if (response.data.code === 2001) {
+            arr.value.splice(i, 1);
+            ElMessage.success('删除内容成功！')
+          }
+        }
+    )
   }
 }
 /*const typeChange = (type) => {
@@ -89,7 +95,7 @@ const loadContents = () => {
       <template #default="scope">
         <el-button-group>
           <el-button size="small" type="success">编辑</el-button>
-          <el-button size="small" type="danger" @click="del(scope.$index)">删除</el-button>
+          <el-button size="small" type="danger" @click="del(scope.$index,scope.row)">删除</el-button>
         </el-button-group>
       </template>
     </el-table-column>
