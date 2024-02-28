@@ -1,6 +1,37 @@
 <script setup>
 
 import router from "@/router";
+import {onMounted, ref} from "vue";
+import axios from "axios";
+
+//1.定义一个数字，装二级分类
+const recipeCatArr = ref([]);
+const videoCatArr = ref([]);
+const infoCatArr = ref([]);
+console.log(recipeCatArr)
+//2.立即执行
+onMounted(() => {
+  //分别获取三个数据的二级分类
+  axios.get('http://localhost:8080/v1/categories/1/sub')
+      .then((response) => {
+        if (response.data.code === 2001) {
+          recipeCatArr.value = response.data.data;
+        }
+      })
+  axios.get('http://localhost:8080/v1/categories/2/sub')
+      .then((response) => {
+        if (response.data.code === 2001) {
+          videoCatArr.value = response.data.data;
+        }
+      })
+  axios.get('http://localhost:8080/v1/categories/3/sub')
+      .then((response) => {
+        if (response.data.code === 2001) {
+          infoCatArr.value = response.data.data;
+        }
+      })
+})
+
 </script>
 
 <template>
@@ -17,10 +48,9 @@ import router from "@/router";
         <p style="font-size: 28px;margin: 10px">烘焙食谱</p>
       </el-col>
       <el-col :span="21">
-        <el-menu active-text-color="orange" mode="horizontal">
-          <el-menu-item index="1">全部</el-menu-item>
-          <el-menu-item index="2">面包</el-menu-item>
-          <el-menu-item index="3">小食</el-menu-item>
+        <el-menu active-text-color="orange" mode="horizontal" default-active="0">
+          <el-menu-item index="0">全部</el-menu-item>
+          <el-menu-item v-for="c in recipeCatArr" :index="c.id">{{c.name}}</el-menu-item>
         </el-menu>
       </el-col>
     </el-row>
@@ -50,10 +80,9 @@ import router from "@/router";
         <p style="font-size: 28px;margin: 10px">烘焙视频</p>
       </el-col>
       <el-col :span="21">
-        <el-menu active-text-color="orange" mode="horizontal">
-          <el-menu-item index="1">全部</el-menu-item>
-          <el-menu-item index="2">面包</el-menu-item>
-          <el-menu-item index="3">小食</el-menu-item>
+        <el-menu active-text-color="orange" mode="horizontal" default-active="0">
+          <el-menu-item index="0">全部</el-menu-item>
+          <el-menu-item v-for="c in videoCatArr" :index="c.id">{{c.name}}</el-menu-item>
         </el-menu>
       </el-col>
     </el-row>
@@ -83,10 +112,9 @@ import router from "@/router";
         <p style="font-size: 28px;margin: 10px">行业资讯</p>
       </el-col>
       <el-col :span="21">
-        <el-menu active-text-color="orange" mode="horizontal">
-          <el-menu-item index="1">全部</el-menu-item>
-          <el-menu-item index="2">面包</el-menu-item>
-          <el-menu-item index="3">小食</el-menu-item>
+        <el-menu active-text-color="orange" mode="horizontal" default-active="0">
+          <el-menu-item index="0">全部</el-menu-item>
+          <el-menu-item v-for="c in infoCatArr" :index="c.id">{{c.name}}</el-menu-item>
         </el-menu>
       </el-col>
     </el-row>
