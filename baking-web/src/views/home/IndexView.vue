@@ -80,7 +80,7 @@ const loadContents = (type, categoryId) => {
       <el-col :span="21">
         <el-menu active-text-color="orange" mode="horizontal" default-active="0">
           <el-menu-item index="0">全部</el-menu-item>
-          <el-menu-item v-for="c in recipeCatArr" :index="c.id">{{c.name}}</el-menu-item>
+          <el-menu-item v-for="c in recipeCatArr" :index="c.id">{{ c.name }}</el-menu-item>
         </el-menu>
       </el-col>
     </el-row>
@@ -112,7 +112,7 @@ const loadContents = (type, categoryId) => {
       <el-col :span="21">
         <el-menu active-text-color="orange" mode="horizontal" default-active="0">
           <el-menu-item index="0">全部</el-menu-item>
-          <el-menu-item v-for="c in videoCatArr" :index="c.id">{{c.name}}</el-menu-item>
+          <el-menu-item v-for="c in videoCatArr" :index="c.id">{{ c.name }}</el-menu-item>
         </el-menu>
       </el-col>
     </el-row>
@@ -144,12 +144,12 @@ const loadContents = (type, categoryId) => {
       <el-col :span="21">
         <el-menu active-text-color="orange" mode="horizontal" default-active="0">
           <el-menu-item index="0">全部</el-menu-item>
-          <el-menu-item v-for="c in infoCatArr" :index="c.id">{{c.name}}</el-menu-item>
+          <el-menu-item v-for="c in infoCatArr" :index="c.id">{{ c.name }}</el-menu-item>
         </el-menu>
       </el-col>
     </el-row>
     <el-row :gutter="10" style="margin-top: 5px;">
-      <el-col v-for="item in infoArr" :span="6"  style="margin-top:10px;">
+      <el-col v-for="item in infoArr" :span="6" style="margin-top:10px;">
         <el-card class="box-card">
           <router-link style="text-decoration: none;color: #333" to="/detail">
             <img alt="" :src="'http://localhost:8080'+item.imgUrl" style="width: 100%;height: 150px;">
