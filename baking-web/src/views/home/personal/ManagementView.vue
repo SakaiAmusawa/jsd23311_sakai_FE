@@ -70,6 +70,7 @@ const loadContents = () => {
         }
       }
   )
+
 }
 
 const edit = (row) => {

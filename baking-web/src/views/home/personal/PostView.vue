@@ -54,6 +54,16 @@ onMounted(
                 console.log(response.data.data)
                 //根据id查询到的内容装载到content中回显在页面上
                 content.value = response.data.data
+                //发送请求获取二级分类
+                //这里解决二级分类不发正常回显的问题
+                axios.get('http://localhost:8080/v1/categories/' + content.value.type + '/sub'
+                ).then(
+                    (response) => {
+                      if (response.data.code === 2001) {
+                        categoryArr.value = response.data.data;
+                      }
+                    }
+                )
               }
             }
         )
