@@ -122,21 +122,40 @@ const post = () => {
     ElMessage.error('请选择二级分类')
     return;
   }
-  if (fileList.value.length === 0) {
-    ElMessage.error('请上传封面')
-    return;
+  /*判读是发布还是修改 如果是修改 可以延用之前的封面图片*/
+  if (content.value.id == null) {
+    //发布
+    if (fileList.value.length === 0) {
+      ElMessage.error('请上传封面')
+      return;
+    }
+    let imgUrl = fileList.value[0].response.data;//获取fileList中图片路径
+    content.value.imgUrl = imgUrl;//将图片路径装载到content对象中去
+
+  } else {
+    //修改
+    if (fileList.value.length > 0) {
+      let imgUrl = fileList.value[0].response.data;
+      content.value.imgUrl = imgUrl;
+    }
   }
-  let imgUrl = fileList.value[0].response.data;//获取fileList中图片路径
-  content.value.imgUrl = imgUrl;//将图片路径装载到content对象中去
+
 
   //判断是视频还是文章
   if (content.value.type === 2) {//视频
-    if (videoList.value.length === 0) {
-      ElMessage.error('请先选择视频文件');
-      return;
+    if (content.value.id == null) {
+      if (videoList.value.length === 0) {
+        ElMessage.error('请先选择视频文件');
+        return;
+      }
+      let videoUrl = videoList.value[0].response.data;
+      content.value.videoUrl = videoUrl;
+    } else {
+      if (videoList.value.length > 0) {
+        let videoUrl = videoList.value[0].response.data;
+        content.value.videoUrl = videoUrl;
+      }
     }
-    let videoUrl = videoList.value[0].response.data;
-    content.value.videoUrl = videoUrl;
   } else {//文章
     content.value.content = editor.txt.html();//获取文章的内容
     content.value.brief = editor.txt.text().slice(0, 30);//获取文章的摘要,截取前30个字符
@@ -147,7 +166,7 @@ const post = () => {
   axios.post('http://localhost:8080/v1/content/add-new', data)
       .then((response) => {
         if (response.data.code === 2001) {
-          ElMessage.success('发布成功!');
+          ElMessage.success(content.value.id == null ? '发布成功!' : '修改成功');
           router.push('/personal/management')
         }
       })
