@@ -1,4 +1,4 @@
-package cn.tedu.baking.service.impl;
+package cn.tedu.baking.service;
 
 import cn.tedu.baking.pojo.dto.ContentDTO;
 import cn.tedu.baking.pojo.dto.ContentIndexDTO;
