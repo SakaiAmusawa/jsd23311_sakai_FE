@@ -2,8 +2,10 @@ package cn.tedu.baking.service.impl;
 
 import cn.tedu.baking.mapper.ContentMapper;
 import cn.tedu.baking.pojo.dto.ContentDTO;
+import cn.tedu.baking.pojo.dto.ContentIndexDTO;
 import cn.tedu.baking.pojo.dto.ContentManagementQueryDTO;
 import cn.tedu.baking.pojo.entity.Content;
+import cn.tedu.baking.pojo.vo.ContentIndexVO;
 import cn.tedu.baking.pojo.vo.ContentManagementVO;
 import cn.tedu.baking.pojo.vo.ContentUpdateVO;
 import org.springframework.beans.BeanUtils;
@@ -47,6 +49,13 @@ public class ContentService implements IContentService {
     public ContentUpdateVO selectForUpdateById(Integer id) {
         ContentUpdateVO contentUpdateVO = contentMapper.selectForUpdateById(id);
         return contentUpdateVO;
+    }
+
+    @Override
+    public List<ContentIndexVO> selectContentByTypeCategoryId(ContentIndexDTO contentIndexDTO) {
+        List<ContentIndexVO> list = contentMapper.selectContentByTypeCategoryId(contentIndexDTO);
+        System.out.println(list);
+        return list;
     }
 
 

@@ -47,4 +47,13 @@
         </set>
         WHERE id = #{id}
     </update>
+    <select id="selectContentByTypeCategoryId" resultType="cn.tedu.baking.pojo.vo.ContentIndexVO">
+        SELECT c.id, c.title, c.img_url, u.img_url userImgUrl, u.nickname, cat.name
+        FROM baking.content c
+        JOIN baking.user u on u.id = c.user_id
+        JOIN baking.category cat on cat.id = c.category_id
+        WHERE c.type = #{type}
+        <if test="categoryId!=0">AND c.category_id = #{categoryId}</if>
+        LIMIT 0,4
+    </select>
 </mapper>
