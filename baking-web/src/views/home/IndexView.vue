@@ -11,7 +11,7 @@ const infoCatArr = ref([]);
 console.log(recipeCatArr)
 //2.立即执行
 onMounted(() => {
-  //分别获取三个数据的二级分类
+  //3.分别获取三个数据的二级分类
   axios.get('http://localhost:8080/v1/categories/1/sub')
       .then((response) => {
         if (response.data.code === 2001) {
@@ -30,8 +30,36 @@ onMounted(() => {
           infoCatArr.value = response.data.data;
         }
       })
+  //6.调用加载内容的方法   加载三种类型的全部内容
+  loadContents(1, 0)
+  loadContents(2, 0)
+  loadContents(3, 0)
 })
 
+//4.准备三个内容数组
+const recipeArr = ref([]);
+const videoArr = ref([]);
+const infoArr = ref([]);
+//5.定义加载内容方法
+const loadContents = (type, categoryId) => {
+  let data = qs.stringify({type: type.value, categoryId: categoryId})
+  axios.get('http://localhost:8080/v1/content/index?' + data)
+      .then((response) => {
+        if (response.data.code === 2001) {
+          //三合一：根据不同的type将响应数据存入不同的内容数组中去
+          switch (type) {
+            case 1:
+              recipeArr.value = response.data.data;
+              break;
+            case 2:
+              videoArr.value = response.data.data;
+              break;
+            case 3:
+              infoArr.value = response.data.data;
+          }
+        }
+      })
+};
 </script>
 
 <template>
