@@ -12,4 +12,6 @@ public interface ContentMapper {
     public void insert(Content content);
 
     List<ContentManagementVO> selectForManagement(ContentManagementQueryDTO contentManagementQueryDTO);
+
+    void deleteById(Integer id);
 }

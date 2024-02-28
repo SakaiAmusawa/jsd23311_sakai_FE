@@ -30,4 +30,9 @@ public class ContentService implements IContentService {
         List<ContentManagementVO> list = contentMapper.selectForManagement(contentManagementQueryDTO);
         return list;
     }
+
+    @Override
+    public void deleteById(Integer id) {
+        contentMapper.deleteById(id);
+    }
 }

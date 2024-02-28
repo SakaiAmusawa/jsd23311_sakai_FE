@@ -6,10 +6,7 @@ import cn.tedu.baking.pojo.vo.ContentManagementVO;
 import cn.tedu.baking.response.JsonResult;
 import cn.tedu.baking.service.impl.ContentService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -33,4 +30,10 @@ public class ContentController {
         return JsonResult.ok(list);
     }
 
+    @PostMapping("{id}delete")
+    public JsonResult deleteContent(@PathVariable Integer id) {
+        System.out.println("id = " + id);
+        contentService.deleteById(id);
+        return JsonResult.ok();
+    }
 }

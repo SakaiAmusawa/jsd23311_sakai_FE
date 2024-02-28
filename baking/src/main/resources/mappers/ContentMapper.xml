@@ -11,6 +11,7 @@
                 0, 0, #{brief},
                 #{categoryId}, #{userId}, #{createTime})
     </insert>
+
     <select id="selectForManagement" resultType="cn.tedu.baking.pojo.vo.ContentManagementVO">
         SELECT c.id,
                title,
@@ -25,4 +26,10 @@
         WHERE c.type = #{type}
           AND c.user_id = #{userId}
     </select>
+
+    <delete id="deleteById">
+        DELETE
+        FROM baking.content
+        WHERE id = #{id}
+    </delete>
 </mapper>

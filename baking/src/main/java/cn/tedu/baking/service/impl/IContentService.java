@@ -10,4 +10,6 @@ public interface IContentService {
     void insert(ContentDTO contentDTO);
 
     List<ContentManagementVO> listForManagement(ContentManagementQueryDTO contentManagementQueryDTO);
+
+    void deleteById(Integer id);
 }
