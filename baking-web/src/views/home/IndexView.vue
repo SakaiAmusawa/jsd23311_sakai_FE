@@ -3,6 +3,7 @@
 import router from "@/router";
 import {onMounted, ref} from "vue";
 import axios from "axios";
+import qs from "qs";
 
 //1.定义一个数字，装二级分类
 const recipeCatArr = ref([]);
