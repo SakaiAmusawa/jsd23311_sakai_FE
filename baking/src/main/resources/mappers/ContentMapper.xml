@@ -34,4 +34,17 @@
         FROM baking.content
         WHERE id = #{id}
     </select>
+    <update id="updateById">
+        UPDATE baking.content
+        <set>
+            <if test="title!=null">title=#{title},</if>
+            <if test="content!=null">content=#{content},</if>
+            <if test="imgUrl!=null">img_url=#{imgUrl},</if>
+            <if test="videoUrl!=null">video_url=#{videoUrl},</if>
+            <if test="brief!=null">brief=#{brief},</if>
+            <if test="categoryId!=null">category_id=#{categoryId},</if>
+            <if test="updateTime!=null">update_time=#{updateTime}</if>
+        </set>
+        WHERE id = #{id}
+    </update>
 </mapper>

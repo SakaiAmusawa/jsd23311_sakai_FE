@@ -1,5 +1,6 @@
 package cn.tedu.baking.mapper;
 
+import cn.tedu.baking.pojo.dto.ContentDTO;
 import cn.tedu.baking.pojo.dto.ContentManagementQueryDTO;
 import cn.tedu.baking.pojo.entity.Content;
 import cn.tedu.baking.pojo.vo.ContentManagementVO;
@@ -10,11 +11,13 @@ import java.util.List;
 
 @Repository
 public interface ContentMapper {
-    public void insert(Content content);
+    void insert(Content content);
 
     List<ContentManagementVO> selectForManagement(ContentManagementQueryDTO contentManagementQueryDTO);
 
     void deleteById(Integer id);
 
     ContentUpdateVO selectForUpdateById(Integer id);
+
+    void updateById(ContentDTO contentDTO);
 }

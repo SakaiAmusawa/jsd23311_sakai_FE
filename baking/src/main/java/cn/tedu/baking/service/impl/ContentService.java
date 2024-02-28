@@ -18,12 +18,18 @@ public class ContentService implements IContentService {
     @Autowired
     ContentMapper contentMapper;
 
+    //重构新建方法
     @Override
     public void insert(ContentDTO contentDTO) {
         Content content = new Content();
         BeanUtils.copyProperties(contentDTO, content);
-        content.setCreateTime(new Date());
-        contentMapper.insert(content);
+        if (contentDTO.getId() == null) {//没有ID 为新增
+            content.setCreateTime(new Date());
+            contentMapper.insert(content);
+        } else {//有ID 为修改
+            content.setUpdateTime(new Date());
+            contentMapper.updateById(contentDTO);
+        }
     }
 
     @Override
