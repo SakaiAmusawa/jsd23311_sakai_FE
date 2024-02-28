@@ -36,7 +36,7 @@ onMounted(() => {
 
 const del = (i, c) => {
   if (confirm('确认删除吗？')) {
-    axios.post('http://localhost:8080/v1/content/' + c.id + 'delete').then(
+    axios.post('http://localhost:8080/v1/content/' + c.id + '/delete').then(
         (response) => {
           if (response.data.code === 2001) {
             arr.value.splice(i, 1);

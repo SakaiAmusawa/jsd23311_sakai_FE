@@ -32,14 +32,14 @@ public class ContentController {
         return JsonResult.ok(list);
     }
 
-    @PostMapping("{id}delete")
+    @PostMapping("{id}/delete")
     public JsonResult deleteContent(@PathVariable Integer id) {
         System.out.println("id = " + id);
         contentService.deleteById(id);
         return JsonResult.ok();
     }
 
-    @GetMapping("{id}update")
+    @GetMapping("{id}/update")
     public JsonResult selectForUpdateById(@PathVariable Integer id){
         ContentUpdateVO contentUpdateVO = contentService.selectForUpdateById(id);
         return JsonResult.ok(contentUpdateVO);
