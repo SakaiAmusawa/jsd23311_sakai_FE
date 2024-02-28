@@ -72,6 +72,10 @@ const loadContents = () => {
   )
 }
 
+const edit = (row) => {
+  router.push('/personal/post?id=' + row.id)
+}
+
 </script>
 
 <template>
@@ -94,7 +98,7 @@ const loadContents = () => {
     <el-table-column align="center" label="操作">
       <template #default="scope">
         <el-button-group>
-          <el-button size="small" type="success">编辑</el-button>
+          <el-button size="small" type="success" @click="edit(scope.row)">编辑</el-button>
           <el-button size="small" type="danger" @click="del(scope.$index,scope.row)">删除</el-button>
         </el-button-group>
       </template>

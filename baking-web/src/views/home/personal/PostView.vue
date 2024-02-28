@@ -44,6 +44,20 @@ const handlePictureCardPreview = (uploadFile) => {
 const catTypeArr = ref([])
 onMounted(
     () => {
+      //当以GET请求携带参数过来时，此方式可获取到？后参数
+      if (location.search.includes('id')) {
+        let id = new URLSearchParams(location.search).get('id')
+        console.log(id)
+        axios.get('http://localhost:8080/v1/content/' + id + '/update').then(
+            (response) => {
+              if (response.data.code === 2001) {
+                console.log(response.data.data)
+                //根据id查询到的内容装载到content中回显在页面上
+                content.value = response.data.data
+              }
+            }
+        )
+      }
       //发送请求获取一级分类
       axios.get('http://localhost:8080/v1/categories/type').then(
           (response) => {
