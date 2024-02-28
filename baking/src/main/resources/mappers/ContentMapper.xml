@@ -48,7 +48,7 @@
         WHERE id = #{id}
     </update>
     <select id="selectContentByTypeCategoryId" resultType="cn.tedu.baking.pojo.vo.ContentIndexVO">
-        SELECT c.id, c.title, c.img_url, u.img_url userImgUrl, u.nickname, cat.name
+        SELECT c.id, c.title, c.img_url, u.img_url userImgUrl, u.nickname, cat.name categoryName
         FROM baking.content c
         JOIN baking.user u on u.id = c.user_id
         JOIN baking.category cat on cat.id = c.category_id
