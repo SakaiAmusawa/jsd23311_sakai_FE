@@ -43,7 +43,8 @@ const videoArr = ref([]);
 const infoArr = ref([]);
 //5.定义加载内容方法
 const loadContents = (type, categoryId) => {
-  let data = qs.stringify({type: type.value, categoryId: categoryId})
+  let data = qs.stringify({type: type, categoryId: categoryId})
+  console.log(data)
   axios.get('http://localhost:8080/v1/content/index?' + data)
       .then((response) => {
         if (response.data.code === 2001) {
