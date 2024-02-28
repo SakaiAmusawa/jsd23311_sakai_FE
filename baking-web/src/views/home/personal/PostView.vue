@@ -243,7 +243,7 @@ const post = () => {
       <div ref="editorDiv"></div>
     </el-form-item>
     <el-form-item>
-      <el-button type="primary" @click="post()">发布内容</el-button>
+      <el-button type="primary" @click="post()">{{content.id == null ? '发布内容' : '修改内容'}}</el-button>
     </el-form-item>
   </el-form>
 </template>
