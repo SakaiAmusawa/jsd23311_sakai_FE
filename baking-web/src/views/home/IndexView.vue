@@ -5,6 +5,9 @@ import {onMounted, ref} from "vue";
 import axios from "axios";
 import qs from "qs";
 
+//创建一个banner数组用于接受后端发送来的数据
+const bannerArr = ref([]);
+
 //1.定义一个数字，装二级分类
 const recipeCatArr = ref([]);
 const videoCatArr = ref([]);
@@ -35,6 +38,14 @@ onMounted(() => {
   loadContents(1, 0)
   loadContents(2, 0)
   loadContents(3, 0)
+
+  //向后端发送请求 用于轮播图的管理
+  axios.get('http://localhost:8080/v1/banner/index')
+      .then((response) => {
+        if (response.data.code === 2001) {
+          bannerArr.value = response.data.data;
+        }
+      })
 })
 
 //4.准备三个内容数组
@@ -86,8 +97,8 @@ const selectInfo = (index) => {
   <div style="width: 1200px;margin: 0 auto;">
 
     <el-carousel>
-      <el-carousel-item v-for="item in 3">
-        <img :src="'/imgs/banner'+item+'.jpg'" alt="轮播图" style="width: 100%;height: 100%;">
+      <el-carousel-item v-for="item in bannerArr">
+        <img :src="'http://localhost:8080'+item.imgUrl" alt="轮播图" style="width: 100%;height: 100%;">
       </el-carousel-item>
     </el-carousel>
 
