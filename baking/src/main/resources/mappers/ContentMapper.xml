@@ -78,4 +78,10 @@
         FROM baking.content
         WHERE user_id = #{userId}
     </select>
+    <select id="selectHot" resultType="cn.tedu.baking.pojo.vo.ContentHotVO">
+        SELECT id, title, img_url, create_time
+        FROM baking.content
+        ORDER BY view_count DESC
+        LIMIT 0,5
+    </select>
 </mapper>

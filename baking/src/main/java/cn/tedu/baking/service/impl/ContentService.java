@@ -76,5 +76,11 @@ public class ContentService implements IContentService {
         return list;
     }
 
+    @Override
+    public List<ContentHotVO> selectHot() {
+        List<ContentHotVO> list = contentMapper.selectHot();
+        return list;
+    }
+
 
 }

@@ -26,4 +26,6 @@ public interface ContentMapper {
     ContentDetailVO selectDetailById(Long id);
 
     List<ContentOtherVO> selectOtherByUserId(Long userId);
+
+    List<ContentHotVO> selectHot();
 }

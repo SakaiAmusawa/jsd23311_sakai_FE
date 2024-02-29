@@ -64,4 +64,10 @@ public class ContentController {
         List<ContentOtherVO> list = contentService.selectOtherByUserId(userId);
         return JsonResult.ok(list);
     }
+
+    @GetMapping("hot")
+    public JsonResult selectHot() {
+        List<ContentHotVO> list = contentService.selectHot();
+        return JsonResult.ok(list);
+    }
 }

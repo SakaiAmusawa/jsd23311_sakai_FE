@@ -7,6 +7,8 @@ import axios from "axios";
 const detail = ref({});
 //otherArr保存作者其他文章
 const otherArr = ref([]);
+//hotArr用于保存热门文章
+const hotArr = ref([]);
 
 
 onMounted(() => {
@@ -22,6 +24,14 @@ onMounted(() => {
                   otherArr.value = response.data.data;
                 }
               })
+
+          axios.get('http://localhost:8080/v1/content/hot')
+              .then((response) => {
+                if (response.data.code === 2001) {
+                  hotArr.value = response.data.data
+                }
+              })
+
         }
       })
 
@@ -94,13 +104,13 @@ onMounted(() => {
       <el-card style="margin-top: 10px;">
         <h2>热门文章</h2>
         <hr>
-        <el-row v-for="item in 4" :gutter="10">
+        <el-row v-for="item in hotArr" :gutter="10">
           <el-col :span="10">
-            <img alt="" src="/imgs/a.jpg" style="width: 100%;">
+            <img alt="" :src="'http://localhost:8080'+item.imgUrl" style="width: 100%;">
           </el-col>
           <el-col :span="14">
-            <h3 style="height: 40px;margin-top: 0;">这是标题内容</h3>
-            <p style="color: #666666;font-size: 12px;margin: 0;">2024年02月19日 16:24:21</p>
+            <h3 style="height: 40px;margin-top: 0;  white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">{{ item.title }}</h3>
+            <p style="color: #666666;font-size: 12px;margin: 0;">{{ item.createTime}}</p>
           </el-col>
         </el-row>
       </el-card>
