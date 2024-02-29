@@ -1,6 +1,6 @@
 <script setup>
 
-import {onMounted, ref} from "vue";
+import {onBeforeUpdate, onMounted, ref} from "vue";
 import axios from "axios";
 
 //保存详情页内容的数组
@@ -10,8 +10,8 @@ const otherArr = ref([]);
 //hotArr用于保存热门文章
 const hotArr = ref([]);
 
-
-onMounted(() => {
+//定义一个方法初始化方法
+const initDate = () => {
   let id = new URLSearchParams(location.search).get('id')
   axios.get('http://localhost:8080/v1/content/' + id + '/detail')
       .then((response) => {
@@ -35,6 +35,13 @@ onMounted(() => {
         }
       })
 
+}
+
+onMounted(() => {
+  initDate();
+})
+onBeforeUpdate(() => {
+  initDate();
 })
 
 </script>
@@ -106,10 +113,14 @@ onMounted(() => {
         <hr>
         <el-row v-for="item in hotArr" :gutter="10">
           <el-col :span="10">
-            <img alt="" :src="'http://localhost:8080'+item.imgUrl" style="width: 100%;">
+            <router-link :to="'/detail?id='+item.id">
+              <img alt="" :src="'http://localhost:8080'+item.imgUrl" style="width: 100%;">
+            </router-link>
           </el-col>
           <el-col :span="14">
-            <p class="title_p">{{ item.title }}</p>
+            <router-link :to="'/detail?id='+item.id">
+              <p class="title_p">{{ item.title }}</p>
+            </router-link>
             <p style="color: #666666;font-size: 12px;margin: 0;">{{ item.createTime}}</p>
           </el-col>
         </el-row>
@@ -120,10 +131,14 @@ onMounted(() => {
         <hr>
         <el-row v-for="item in otherArr" :gutter="10">
           <el-col :span="10">
-            <img alt="" :src="'http://localhost:8080'+item.imgUrl" style="width: 100%;">
+            <router-link :to="'/detail?id='+item.id">
+              <img alt="" :src="'http://localhost:8080'+item.imgUrl" style="width: 100%;">
+            </router-link>
           </el-col>
           <el-col :span="14">
-            <p class="title_p">{{ item.title }}</p>
+            <router-link :to="'/detail?id='+item.id">
+              <p class="title_p">{{ item.title }}</p>
+            </router-link>
             <p style="color: #666666;font-size: 12px;margin: 0;">{{ item.createTime }}</p>
           </el-col>
         </el-row>
@@ -144,7 +159,9 @@ onMounted(() => {
   position: relative;
   top: 3px;
   right: 5px;
+
 }
+
 
 .title_p {
   height: 40px;
@@ -155,5 +172,16 @@ onMounted(() => {
   -webkit-line-clamp: 2;
   /*水平排列*/
   -webkit-box-orient: vertical;
+
+  color: orange;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+a:hover {
+  font-weight: bolder;
 }
 </style>
