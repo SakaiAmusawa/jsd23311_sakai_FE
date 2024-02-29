@@ -109,7 +109,7 @@ onMounted(() => {
             <img alt="" :src="'http://localhost:8080'+item.imgUrl" style="width: 100%;">
           </el-col>
           <el-col :span="14">
-            <h3 style="height: 40px;margin-top: 0;  white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">{{ item.title }}</h3>
+            <p class="title_p">{{ item.title }}</p>
             <p style="color: #666666;font-size: 12px;margin: 0;">{{ item.createTime}}</p>
           </el-col>
         </el-row>
@@ -123,7 +123,7 @@ onMounted(() => {
             <img alt="" :src="'http://localhost:8080'+item.imgUrl" style="width: 100%;">
           </el-col>
           <el-col :span="14">
-            <h3 style="height: 40px;margin-top: 0;  white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">{{ item.title }}</h3>
+            <p class="title_p">{{ item.title }}</p>
             <p style="color: #666666;font-size: 12px;margin: 0;">{{ item.createTime }}</p>
           </el-col>
         </el-row>
@@ -144,5 +144,16 @@ onMounted(() => {
   position: relative;
   top: 3px;
   right: 5px;
+}
+
+.title_p {
+  height: 40px;
+  margin-top: 0;
+  overflow: hidden;
+  display: -webkit-box;
+  /*显示的行数为两行*/
+  -webkit-line-clamp: 2;
+  /*水平排列*/
+  -webkit-box-orient: vertical;
 }
 </style>
