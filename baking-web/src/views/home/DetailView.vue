@@ -37,9 +37,12 @@ const initDate = () => {
 
 }
 
+//初始加载
 onMounted(() => {
   initDate();
 })
+
+//更新后加载
 onBeforeUpdate(() => {
   initDate();
 })
