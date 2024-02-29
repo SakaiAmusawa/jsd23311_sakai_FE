@@ -73,4 +73,9 @@
                  JOIN baking.user u on u.id = c.user_id
         WHERE c.id = #{id}
     </select>
+    <select id="selectOtherByUserId" resultType="cn.tedu.baking.pojo.vo.ContentOtherVO">
+        SELECT id, title, img_url, create_time
+        FROM baking.content
+        WHERE user_id = #{userId}
+    </select>
 </mapper>

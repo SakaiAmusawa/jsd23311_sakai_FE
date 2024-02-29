@@ -3,10 +3,7 @@ package cn.tedu.baking.controller;
 import cn.tedu.baking.pojo.dto.ContentDTO;
 import cn.tedu.baking.pojo.dto.ContentIndexDTO;
 import cn.tedu.baking.pojo.dto.ContentManagementQueryDTO;
-import cn.tedu.baking.pojo.vo.ContentDetailVO;
-import cn.tedu.baking.pojo.vo.ContentIndexVO;
-import cn.tedu.baking.pojo.vo.ContentManagementVO;
-import cn.tedu.baking.pojo.vo.ContentUpdateVO;
+import cn.tedu.baking.pojo.vo.*;
 import cn.tedu.baking.response.JsonResult;
 import cn.tedu.baking.service.IContentService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -60,5 +57,11 @@ public class ContentController {
     public JsonResult selectDetailById(@PathVariable Long id) {
         ContentDetailVO contentDetailVO = contentService.selectDetailById(id);
         return JsonResult.ok(contentDetailVO);
+    }
+
+    @GetMapping("{userId}/other")
+    public JsonResult selectOtherByUserId(@PathVariable Long userId) {
+        List<ContentOtherVO> list = contentService.selectOtherByUserId(userId);
+        return JsonResult.ok(list);
     }
 }

@@ -3,7 +3,11 @@
 import {onMounted, ref} from "vue";
 import axios from "axios";
 
+//保存详情页内容的数组
 const detail = ref({});
+//otherArr保存作者其他文章
+const otherArr = ref([]);
+
 
 onMounted(() => {
   let id = new URLSearchParams(location.search).get('id')
@@ -11,8 +15,16 @@ onMounted(() => {
       .then((response) => {
         if (response.data.code === 2001) {
           detail.value = response.data.data;
+
+          axios.get('http://localhost:8080/v1/content/' + detail.value.userId + '/other')
+              .then((response) => {
+                if (response.data.code === 2001) {
+                  otherArr.value = response.data.data;
+                }
+              })
         }
       })
+
 })
 
 </script>
@@ -26,12 +38,16 @@ onMounted(() => {
             detail.createTime
           }}|阅读次数：{{ detail.viewCount }}</p>
         <hr>
-        <el-card class="box-card" v-if="detail.content!=null">
-          <span style="color: #0aa1ed;font-weight: bold;" >摘要：</span>{{ detail.brief }}
-        </el-card>
-        <p v-if="detail.content!=null">{{ detail.content }}</p>
-        <video v-else :src="'http://localhost:8080/'+detail.videoUrl" type="video/mp4" style="width: 100%;margin: 5px;"></video>
-        <img alt="" :src="'http://localhost:8080'+detail.imgUrl" style="width: 100%;">
+        <div v-if="detail.type!==2">
+          <el-card class="box-card">
+            <span style="color: #0aa1ed;font-weight: bold;">摘要：</span>{{ detail.brief }}
+          </el-card>
+          <div v-html="detail.content"></div>
+        </div>
+        <div v-else>
+          <video :src="'http://localhost:8080/'+detail.videoUrl" controls type="video/mp4"
+                 style="width: 100%;margin: 5px;"></video>
+        </div>
       </el-card>
       <!--   评论相关开始   -->
       <el-card style="margin-top: 10px;">
@@ -92,13 +108,13 @@ onMounted(() => {
       <el-card style="margin-top: 10px;">
         <h2>作者其他文章</h2>
         <hr>
-        <el-row v-for="item in 4" :gutter="10">
+        <el-row v-for="item in otherArr" :gutter="10">
           <el-col :span="10">
-            <img alt="" src="/imgs/a.jpg" style="width: 100%;">
+            <img alt="" :src="'http://localhost:8080'+item.imgUrl" style="width: 100%;">
           </el-col>
           <el-col :span="14">
-            <h3 style="height: 40px;margin-top: 0;">这是标题内容</h3>
-            <p style="color: #666666;font-size: 12px;margin: 0;">2024年02月19日 16:24:21</p>
+            <h3 style="height: 40px;margin-top: 0;  white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">{{ item.title }}</h3>
+            <p style="color: #666666;font-size: 12px;margin: 0;">{{ item.createTime }}</p>
           </el-col>
         </el-row>
       </el-card>

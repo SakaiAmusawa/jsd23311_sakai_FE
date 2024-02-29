@@ -5,10 +5,7 @@ import cn.tedu.baking.pojo.dto.ContentDTO;
 import cn.tedu.baking.pojo.dto.ContentIndexDTO;
 import cn.tedu.baking.pojo.dto.ContentManagementQueryDTO;
 import cn.tedu.baking.pojo.entity.Content;
-import cn.tedu.baking.pojo.vo.ContentDetailVO;
-import cn.tedu.baking.pojo.vo.ContentIndexVO;
-import cn.tedu.baking.pojo.vo.ContentManagementVO;
-import cn.tedu.baking.pojo.vo.ContentUpdateVO;
+import cn.tedu.baking.pojo.vo.*;
 import cn.tedu.baking.service.IContentService;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -70,6 +67,13 @@ public class ContentService implements IContentService {
         ContentDetailVO contentDetailVO = contentMapper.selectDetailById(id);
         System.out.println("contentDetailVO:" + contentDetailVO);
         return contentDetailVO;
+    }
+
+    @Override
+    public List<ContentOtherVO> selectOtherByUserId(Long userId) {
+        List<ContentOtherVO> list = contentMapper.selectOtherByUserId(userId);
+        System.out.println(list);
+        return list;
     }
 
 
