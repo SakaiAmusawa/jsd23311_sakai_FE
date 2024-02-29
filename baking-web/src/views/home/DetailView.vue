@@ -26,10 +26,11 @@ onMounted(() => {
             detail.createTime
           }}|阅读次数：{{ detail.viewCount }}</p>
         <hr>
-        <el-card class="box-card">
-          <span style="color: #0aa1ed;font-weight: bold;">摘要：</span>{{ detail.brief }}
+        <el-card class="box-card" v-if="detail.content!=null">
+          <span style="color: #0aa1ed;font-weight: bold;" >摘要：</span>{{ detail.brief }}
         </el-card>
-        <p>{{ detail.content }}</p>
+        <p v-if="detail.content!=null">{{ detail.content }}</p>
+        <video v-else :src="'http://localhost:8080/'+detail.videoUrl" type="video/mp4" style="width: 100%;margin: 5px;"></video>
         <img alt="" :src="'http://localhost:8080'+detail.imgUrl" style="width: 100%;">
       </el-card>
       <!--   评论相关开始   -->
