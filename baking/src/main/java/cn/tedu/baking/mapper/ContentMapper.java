@@ -28,4 +28,6 @@ public interface ContentMapper {
     List<ContentOtherVO> selectOtherByUserId(Long userId);
 
     List<ContentHotVO> selectHot();
+
+    void updateViewById(Long id);
 }

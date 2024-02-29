@@ -65,14 +65,13 @@ public class ContentService implements IContentService {
     @Override
     public ContentDetailVO selectDetailById(Long id) {
         ContentDetailVO contentDetailVO = contentMapper.selectDetailById(id);
-        System.out.println("contentDetailVO:" + contentDetailVO);
+        contentMapper.updateViewById(id);
         return contentDetailVO;
     }
 
     @Override
     public List<ContentOtherVO> selectOtherByUserId(Long userId) {
         List<ContentOtherVO> list = contentMapper.selectOtherByUserId(userId);
-        System.out.println(list);
         return list;
     }
 

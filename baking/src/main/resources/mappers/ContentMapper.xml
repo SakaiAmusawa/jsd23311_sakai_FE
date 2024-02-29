@@ -85,4 +85,9 @@
         ORDER BY view_count DESC
         LIMIT 0,4
     </select>
+    <update id="updateViewById">
+        UPDATE baking.content
+        SET view_count = view_count + 1
+        WHERE id = #{id}
+    </update>
 </mapper>
