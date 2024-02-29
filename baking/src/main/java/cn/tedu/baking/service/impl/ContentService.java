@@ -5,6 +5,7 @@ import cn.tedu.baking.pojo.dto.ContentDTO;
 import cn.tedu.baking.pojo.dto.ContentIndexDTO;
 import cn.tedu.baking.pojo.dto.ContentManagementQueryDTO;
 import cn.tedu.baking.pojo.entity.Content;
+import cn.tedu.baking.pojo.vo.ContentDetailVO;
 import cn.tedu.baking.pojo.vo.ContentIndexVO;
 import cn.tedu.baking.pojo.vo.ContentManagementVO;
 import cn.tedu.baking.pojo.vo.ContentUpdateVO;
@@ -62,6 +63,13 @@ public class ContentService implements IContentService {
         List<ContentIndexVO> list = contentMapper.selectContentByTypeCategoryId(contentIndexDTO);
         System.out.println(list);
         return list;
+    }
+
+    @Override
+    public ContentDetailVO selectDetailById(Long id) {
+        ContentDetailVO contentDetailVO = contentMapper.selectDetailById(id);
+        System.out.println("contentDetailVO:" + contentDetailVO);
+        return contentDetailVO;
     }
 
 

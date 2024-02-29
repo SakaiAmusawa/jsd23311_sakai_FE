@@ -3,6 +3,7 @@ package cn.tedu.baking.controller;
 import cn.tedu.baking.pojo.dto.ContentDTO;
 import cn.tedu.baking.pojo.dto.ContentIndexDTO;
 import cn.tedu.baking.pojo.dto.ContentManagementQueryDTO;
+import cn.tedu.baking.pojo.vo.ContentDetailVO;
 import cn.tedu.baking.pojo.vo.ContentIndexVO;
 import cn.tedu.baking.pojo.vo.ContentManagementVO;
 import cn.tedu.baking.pojo.vo.ContentUpdateVO;
@@ -53,5 +54,11 @@ public class ContentController {
     public JsonResult selectContentInIndex(ContentIndexDTO contentIndexDTO) {
         List<ContentIndexVO> list = contentService.selectContentByTypeCategoryId(contentIndexDTO);
         return JsonResult.ok(list);
+    }
+
+    @GetMapping("{id}/detail")
+    public JsonResult selectDetailById(@PathVariable Long id) {
+        ContentDetailVO contentDetailVO = contentService.selectDetailById(id);
+        return JsonResult.ok(contentDetailVO);
     }
 }

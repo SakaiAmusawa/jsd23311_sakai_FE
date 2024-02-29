@@ -56,4 +56,21 @@
         <if test="categoryId!=0">AND c.category_id = #{categoryId}</if>
         LIMIT 0,4
     </select>
+    <select id="selectDetailById" resultType="cn.tedu.baking.pojo.vo.ContentDetailVO">
+        SELECT c.id,
+               c.title,
+               c.brief,
+               c.content,
+               u.nickname,
+               u.img_url userImgUrl,
+               c.create_time,
+               c.view_count,
+               u.id      userId,
+               c.type,
+               c.video_url
+        FROM baking.content c
+                 JOIN baking.category cat on cat.id = c.category_id
+                 JOIN baking.user u on u.id = c.user_id
+        WHERE c.id = #{id}
+    </select>
 </mapper>

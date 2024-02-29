@@ -93,6 +93,8 @@ const selectInfo = (index) => {
   loadContents(3, index)
 }
 
+
+
 </script>
 
 <template>
@@ -118,7 +120,7 @@ const selectInfo = (index) => {
     <el-row :gutter="10" style="margin-top: 5px;">
       <el-col v-for="item in recipeArr" :span="6" style="margin-top:10px;">
         <el-card class="box-card">
-          <router-link style="text-decoration: none;color: #333" to="/detail">
+          <router-link style="text-decoration: none;color: #333" :to="'/detail?id='+item.id">
             <img alt="" :src="'http://localhost:8080'+item.imgUrl" style="width: 100%;height: 150px;">
             <p style="height: 40px;">{{ item.title }}</p>
           </router-link>
@@ -150,7 +152,7 @@ const selectInfo = (index) => {
     <el-row :gutter="10" style="margin-top: 5px;">
       <el-col v-for="item in videoArr" :span="6" style="margin-top:10px;">
         <el-card class="box-card">
-          <router-link style="text-decoration: none;color: #333" to="/detail">
+          <router-link style="text-decoration: none;color: #333" :to="'/detail?id='+item.id">
             <img alt="" :src="'http://localhost:8080'+item.imgUrl" style="width: 100%;height: 150px;">
             <p style="height: 40px;">{{ item.title }}</p>
           </router-link>
@@ -182,7 +184,7 @@ const selectInfo = (index) => {
     <el-row :gutter="10" style="margin-top: 5px;">
       <el-col v-for="item in infoArr" :span="6" style="margin-top:10px;">
         <el-card class="box-card">
-          <router-link style="text-decoration: none;color: #333" to="/detail">
+          <router-link style="text-decoration: none;color: #333" :to="'/detail?id='+item.id">
             <img alt="" :src="'http://localhost:8080'+item.imgUrl" style="width: 100%;height: 150px;">
             <p style="height: 40px;">{{ item.title }}</p>
           </router-link>
