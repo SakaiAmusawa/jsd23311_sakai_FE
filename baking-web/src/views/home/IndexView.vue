@@ -62,6 +62,24 @@ const loadContents = (type, categoryId) => {
         }
       })
 };
+/*
+参数：index的来源
+  在对应菜单项中的 :index="c.id"
+  eg:<el-menu-item v-for="c in recipeCatArr" :index="c.id">{{ c.name }}</el-menu-item>
+ */
+//选着食谱二级分类时触发此函数
+const selectRecipe = (index) => {
+  loadContents(1, index)
+}
+//选着视频二级分类时触发此函数
+const selectVideo = (index) => {
+  loadContents(2, index)
+}
+//选着资讯二级分类时触发此函数
+const selectInfo = (index) => {
+  loadContents(3, index)
+}
+
 </script>
 
 <template>
@@ -78,7 +96,7 @@ const loadContents = (type, categoryId) => {
         <p style="font-size: 28px;margin: 10px">烘焙食谱</p>
       </el-col>
       <el-col :span="21">
-        <el-menu active-text-color="orange" mode="horizontal" default-active="0">
+        <el-menu active-text-color="orange" mode="horizontal" default-active="0" @select="selectRecipe">
           <el-menu-item index="0">全部</el-menu-item>
           <el-menu-item v-for="c in recipeCatArr" :index="c.id">{{ c.name }}</el-menu-item>
         </el-menu>
@@ -110,7 +128,7 @@ const loadContents = (type, categoryId) => {
         <p style="font-size: 28px;margin: 10px">烘焙视频</p>
       </el-col>
       <el-col :span="21">
-        <el-menu active-text-color="orange" mode="horizontal" default-active="0">
+        <el-menu active-text-color="orange" mode="horizontal" default-active="0" @select="selectVideo">
           <el-menu-item index="0">全部</el-menu-item>
           <el-menu-item v-for="c in videoCatArr" :index="c.id">{{ c.name }}</el-menu-item>
         </el-menu>
@@ -128,8 +146,8 @@ const loadContents = (type, categoryId) => {
             <el-col :span="4">
               <el-avatar :src="'http://localhost:8080'+item.userImgUrl"></el-avatar>
             </el-col>
-            <el-col :span="16" style="font-size: 20px;line-height: 40px">{{ item.nickname }}</el-col>
-            <el-col :span="4" style="line-height: 40px">{{ item.categoryName }}</el-col>
+            <el-col :span="12" style="font-size: 20px;line-height: 40px">{{ item.nickname }}</el-col>
+            <el-col :span="8" style="line-height: 40px">{{ item.categoryName }}</el-col>
           </el-row>
         </el-card>
       </el-col>
@@ -142,7 +160,7 @@ const loadContents = (type, categoryId) => {
         <p style="font-size: 28px;margin: 10px">行业资讯</p>
       </el-col>
       <el-col :span="21">
-        <el-menu active-text-color="orange" mode="horizontal" default-active="0">
+        <el-menu active-text-color="orange" mode="horizontal" default-active="0" @select="selectInfo">
           <el-menu-item index="0">全部</el-menu-item>
           <el-menu-item v-for="c in infoCatArr" :index="c.id">{{ c.name }}</el-menu-item>
         </el-menu>
@@ -160,8 +178,8 @@ const loadContents = (type, categoryId) => {
             <el-col :span="4">
               <el-avatar :src="'http://localhost:8080'+item.userImgUrl"></el-avatar>
             </el-col>
-            <el-col :span="16" style="font-size: 20px;line-height: 40px">{{ item.nickname }}</el-col>
-            <el-col :span="4" style="line-height: 40px">{{ item.categoryName }}</el-col>
+            <el-col :span="12" style="font-size: 20px;line-height: 40px">{{ item.nickname }}</el-col>
+            <el-col :span="8" style="line-height: 40px">{{ item.categoryName }}</el-col>
           </el-row>
         </el-card>
       </el-col>
@@ -173,5 +191,9 @@ const loadContents = (type, categoryId) => {
 </template>
 
 <style scoped>
-
+p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 </style>
