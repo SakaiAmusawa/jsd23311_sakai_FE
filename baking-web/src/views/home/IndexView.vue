@@ -8,14 +8,6 @@ import qs from "qs";
 //创建一个banner数组用于接受后端发送来的数据
 const bannerArr = ref([]);
 
-//向后端发送请求 用于轮播图的管理
-axios.get('http://localhost:8080/v1/banner/index')
-    .then((response) => {
-      if (response.data.code === 2001) {
-        bannerArr.value = response.data.data;
-      }
-    })
-
 //1.定义一个数字，装二级分类
 const recipeCatArr = ref([]);
 const videoCatArr = ref([]);
@@ -23,6 +15,15 @@ const infoCatArr = ref([]);
 console.log(recipeCatArr)
 //2.立即执行
 onMounted(() => {
+
+//向后端发送请求 用于轮播图的管理
+  axios.get('http://localhost:8080/v1/banner/index')
+      .then((response) => {
+        if (response.data.code === 2001) {
+          bannerArr.value = response.data.data;
+        }
+      })
+
   //3.分别获取三个数据的二级分类
   axios.get('http://localhost:8080/v1/categories/1/sub')
       .then((response) => {
