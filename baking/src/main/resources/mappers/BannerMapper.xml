@@ -5,7 +5,7 @@
 <mapper namespace="cn.tedu.baking.mapper.BannerMapper">
 
     <select id="listForIndex" resultType="cn.tedu.baking.pojo.vo.BannerIndexVO">
-        SELECT id, img_url, create_time
+        SELECT id, img_url
         FROM baking.banner
     </select>
 </mapper>

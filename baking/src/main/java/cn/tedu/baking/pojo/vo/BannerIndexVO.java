@@ -8,5 +8,4 @@ import java.util.Date;
 public class BannerIndexVO {
     private Integer id;
     private String imgUrl;
-    private Date createTime;
 }
