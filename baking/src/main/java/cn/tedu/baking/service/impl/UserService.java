@@ -18,8 +18,11 @@ import java.util.Date;
 @Service
 public class UserService implements IUserService {
 
+    private UserMapper userMapper;
     @Autowired
-    UserMapper userMapper;
+    public void setUserMapper(UserMapper userMapper) {
+        this.userMapper = userMapper;
+    }
 
     @Override
     public void reg(UserRegDTO userRegDTO) {

@@ -10,8 +10,13 @@ import java.util.List;
 
 @Service
 public class CategoryService implements ICategoryService {
+
+    private CategoryMapper categoryMapper;
+
     @Autowired
-    CategoryMapper categoryMapper;
+    public void setCategoryMapper(CategoryMapper categoryMapper) {
+        this.categoryMapper = categoryMapper;
+    }
 
     @Override
     public List<CategoryVO> typeList() {

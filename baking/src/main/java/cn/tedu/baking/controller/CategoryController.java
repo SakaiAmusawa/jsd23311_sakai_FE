@@ -15,8 +15,12 @@ import java.util.List;
 @RequestMapping("/v1/categories/")
 public class CategoryController {
 
+    private ICategoryService categoryService;
+
     @Autowired
-    ICategoryService categoryService;
+    public void setCategoryService(ICategoryService categoryService) {
+        this.categoryService = categoryService;
+    }
 
     @GetMapping("type")
     public JsonResult typeList() {

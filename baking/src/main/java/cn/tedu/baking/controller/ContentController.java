@@ -7,7 +7,7 @@ import cn.tedu.baking.pojo.vo.ContentIndexVO;
 import cn.tedu.baking.pojo.vo.ContentManagementVO;
 import cn.tedu.baking.pojo.vo.ContentUpdateVO;
 import cn.tedu.baking.response.JsonResult;
-import cn.tedu.baking.service.impl.ContentService;
+import cn.tedu.baking.service.IContentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -17,8 +17,11 @@ import java.util.List;
 @RequestMapping("/v1/content/")
 public class ContentController {
 
+    private IContentService contentService;
     @Autowired
-    ContentService contentService;
+    public void setContentService(IContentService contentService) {
+        this.contentService = contentService;
+    }
 
     @PostMapping("add-new")
     public JsonResult addNew(ContentDTO contentDTO) {

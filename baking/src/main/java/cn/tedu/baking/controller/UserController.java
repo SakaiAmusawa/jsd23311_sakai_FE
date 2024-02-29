@@ -5,6 +5,7 @@ import cn.tedu.baking.pojo.dto.UserRegDTO;
 import cn.tedu.baking.pojo.dto.UserUpdateDTO;
 import cn.tedu.baking.pojo.vo.UserVO;
 import cn.tedu.baking.response.JsonResult;
+import cn.tedu.baking.service.IUserService;
 import cn.tedu.baking.service.impl.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -15,8 +16,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/v1/users/")
 public class UserController {
 
+    private IUserService userService;
+
     @Autowired
-    UserService userService;
+    public void setUserService(IUserService userService) {
+        this.userService = userService;
+    }
 
     @PostMapping("reg")
     public JsonResult regUser(UserRegDTO userRegDTO) {

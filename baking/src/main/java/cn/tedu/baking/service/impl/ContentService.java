@@ -18,8 +18,13 @@ import java.util.List;
 
 @Service
 public class ContentService implements IContentService {
+
+    private ContentMapper contentMapper;
+
     @Autowired
-    ContentMapper contentMapper;
+    public void setContentMapper(ContentMapper contentMapper) {
+        this.contentMapper = contentMapper;
+    }
 
     //重构新建方法
     @Override
