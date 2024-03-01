@@ -38,7 +38,9 @@ const initDate = () => {
                   hotArr.value = response.data.data
                 }
               })
+
           loadComment(detail.value.id);
+
         }
       })
 
@@ -54,6 +56,7 @@ onBeforeUpdate(() => {
   initDate();
 })
 
+//发布评论
 const pushComment = () => {
   let user = localStorage.user ? JSON.parse(localStorage.user) : null
   if (user == null) {
@@ -73,6 +76,7 @@ const pushComment = () => {
       })
 }
 
+//加载评论
 const loadComment = (id) => {
   let user = localStorage.user ? JSON.parse(localStorage.user) : null
   let queryData = qs.stringify({userId: user.id, contentId: id})
