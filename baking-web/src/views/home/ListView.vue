@@ -26,7 +26,7 @@ const initData = () => {
     <el-row :gutter="10" style="margin-top: 5px;">
       <el-col v-for="item in contentList" :span="6">
         <el-card class="box-card">
-          <router-link style="text-decoration: none" to="/detail">
+          <router-link style="text-decoration: none" :to="'/detail?id='+item.id">
             <img alt="" src="/imgs/a.jpg" style="width: 100%;height: 150px;">
             <p style="height: 40px;">{{ item.title }}</p>
           </router-link>
