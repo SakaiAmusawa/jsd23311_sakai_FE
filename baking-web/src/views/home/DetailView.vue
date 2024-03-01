@@ -118,7 +118,7 @@ const loadComment = (id) => {
         <hr>
         <el-row :gutter="10">
           <el-col :span="22">
-            <el-input v-model="comment.content" placeholder="想不想说点什么"></el-input>
+            <el-input v-model="comment.content" placeholder="想不想说点什么" @keydown.enter="pushComment()"></el-input>
           </el-col>
           <el-col :span="2">
             <el-button type="primary" @click="pushComment()">发布</el-button>
