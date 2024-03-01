@@ -72,6 +72,8 @@ const pushComment = () => {
         if (response.data.code === 2001) {
           ElMessage.success('发布成功');
           loadComment(detail.value.id);
+          //清空残留在输入框的评论
+          comment.value.content = '';
         }
       })
 }
