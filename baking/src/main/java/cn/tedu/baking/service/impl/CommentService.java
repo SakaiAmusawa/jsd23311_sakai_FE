@@ -28,7 +28,6 @@ public class CommentService implements ICommentService {
         Comment comment = new Comment();
         BeanUtils.copyProperties(commentDTO, comment);
         comment.setCreateTime(new Date());
-        System.out.println(comment);
         commentMapper.insertComment(comment);
 
     }

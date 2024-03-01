@@ -23,7 +23,6 @@ public class BannerController {
     @GetMapping("index")
     public JsonResult listForIndex() {
         List<BannerIndexVO> list = bannerService.listForIndex();
-        System.out.println("list:" + list);
         return JsonResult.ok(list);
     }
 }

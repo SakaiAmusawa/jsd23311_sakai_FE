@@ -24,7 +24,6 @@ public class ContentController {
 
     @PostMapping("add-new")
     public JsonResult addNew(ContentDTO contentDTO) {
-        System.out.println("contentDTO = " + contentDTO);
         contentService.insert(contentDTO);
         return JsonResult.ok();
     }
@@ -37,7 +36,6 @@ public class ContentController {
 
     @PostMapping("{id}/delete")
     public JsonResult deleteContent(@PathVariable Integer id) {
-        System.out.println("id = " + id);
         contentService.deleteById(id);
         return JsonResult.ok();
     }

@@ -24,7 +24,6 @@ public class UserController {
 
     @PostMapping("reg")
     public JsonResult regUser(UserRegDTO userRegDTO) {
-        //System.out.println("userRegDTO = " + userRegDTO);
         userService.reg(userRegDTO);
         return JsonResult.ok();
     }

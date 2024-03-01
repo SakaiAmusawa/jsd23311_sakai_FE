@@ -17,7 +17,6 @@ public class CommentController {
 
     @PostMapping("add-new")
     public JsonResult addNew(CommentDTO commentDTO) {
-        //System.out.println("commentDTO = " + commentDTO);
         commentService.insertComment(commentDTO);
         return JsonResult.ok();
     }

@@ -19,7 +19,6 @@ public class WeiboController {
 
     @PostMapping("post")
     public JsonResult post(WeiboDTO weiboDTO) {
-        System.out.println("weiboDTO = " + weiboDTO);
         weiboService.post(weiboDTO);
         return JsonResult.ok();
     }
@@ -32,14 +31,12 @@ public class WeiboController {
 
     @GetMapping("")
     public JsonResult personalWeibo(Integer userId) {
-        System.out.println("UserId = " + userId);
         List<WeiboIndexVO> list = weiboService.listForId(userId);
         return JsonResult.ok(list);
     }
 
     @PostMapping("{id}/delete")
     public JsonResult deleteWeibo(@PathVariable Integer id) {
-        System.out.println("id = " + id);
         weiboService.deleteByWeiboId(id);
         return JsonResult.ok();
     }
@@ -48,7 +45,6 @@ public class WeiboController {
     public JsonResult weiboDetail(@PathVariable Integer id) {
 
         WeiboDetailVO weiboDetailVO = weiboService.selectWeiboDetail(id);
-        System.out.println("Id:" + id + "" + weiboDetailVO);
         return JsonResult.ok(weiboDetailVO);
     }
 }
