@@ -16,7 +16,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/v1/comment/")
 public class CommentController {
-    private ICommentService commentService;
+    private final ICommentService commentService;
 
     @Autowired
     public CommentController(ICommentService commentService) {

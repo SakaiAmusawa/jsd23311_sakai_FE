@@ -30,4 +30,6 @@ public interface ContentMapper {
     List<ContentHotVO> selectHot();
 
     void updateViewById(Long id);
+
+    void updateCommentCountById(Long contentId);
 }

@@ -1,6 +1,7 @@
 package cn.tedu.baking.service.impl;
 
 import cn.tedu.baking.mapper.CommentMapper;
+import cn.tedu.baking.mapper.ContentMapper;
 import cn.tedu.baking.pojo.dto.CommentDTO;
 import cn.tedu.baking.pojo.dto.CommentQueryDTO;
 import cn.tedu.baking.pojo.entity.Comment;
@@ -17,10 +18,16 @@ import java.util.List;
 public class CommentService implements ICommentService {
 
     private CommentMapper commentMapper;
+    private ContentMapper contentMapper;
 
     @Autowired
     public void setCommentMapper(CommentMapper commentMapper) {
         this.commentMapper = commentMapper;
+    }
+
+    @Autowired
+    public void setContentMapper(ContentMapper contentMapper) {
+        this.contentMapper = contentMapper;
     }
 
     @Override
@@ -29,6 +36,8 @@ public class CommentService implements ICommentService {
         BeanUtils.copyProperties(commentDTO, comment);
         comment.setCreateTime(new Date());
         commentMapper.insertComment(comment);
+        //没新增一条评论，该文章的评论量+1
+        contentMapper.updateCommentCountById(comment.getContentId());
 
     }
 
