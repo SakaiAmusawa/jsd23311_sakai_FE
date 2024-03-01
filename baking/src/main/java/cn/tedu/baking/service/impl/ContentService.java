@@ -58,7 +58,6 @@ public class ContentService implements IContentService {
     @Override
     public List<ContentIndexVO> selectContentByTypeCategoryId(ContentIndexDTO contentIndexDTO) {
         List<ContentIndexVO> list = contentMapper.selectContentByTypeCategoryId(contentIndexDTO);
-        System.out.println(list);
         return list;
     }
 
