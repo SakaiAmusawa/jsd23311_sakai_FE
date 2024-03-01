@@ -13,5 +13,6 @@
         FROM baking.comment cm
                  JOIN baking.user u on u.id = cm.user_id
         WHERE content_id = #{contentId}
+        ORDER BY create_time DESC #根据发布时间降序排序
     </select>
 </mapper>
