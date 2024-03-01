@@ -23,4 +23,6 @@ public interface IContentService {
     List<ContentOtherVO> selectOtherByUserId(Long userId);
 
     List<ContentHotVO> selectHot();
+
+    List<ContentIndexVO> selectContentByType(Integer type);
 }

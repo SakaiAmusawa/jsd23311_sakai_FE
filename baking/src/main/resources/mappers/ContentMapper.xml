@@ -85,6 +85,13 @@
         ORDER BY view_count DESC
         LIMIT 0,4
     </select>
+    <select id="selectContentByType" resultType="cn.tedu.baking.pojo.vo.ContentIndexVO">
+        SELECT c.id, c.title, c.img_url, u.img_url userImgUrl, u.nickname, cat.name categoryName
+        FROM baking.content c
+                 JOIN baking.user u on u.id = c.user_id
+                 JOIN baking.category cat on cat.id = c.category_id
+        WHERE c.type = #{type}
+    </select>
     <update id="updateViewById">
         UPDATE baking.content
         SET view_count = view_count + 1

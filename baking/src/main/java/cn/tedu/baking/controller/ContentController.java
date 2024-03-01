@@ -69,4 +69,10 @@ public class ContentController {
         List<ContentHotVO> list = contentService.selectHot();
         return JsonResult.ok(list);
     }
+
+    @GetMapping("{type}/type")
+    public JsonResult showMore(@PathVariable Integer type) {
+        List<ContentIndexVO> list = contentService.selectContentByType(type);
+        return JsonResult.ok(list);
+    }
 }

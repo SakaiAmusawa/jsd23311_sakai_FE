@@ -32,4 +32,6 @@ public interface ContentMapper {
     void updateViewById(Long id);
 
     void updateCommentCountById(Long contentId);
+
+    List<ContentIndexVO> selectContentByType(Integer type);
 }

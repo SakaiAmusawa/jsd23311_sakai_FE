@@ -80,5 +80,11 @@ public class ContentService implements IContentService {
         return list;
     }
 
+    @Override
+    public List<ContentIndexVO> selectContentByType(Integer type) {
+        System.out.println(contentMapper.selectContentByType(type));
+        return contentMapper.selectContentByType(type);
+    }
+
 
 }
