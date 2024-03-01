@@ -135,7 +135,7 @@ const selectInfo = (index) => {
       </el-col>
     </el-row>
     <div style="text-align: center;margin: 10px;">
-      <el-button @click="router.push('/list')">点击加载更多</el-button>
+      <el-button @click="router.push('/list?type=1')">点击加载更多</el-button>
     </div>
     <el-row :gutter="10" style="background-color: #fff; margin-top: 10px;">
       <el-col :span="3">
@@ -167,7 +167,7 @@ const selectInfo = (index) => {
       </el-col>
     </el-row>
     <div style="text-align: center;margin: 10px;">
-      <el-button @click="router.push('/list')">点击加载更多</el-button>
+      <el-button @click="router.push('/list?type=2')">点击加载更多</el-button>
     </div>
     <el-row :gutter="10" style="background-color: #fff; margin-top: 10px;">
       <el-col :span="3">
@@ -199,7 +199,7 @@ const selectInfo = (index) => {
       </el-col>
     </el-row>
     <div style="text-align: center;margin: 10px;">
-      <el-button @click="router.push('/list')">点击加载更多</el-button>
+      <el-button @click="router.push('/list?type=3')">点击加载更多</el-button>
     </div>
   </div>
 </template>
