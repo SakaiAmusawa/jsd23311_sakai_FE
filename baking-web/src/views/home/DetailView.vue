@@ -38,17 +38,7 @@ const initDate = () => {
                   hotArr.value = response.data.data
                 }
               })
-
-          let user = localStorage.user ? JSON.parse(localStorage.user) : null
-          let queryData = qs.stringify({userId: user.id, contentId: detail.value.id})
-          console.log(queryData)
-          axios.get('http://localhost:8080/v1/comment/list?' + queryData)
-              .then((response) => {
-                if (response.data.code === 2001) {
-                  commentArr.value = response.data.data;
-                }
-              })
-
+          loadComment(detail.value.id);
         }
       })
 
@@ -78,10 +68,22 @@ const pushComment = () => {
       .then((response) => {
         if (response.data.code === 2001) {
           ElMessage.success('发布成功');
+          loadComment(detail.value.id);
         }
       })
 }
 
+const loadComment = (id) => {
+  let user = localStorage.user ? JSON.parse(localStorage.user) : null
+  let queryData = qs.stringify({userId: user.id, contentId: id})
+  console.log(queryData)
+  axios.get('http://localhost:8080/v1/comment/list?' + queryData)
+      .then((response) => {
+        if (response.data.code === 2001) {
+          commentArr.value = response.data.data;
+        }
+      })
+}
 </script>
 
 <template>
