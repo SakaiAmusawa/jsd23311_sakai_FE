@@ -58,6 +58,10 @@ onBeforeUpdate(() => {
 
 //发布评论
 const pushComment = () => {
+  if (comment.value.content == null) {
+    ElMessage.error("不能发布空白评论");
+    return;
+  }
   let user = localStorage.user ? JSON.parse(localStorage.user) : null
   if (user == null) {
     ElMessage.error('发送评论前，请先登录')
