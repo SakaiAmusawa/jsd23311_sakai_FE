@@ -8,4 +8,11 @@
         INSERT INTO baking.comment(content, user_id, content_id, create_time)
         VALUES (#{content},#{userId},#{contentId},#{createTime})
     </insert>
+    <select id="selectForComment" resultType="cn.tedu.baking.pojo.vo.CommentVO">
+        SELECT cm.id, u.img_url userImgUrl, u.nickname, cm.content, cm.create_time
+        FROM baking.comment cm
+                 JOIN baking.content c on c.id = cm.content_id
+                 JOIN baking.user u on u.id = c.user_id
+        WHERE content_id = #{contentId}
+    </select>
 </mapper>

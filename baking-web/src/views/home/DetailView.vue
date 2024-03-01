@@ -39,6 +39,16 @@ const initDate = () => {
                 }
               })
 
+          let user = localStorage.user ? JSON.parse(localStorage.user) : null
+          let queryData = qs.stringify({userId: user.id, contentId: detail.value.id})
+          console.log(queryData)
+          axios.get('http://localhost:8080/v1/comment/list?' + queryData)
+              .then((response) => {
+                if (response.data.code === 2001) {
+                  commentArr.value = response.data.data;
+                }
+              })
+
         }
       })
 
@@ -106,14 +116,14 @@ const pushComment = () => {
             <el-button type="primary" @click="pushComment()">发布</el-button>
           </el-col>
         </el-row>
-        <el-row v-for="item in 10" :gutter="10" style="margin-top: 10px;">
+        <el-row v-for="item in commentArr" :gutter="10" style="margin-top: 10px;">
           <el-col :span="2">
-            <el-avatar style="margin: 10px;"><img alt="" :src="'http://localhost:8080/'+detail.userImgUrl"></el-avatar>
+            <el-avatar style="margin: 10px;"><img alt="" :src="'http://localhost:8080/'+item.userImgUrl"></el-avatar>
           </el-col>
           <el-col :span="22">
-            <p style="color: orange;font-weight: bold;margin: 0;font-size: 15px">{{ detail.nickname }}</p>
-            <p style="margin: 2px 0;font-size: 12px">看起来很好吃的样子</p>
-            <p style="color: #666;font-size: 12px;margin: 0;">2024年02月19日 15:38:45</p>
+            <p style="color: orange;font-weight: bold;margin: 0;font-size: 15px">{{ item.nickname }}</p>
+            <p style="margin: 2px 0;font-size: 12px">{{ item.content }}</p>
+            <p style="color: #666;font-size: 12px;margin: 0;">{{ item.createTime }}</p>
           </el-col>
         </el-row>
       </el-card>
