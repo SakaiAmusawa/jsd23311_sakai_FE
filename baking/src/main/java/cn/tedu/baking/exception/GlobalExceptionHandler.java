@@ -1,11 +1,11 @@
 package cn.tedu.baking.exception;
 
+import cn.tedu.baking.response.JsonResult;
+import cn.tedu.baking.response.StatusCode;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
-import cn.tedu.baking.response.JsonResult;
-import cn.tedu.baking.response.StatusCode;
 
 import javax.validation.ConstraintViolationException;
 

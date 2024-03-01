@@ -9,7 +9,7 @@
         <el-input v-model="login.password" placeholder="密码" type="password" @keydown.enter="log()"></el-input>
       </el-form-item>
       <el-form-item>
-        <el-button type="primary" @click="log()" style="width: 100%;">登录</el-button>
+        <el-button style="width: 100%;" type="primary" @click="log()">登录</el-button>
       </el-form-item>
     </el-form>
   </el-card>
@@ -34,7 +34,7 @@ const log = () => {
     if (response.data.code === 2001) {
       let user = response.data.data;
       ElMessage.success('登录成功!欢迎' + user.nickname + '回来');
-      localStorage.setItem('user',JSON.stringify(user))
+      localStorage.setItem('user', JSON.stringify(user))
       router.push('/')
     } else {
       ElMessage.error(response.data.msg)

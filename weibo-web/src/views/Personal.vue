@@ -47,7 +47,7 @@ const del = (id, i) => {
   <h1>个人中心页</h1>
   <div v-for="(weibo,i) in arr" style="width: 500px;height: 40px;margin: 0 auto;">
     <h3 style="float: left;margin: 0;line-height: 32px;">{{ weibo.nickname }}说：{{ weibo.content }}</h3>
-    <el-button type="danger" style="float: right;" @click="del(weibo.id,i)">删除</el-button>
+    <el-button style="float: right;" type="danger" @click="del(weibo.id,i)">删除</el-button>
   </div>
 </template>
 

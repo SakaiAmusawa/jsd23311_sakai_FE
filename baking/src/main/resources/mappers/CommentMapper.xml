@@ -6,7 +6,7 @@
 
     <insert id="insertComment">
         INSERT INTO baking.comment(content, user_id, content_id, create_time)
-        VALUES (#{content},#{userId},#{contentId},#{createTime})
+        VALUES (#{content}, #{userId}, #{contentId}, #{createTime})
     </insert>
     <select id="selectForComment" resultType="cn.tedu.baking.pojo.vo.CommentVO">
         SELECT cm.id, u.img_url userImgUrl, u.nickname, cm.content, cm.create_time

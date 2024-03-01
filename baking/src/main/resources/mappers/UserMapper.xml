@@ -9,8 +9,8 @@
         WHERE username = #{username}
     </select>
     <insert id="insertUser">
-        INSERT INTO baking.user(username, password, nickname, is_admin, created_time,img_url)
-        VALUES (#{username}, #{password}, #{nickname}, #{isAdmin}, #{createdTime},NULL)
+        INSERT INTO baking.user(username, password, nickname, is_admin, created_time, img_url)
+        VALUES (#{username}, #{password}, #{nickname}, #{isAdmin}, #{createdTime}, NULL)
     </insert>
     <update id="update">
         UPDATE baking.user

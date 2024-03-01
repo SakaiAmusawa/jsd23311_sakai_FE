@@ -22,9 +22,9 @@
     <router-link :to="'/detail?id='+weibo.id" style="text-decoration: none;color: black"><h3>{{
         weibo.nickname
       }}说：{{ weibo.content }}</h3>
-      <img width="100" v-if="weibo.imgUrls!=null"
-           v-for="url in weibo.imgUrls.split(',')"
-           :src="'http://localhost:8080/'+url">
+      <img v-for="url in weibo.imgUrls.split(',')" v-if="weibo.imgUrls!=null"
+           :src="'http://localhost:8080/'+url"
+           width="100">
     </router-link>
   </div>
 </template>

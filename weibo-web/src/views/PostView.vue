@@ -68,16 +68,16 @@ const handlePictureCardPreview = (uploadFile) => {
   <h1>发布微博</h1>
   <div style="width: 500px;margin: 0 auto;">
     <el-input v-model="weibo.content" placeholder="说点啥"></el-input>
-    <el-button type="primary" style="width: 100px;font-weight: bold;margin: 10px;" @click="post()">发布微博</el-button>
+    <el-button style="width: 100px;font-weight: bold;margin: 10px;" type="primary" @click="post()">发布微博</el-button>
     <!--头像上传开始-->
     <el-upload
         v-model:file-list="fileList"
-        action="http://localhost:8080/v1/upload"
-        limit="9"
-        name="file"
-        list-type="picture-card"
         :on-preview="handlePictureCardPreview"
         :on-remove="handleRemove"
+        action="http://localhost:8080/v1/upload"
+        limit="9"
+        list-type="picture-card"
+        name="file"
     >
       <el-icon>
         <Plus/>
@@ -85,7 +85,7 @@ const handlePictureCardPreview = (uploadFile) => {
     </el-upload>
 
     <el-dialog v-model="dialogVisible">
-      <img w-full :src="dialogImageUrl" alt="Preview Image"/>
+      <img :src="dialogImageUrl" alt="Preview Image" w-full/>
     </el-dialog>
     <!--头像上传结束-->
   </div>

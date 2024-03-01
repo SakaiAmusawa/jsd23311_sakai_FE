@@ -19,6 +19,7 @@ import java.util.Date;
 public class UserService implements IUserService {
 
     private final UserMapper userMapper;
+
     @Autowired
     public UserService(UserMapper userMapper) {
         this.userMapper = userMapper;
@@ -54,7 +55,7 @@ public class UserService implements IUserService {
     @Override
     public void update(UserUpdateDTO userUpdateDTO) {
         User user = new User();
-        BeanUtils.copyProperties(userUpdateDTO,user);
+        BeanUtils.copyProperties(userUpdateDTO, user);
         userMapper.update(user);
     }
 }

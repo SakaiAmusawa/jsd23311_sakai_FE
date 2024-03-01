@@ -12,7 +12,7 @@
           </el-col>
           <el-col :span="10">
             <!--头部导航栏-->
-            <el-menu @select="handleSelect" mode="horizontal" active-text-color="orange" style="height: 70px;">
+            <el-menu active-text-color="orange" mode="horizontal" style="height: 70px;" @select="handleSelect">
               <el-menu-item index="1">食谱</el-menu-item>
               <el-menu-item index="2">视频</el-menu-item>
               <el-menu-item index="3">资讯</el-menu-item>
@@ -28,29 +28,29 @@
           </el-col>
           <el-col :span="2">
             <!--气泡卡片1-->
-            <el-popover title="欢迎访问烘焙坊" v-if="user==null">
+            <el-popover v-if="user==null" title="欢迎访问烘焙坊">
               <template #reference>
-                <el-icon size="25" color="#666" style="margin-top:30px;">
+                <el-icon color="#666" size="25" style="margin-top:30px;">
                   <User/>
                 </el-icon>
               </template>
               <div style="text-align:center;">
-                <el-button type="info" size="small" @click="router.push('/reg')">注册</el-button>
-                <el-button type="warning" size="small" @click="router.push('/login')">登录</el-button>
+                <el-button size="small" type="info" @click="router.push('/reg')">注册</el-button>
+                <el-button size="small" type="warning" @click="router.push('/login')">登录</el-button>
               </div>
             </el-popover>
             <!--气泡卡片2-->
             <el-popover v-else :title="'欢迎'+user.nickname+'回来!'"
                         :width="200" popper-style="text-align:center;">
               <template #reference>
-                <el-icon size="25" color="#666" style="margin-top:30px;">
+                <el-icon color="#666" size="25" style="margin-top:30px;">
                   <User/>
                 </el-icon>
               </template>
               <el-avatar :src="'http://localhost:8080'+user.imgUrl"></el-avatar>
               <div style="text-align:center;">
-                <el-button type="success" size="small" @click="router.push('/personal')">个人中心</el-button>
-                <el-button type="danger" size="small" @click="logout()">退出登录</el-button>
+                <el-button size="small" type="success" @click="router.push('/personal')">个人中心</el-button>
+                <el-button size="small" type="danger" @click="logout()">退出登录</el-button>
               </div>
             </el-popover>
           </el-col>
@@ -70,7 +70,7 @@
               <p>烘焙行业网络社区平台</p>
               <p>全国成百上千个职位等你来</p>
             </el-col>
-            <el-col :span="8" id="footer-center">
+            <el-col id="footer-center" :span="8">
               <el-row :gutter="10">
                 <el-col :span="8">
                   <h3>关于我们</h3>

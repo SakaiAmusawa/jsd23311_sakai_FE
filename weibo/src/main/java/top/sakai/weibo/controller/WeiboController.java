@@ -48,7 +48,7 @@ public class WeiboController {
     public JsonResult weiboDetail(@PathVariable Integer id) {
 
         WeiboDetailVO weiboDetailVO = weiboService.selectWeiboDetail(id);
-        System.out.println("Id:"+id+""+weiboDetailVO);
+        System.out.println("Id:" + id + "" + weiboDetailVO);
         return JsonResult.ok(weiboDetailVO);
     }
 }

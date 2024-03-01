@@ -94,7 +94,6 @@ const selectInfo = (index) => {
 }
 
 
-
 </script>
 
 <template>
@@ -111,7 +110,7 @@ const selectInfo = (index) => {
         <p style="font-size: 28px;margin: 10px">烘焙食谱</p>
       </el-col>
       <el-col :span="21">
-        <el-menu active-text-color="orange" mode="horizontal" default-active="0" @select="selectRecipe">
+        <el-menu active-text-color="orange" default-active="0" mode="horizontal" @select="selectRecipe">
           <el-menu-item index="0">全部</el-menu-item>
           <el-menu-item v-for="c in recipeCatArr" :index="c.id">{{ c.name }}</el-menu-item>
         </el-menu>
@@ -120,8 +119,8 @@ const selectInfo = (index) => {
     <el-row :gutter="10" style="margin-top: 5px;">
       <el-col v-for="item in recipeArr" :span="6" style="margin-top:10px;">
         <el-card class="box-card">
-          <router-link style="text-decoration: none;color: #333" :to="'/detail?id='+item.id">
-            <img alt="" :src="'http://localhost:8080'+item.imgUrl" style="width: 100%;height: 150px;">
+          <router-link :to="'/detail?id='+item.id" style="text-decoration: none;color: #333">
+            <img :src="'http://localhost:8080'+item.imgUrl" alt="" style="width: 100%;height: 150px;">
             <p style="height: 40px;">{{ item.title }}</p>
           </router-link>
           <!--作者与分类-->
@@ -143,7 +142,7 @@ const selectInfo = (index) => {
         <p style="font-size: 28px;margin: 10px">烘焙视频</p>
       </el-col>
       <el-col :span="21">
-        <el-menu active-text-color="orange" mode="horizontal" default-active="0" @select="selectVideo">
+        <el-menu active-text-color="orange" default-active="0" mode="horizontal" @select="selectVideo">
           <el-menu-item index="0">全部</el-menu-item>
           <el-menu-item v-for="c in videoCatArr" :index="c.id">{{ c.name }}</el-menu-item>
         </el-menu>
@@ -152,8 +151,8 @@ const selectInfo = (index) => {
     <el-row :gutter="10" style="margin-top: 5px;">
       <el-col v-for="item in videoArr" :span="6" style="margin-top:10px;">
         <el-card class="box-card">
-          <router-link style="text-decoration: none;color: #333" :to="'/detail?id='+item.id">
-            <img alt="" :src="'http://localhost:8080'+item.imgUrl" style="width: 100%;height: 150px;">
+          <router-link :to="'/detail?id='+item.id" style="text-decoration: none;color: #333">
+            <img :src="'http://localhost:8080'+item.imgUrl" alt="" style="width: 100%;height: 150px;">
             <p style="height: 40px;">{{ item.title }}</p>
           </router-link>
           <!--作者与分类-->
@@ -175,7 +174,7 @@ const selectInfo = (index) => {
         <p style="font-size: 28px;margin: 10px">行业资讯</p>
       </el-col>
       <el-col :span="21">
-        <el-menu active-text-color="orange" mode="horizontal" default-active="0" @select="selectInfo">
+        <el-menu active-text-color="orange" default-active="0" mode="horizontal" @select="selectInfo">
           <el-menu-item index="0">全部</el-menu-item>
           <el-menu-item v-for="c in infoCatArr" :index="c.id">{{ c.name }}</el-menu-item>
         </el-menu>
@@ -184,8 +183,8 @@ const selectInfo = (index) => {
     <el-row :gutter="10" style="margin-top: 5px;">
       <el-col v-for="item in infoArr" :span="6" style="margin-top:10px;">
         <el-card class="box-card">
-          <router-link style="text-decoration: none;color: #333" :to="'/detail?id='+item.id">
-            <img alt="" :src="'http://localhost:8080'+item.imgUrl" style="width: 100%;height: 150px;">
+          <router-link :to="'/detail?id='+item.id" style="text-decoration: none;color: #333">
+            <img :src="'http://localhost:8080'+item.imgUrl" alt="" style="width: 100%;height: 150px;">
             <p style="height: 40px;">{{ item.title }}</p>
           </router-link>
           <!--作者与分类-->

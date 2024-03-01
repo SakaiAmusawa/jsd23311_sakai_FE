@@ -51,7 +51,7 @@ public class WeiboService implements IWeiboService {
 
     @Override
     public WeiboDetailVO selectWeiboDetail(Integer id) {
-        WeiboDetailVO weiboDetailVO=weiboMapper.selectWeiboDetail(id);
+        WeiboDetailVO weiboDetailVO = weiboMapper.selectWeiboDetail(id);
         return weiboDetailVO;
     }
 }

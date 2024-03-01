@@ -106,8 +106,8 @@ const loadComment = (id) => {
           <div v-html="detail.content"></div>
         </div>
         <div v-else>
-          <video :src="'http://localhost:8080/'+detail.videoUrl" controls type="video/mp4"
-                 style="width: 100%;margin: 5px;"></video>
+          <video :src="'http://localhost:8080/'+detail.videoUrl" controls style="width: 100%;margin: 5px;"
+                 type="video/mp4"></video>
         </div>
       </el-card>
       <!--   评论相关开始   -->
@@ -116,7 +116,7 @@ const loadComment = (id) => {
         <hr>
         <el-row :gutter="10">
           <el-col :span="22">
-            <el-input placeholder="想不想说点什么" v-model="comment.content"></el-input>
+            <el-input v-model="comment.content" placeholder="想不想说点什么"></el-input>
           </el-col>
           <el-col :span="2">
             <el-button type="primary" @click="pushComment()">发布</el-button>
@@ -124,7 +124,7 @@ const loadComment = (id) => {
         </el-row>
         <el-row v-for="item in commentArr" :gutter="10" style="margin-top: 10px;">
           <el-col :span="2">
-            <el-avatar style="margin: 10px;"><img alt="" :src="'http://localhost:8080/'+item.userImgUrl"></el-avatar>
+            <el-avatar style="margin: 10px;"><img :src="'http://localhost:8080/'+item.userImgUrl" alt=""></el-avatar>
           </el-col>
           <el-col :span="22">
             <p style="color: orange;font-weight: bold;margin: 0;font-size: 15px">{{ item.nickname }}</p>
@@ -138,7 +138,9 @@ const loadComment = (id) => {
       <el-card>
         <div id="head-div"></div>
         <div style="text-align: center;position: relative;bottom: 45px">
-          <el-avatar :size="90" style="border: 5px solid #fff"><img alt="" :src="'http://localhost:8080/'+detail.userImgUrl"></el-avatar>
+          <el-avatar :size="90" style="border: 5px solid #fff"><img :src="'http://localhost:8080/'+detail.userImgUrl"
+                                                                    alt="">
+          </el-avatar>
           <p style="font-size: 20px;font-weight: bold;margin: 5px 0;">{{ detail.nickname }}</p>
           <el-icon class="head-icon">
             <Edit/>
@@ -158,14 +160,14 @@ const loadComment = (id) => {
         <el-row v-for="item in hotArr" :gutter="10">
           <el-col :span="10">
             <router-link :to="'/detail?id='+item.id">
-              <img alt="" :src="'http://localhost:8080'+item.imgUrl" style="width: 100%;">
+              <img :src="'http://localhost:8080'+item.imgUrl" alt="" style="width: 100%;">
             </router-link>
           </el-col>
           <el-col :span="14">
             <router-link :to="'/detail?id='+item.id">
               <p class="title_p">{{ item.title }}</p>
             </router-link>
-            <p style="color: #666666;font-size: 12px;margin: 0;">{{ item.createTime}}</p>
+            <p style="color: #666666;font-size: 12px;margin: 0;">{{ item.createTime }}</p>
           </el-col>
         </el-row>
       </el-card>
@@ -176,7 +178,7 @@ const loadComment = (id) => {
         <el-row v-for="item in otherArr" :gutter="10">
           <el-col :span="10">
             <router-link :to="'/detail?id='+item.id">
-              <img alt="" :src="'http://localhost:8080'+item.imgUrl" style="width: 100%;">
+              <img :src="'http://localhost:8080'+item.imgUrl" alt="" style="width: 100%;">
             </router-link>
           </el-col>
           <el-col :span="14">

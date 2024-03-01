@@ -3,7 +3,6 @@ package cn.tedu.baking.service;
 import cn.tedu.baking.pojo.dto.ContentDTO;
 import cn.tedu.baking.pojo.dto.ContentIndexDTO;
 import cn.tedu.baking.pojo.dto.ContentManagementQueryDTO;
-import cn.tedu.baking.pojo.entity.Content;
 import cn.tedu.baking.pojo.vo.*;
 
 import java.util.List;

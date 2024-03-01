@@ -16,6 +16,7 @@ import java.util.List;
 public class ContentController {
 
     private IContentService contentService;
+
     @Autowired
     public void setContentService(IContentService contentService) {
         this.contentService = contentService;
@@ -42,7 +43,7 @@ public class ContentController {
     }
 
     @GetMapping("{id}/update")
-    public JsonResult selectForUpdateById(@PathVariable Integer id){
+    public JsonResult selectForUpdateById(@PathVariable Integer id) {
         ContentUpdateVO contentUpdateVO = contentService.selectForUpdateById(id);
         return JsonResult.ok(contentUpdateVO);
     }

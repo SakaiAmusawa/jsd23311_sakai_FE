@@ -5,12 +5,12 @@
       <!--头像上传开始-->
       <el-upload
           v-model:file-list="fileList"
-          action="http://localhost:8080/v1/upload"
-          limit="1"
-          name="file"
-          list-type="picture-card"
           :on-preview="handlePictureCardPreview"
           :on-remove="handleRemove"
+          action="http://localhost:8080/v1/upload"
+          limit="1"
+          list-type="picture-card"
+          name="file"
       >
         <el-icon>
           <Plus/>
@@ -18,15 +18,15 @@
       </el-upload>
 
       <el-dialog v-model="dialogVisible">
-        <img w-full :src="dialogImageUrl" alt="Preview Image"/>
+        <img :src="dialogImageUrl" alt="Preview Image" w-full/>
       </el-dialog>
       <!--头像上传结束-->
     </el-form-item>
     <el-form-item label="昵称">
-      <el-input placeholder="请输入昵称" v-model="user.nickname"></el-input>
+      <el-input v-model="user.nickname" placeholder="请输入昵称"></el-input>
     </el-form-item>
     <el-form-item label="用户名">
-      <el-input placeholder="请输入用户名" :value="user.username" disabled></el-input>
+      <el-input :value="user.username" disabled placeholder="请输入用户名"></el-input>
     </el-form-item>
     <el-form-item>
       <el-button type="primary" @click="save()">保存修改</el-button>

@@ -12,7 +12,7 @@
         <el-input v-model="user.nickname" placeholder="请输入昵称"></el-input>
       </el-form-item>
       <el-form-item>
-        <el-button type="primary" style="width: 100%;" @click="reg()">注册</el-button>
+        <el-button style="width: 100%;" type="primary" @click="reg()">注册</el-button>
       </el-form-item>
     </el-form>
   </el-card>

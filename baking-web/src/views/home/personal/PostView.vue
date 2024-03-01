@@ -177,11 +177,11 @@ const post = () => {
   <h1 style="color: orange">{{ content.id == null ? '发布内容页面' : '修改内容页面' }}</h1>
   <el-form label-width="100px">
     <el-form-item label="文章标题">
-      <el-input placeholder="请输入文章标题" v-model="content.title"></el-input>
+      <el-input v-model="content.title" placeholder="请输入文章标题"></el-input>
     </el-form-item>
     <el-form-item label="文章类型">
       <!--  :disabled="content.id!=null" id不为空也就是修改时，禁止修改文件类型    -->
-      <el-radio-group v-model="content.type" @change="typeChange()" :disabled="content.id!=null">
+      <el-radio-group v-model="content.type" :disabled="content.id!=null" @change="typeChange()">
         <!--        <el-radio-button label="1">烘焙食谱</el-radio-button>
                 <el-radio-button label="2">烘焙视频</el-radio-button>
                 <el-radio-button label="3">行业资讯</el-radio-button>-->
@@ -189,7 +189,7 @@ const post = () => {
       </el-radio-group>
     </el-form-item>
     <el-form-item label="二级分类">
-      <el-select placeholder="请选择" v-model="content.categoryId">
+      <el-select v-model="content.categoryId" placeholder="请选择">
         <!--        <el-option label="面包" value="1"></el-option>
                 <el-option label="小食" value="2"></el-option>-->
         <el-option v-for="c in categoryArr" :label="c.name" :value="c.id"></el-option>
@@ -197,16 +197,16 @@ const post = () => {
     </el-form-item>
     <!--   封面上传开始    -->
     <el-form-item label="封面">
-      <img :src="'http://localhost:8080/'+content.imgUrl" alt="" v-if="content.id!=null&&fileList.length===0"
+      <img v-if="content.id!=null&&fileList.length===0" :src="'http://localhost:8080/'+content.imgUrl" alt=""
            style="width: 145px;height: 145px;margin-right: 10px;">
       <el-upload
           v-model:file-list="fileList"
-          limit="1"
-          name="file"
           :on-preview="handlePictureCardPreview"
           :on-remove="handleRemove"
           action="http://localhost:8080/v1/upload"
+          limit="1"
           list-type="picture-card"
+          name="file"
       >
         <el-icon>
           <Plus/>
@@ -218,17 +218,17 @@ const post = () => {
     </el-form-item>
     <!--   封面上传结束    -->
     <!--   视频开始上传   -->
-    <el-form-item label="视频" v-show="content.type===2">
+    <el-form-item v-show="content.type===2" label="视频">
       <video v-if="content.id!=null&&videoList.length===0" :src="'http://localhost:8080/'+content.videoUrl"
              style="width: 300px;margin-right: 10px;" type="video/mp4"></video>
       <el-upload
           v-model:file-list="videoList"
-          limit="1"
-          name="file"
           :on-preview="handlePictureCardPreview"
           :on-remove="handleRemove"
-          action="http://localhost:8080/v1/upload"
           accept="video/*"
+          action="http://localhost:8080/v1/upload"
+          limit="1"
+          name="file"
       >
         <el-button type="warning">点击上传视频</el-button>
         <div>(只能上传不超过不超过100M的MP4文件)</div>
@@ -239,11 +239,11 @@ const post = () => {
       </el-dialog>
     </el-form-item>
     <!--  视频上传结束  -->
-    <el-form-item label="文章内容" v-show="content.type!==2">
+    <el-form-item v-show="content.type!==2" label="文章内容">
       <div ref="editorDiv"></div>
     </el-form-item>
     <el-form-item>
-      <el-button type="primary" @click="post()">{{content.id == null ? '发布内容' : '修改内容'}}</el-button>
+      <el-button type="primary" @click="post()">{{ content.id == null ? '发布内容' : '修改内容' }}</el-button>
     </el-form-item>
   </el-form>
 </template>

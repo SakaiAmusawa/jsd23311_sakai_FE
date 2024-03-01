@@ -5,9 +5,9 @@
   <p>发布于:{{ weibo.created }}</p>
   <hr>
   <el-input v-model="comment.content" placeholder="留下你的评论吧" style="width: 500px;"></el-input>
-  <el-button type="primary" @click="post()" style="margin: 10px;">发布评论</el-button>
+  <el-button style="margin: 10px;" type="primary" @click="post()">发布评论</el-button>
   <div v-for="c in arr">
-    <h4>{{c.nickname}}评论说: {{c.content}}</h4>
+    <h4>{{ c.nickname }}评论说: {{ c.content }}</h4>
     <span>发布于：{{ c.created }}</span>
   </div>
 </template>
@@ -20,7 +20,7 @@ import {ElMessage} from "element-plus";
 import router from "@/router";
 import qs from "qs"
 
-const weibo = ref({nickname:'',content:'',created:''});
+const weibo = ref({nickname: '', content: '', created: ''});
 onMounted(() => {
   let id = new URLSearchParams(location.search).get('id')
   loadComments(id);//页面一打开，获取微博ID后，立即加载此条微博的评论
@@ -60,15 +60,15 @@ const post = () => {
     }
   })
 }
-  const arr = ref([])
-  //定义加载评论函数，参数为被评论的微博id
-  const loadComments = (id) => {
-    axios.get('http://localhost:8080/v1/comment/' + id).then((response) => {
-      if (response.data.code === 2001) {
-        arr.value = response.data.data;
-      }
-    })
-  }
+const arr = ref([])
+//定义加载评论函数，参数为被评论的微博id
+const loadComments = (id) => {
+  axios.get('http://localhost:8080/v1/comment/' + id).then((response) => {
+    if (response.data.code === 2001) {
+      arr.value = response.data.data;
+    }
+  })
+}
 </script>
 
 <style scoped>

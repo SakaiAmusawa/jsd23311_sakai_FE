@@ -2,7 +2,6 @@ package top.sakai.weibo.service;
 
 import top.sakai.weibo.pojo.dto.CommentDTO;
 import top.sakai.weibo.pojo.vo.CommentVO;
-import top.sakai.weibo.response.JsonResult;
 
 import java.util.List;
 

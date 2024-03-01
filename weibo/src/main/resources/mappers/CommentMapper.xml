@@ -9,8 +9,9 @@
         VALUES (#{content}, #{created}, #{userId}, #{weiboId})
     </insert>
     <select id="selectListByWeiboId" resultType="top.sakai.weibo.pojo.vo.CommentVO">
-        SELECT c.content, c.created, c.user_id, c.weibo_id,u.nickname
-        FROM blog.comment c JOIN blog.user u on u.id = c.user_id
+        SELECT c.content, c.created, c.user_id, c.weibo_id, u.nickname
+        FROM blog.comment c
+                 JOIN blog.user u on u.id = c.user_id
         WHERE weibo_id = #{id}
     </select>
 </mapper>
