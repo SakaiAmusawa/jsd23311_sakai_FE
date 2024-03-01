@@ -2,6 +2,9 @@
 
 import {onBeforeUpdate, onMounted, ref} from "vue";
 import axios from "axios";
+import {ElMessage} from "element-plus";
+import router from "@/router";
+import qs from "qs";
 
 //保存详情页内容的数组
 const detail = ref({});
@@ -9,6 +12,10 @@ const detail = ref({});
 const otherArr = ref([]);
 //hotArr用于保存热门文章
 const hotArr = ref([]);
+//comment用于发布评论
+const comment = ref({})
+//commentArr用于保存评论
+const commentArr = ref([])
 
 //定义一个方法初始化方法
 const initDate = () => {
@@ -47,6 +54,24 @@ onBeforeUpdate(() => {
   initDate();
 })
 
+const pushComment = () => {
+  let user = localStorage.user ? JSON.parse(localStorage.user) : null
+  if (user == null) {
+    ElMessage.error('发送评论前，请先登录')
+    router.push('/login')
+  }
+  comment.value.userId = user.id;
+  comment.value.contentId = detail.value.id;
+  console.log(comment.value)
+  let data = qs.stringify(comment.value);
+  axios.post('http://localhost:8080/v1/comment/add-new', data)
+      .then((response) => {
+        if (response.data.code === 2001) {
+          ElMessage.success('发布成功');
+        }
+      })
+}
+
 </script>
 
 <template>
@@ -75,10 +100,10 @@ onBeforeUpdate(() => {
         <hr>
         <el-row :gutter="10">
           <el-col :span="22">
-            <el-input placeholder="想不想说点什么"></el-input>
+            <el-input placeholder="想不想说点什么" v-model="comment.content"></el-input>
           </el-col>
           <el-col :span="2">
-            <el-button type="primary">发布</el-button>
+            <el-button type="primary" @click="pushComment()">发布</el-button>
           </el-col>
         </el-row>
         <el-row v-for="item in 10" :gutter="10" style="margin-top: 10px;">
